@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@600&display=swap');
+
+body {
+	background-color: black;
+	text-align: center;
+	position: absolute;
+	right: 5%; left: 5%; top: 20%; bottom: 20%;
+	margin: auto;
+}
+
+h1 {
+	color: white;
+	font-family: 'Bitter', Serif;
+	font-size: 30px;
+}
+
+p {
+	border: 3px white;
+	font-family: Cascadia Mono, Monospace;
+	font-size: 80px;
+}
+
+.escape {
+	position: fixed;
+	margin: 0;
+	right: 0; left: 0; top: 0; bottom: 0;
+	padding: 0;
+}
