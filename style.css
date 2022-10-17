@@ -34,6 +34,25 @@ p {
 .link {
 	margin-left: 3px;
 	margin-right: 3px;
+	transition: all 0.1s ease 0s;
+}
+.link:hover {
+	border: 3px solid orange;
+	padding: 2px;
+	margin-left: 12px;
+	margin-right: 12px;
+	transition: all 0.1s ease 0s;
+}
+
+.game {
+	padding: 10px;
+	transition: all 0.3s ease 0s;
+}
+.game:hover {
+	border: 4px solid orange;
+	border-radius: 1px;
+	padding: 20px;
+	transition: all 0.3s ease 0s;
 }
 
 .description { 
@@ -44,8 +63,21 @@ p {
 	margin-right: 20px;
 }
 
-.trailer {
-	margin-left: 500px;
+.stores {
+	display: flex;
+	justify-content: left;
+	align-items: left;
+	gap: 20px;
+	margin-left: 20px;
+}
+
+.store {
+	transition: all 0.1s ease 0s;
+}
+.store:hover {
+	border: 2px solid orange;
+	padding: 2px;
+	transition: all 0.1s ease 0s;
 }
 
 .scrapbook {
