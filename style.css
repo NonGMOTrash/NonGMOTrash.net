@@ -84,6 +84,12 @@ p {
 	margin-top: 200px;
 	margin-bottom: 20px;
 	margin-left: 60px;
+	transition: all 0.1s ease 0s;
+}
+.scrapbook:hover {
+	border: 3px solid orange;
+	padding: 3px;
+	transition: all 0.1s ease 0s;
 }
 
 .him {
