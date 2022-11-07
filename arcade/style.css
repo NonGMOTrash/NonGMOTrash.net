@@ -11,6 +11,10 @@ body {
 	font-family: Bitter, Monospace;
 }
 
+p {
+	font-size: 24px;
+}
+
 .escape {
 	position: fixed;
 	margin: 0;
@@ -53,4 +57,3 @@ body {
 	font-size: 50px;
 	transition: all 0.1s ease 0s;
 }
-
