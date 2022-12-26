@@ -9,6 +9,15 @@ p {
 	font-family: 'Bitter', Serif;
 }
 
+button {
+	color: white;
+	font-family: 'Bitter', Serif;
+	background-color: black;
+}
+button:hover {
+	color: orange;
+}
+
 .table {
 	display: flex;
 	justify-content: center;
@@ -92,8 +101,13 @@ p {
 	transition: all 0.1s ease 0s;
 }
 
+.funny {
+	margin-left:150px;
+	margin-top: 90px;
+}
+
 .him {
 	position: absolute;
 	margin-top: 400px;
-	margin-left: 800px;
+	margin-left: 600px;
 }
