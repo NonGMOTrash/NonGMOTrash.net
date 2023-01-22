@@ -64,7 +64,7 @@ button:hover {
 	transition: all 0.3s ease 0s;
 }
 
-.description { 
+.description {
 	text-align: left;
 	font-size: 20px;
 	width: 500px;
@@ -87,6 +87,29 @@ button:hover {
 	border: 2px solid orange;
 	padding: 2px;
 	transition: all 0.1s ease 0s;
+}
+
+
+.blog {
+	text-decoration: none;
+	transition: all 0.2s ease 0s;
+	text-align: center;
+}
+.blog:hover {
+	border: 3px solid orange;
+	padding: 2px;
+	transition: all 0.2s ease 0s;
+}
+
+.blog-title {
+	font-size: 40px;
+	margin-top: 10px;
+}
+
+
+.blog-date {
+	font-size: 16px;
+	margin-top: -30px;
 }
 
 .scrapbook {
