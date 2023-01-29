@@ -6,7 +6,6 @@ body {
 	text-align: center;
 	position: absolute;
 	right: 5%; left: 5%; top: 20%; bottom: 20%;
-	margin: auto;
 	font-size: 40px;
 	font-family: Bitter, Monospace;
 }
@@ -31,14 +30,13 @@ p {
 	margin-left: 200px;
 	margin-right: 200px;
 	margin-bottom: 80px;
-	margin-top: -50px;
+	margin-top: -80px;
 }
 
 .table {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin-left: 60px;
 }
 
 .blog {

@@ -50,10 +50,10 @@ p {
 	justify-content: center;
 	align-items: center;
 	transition: all 0.1s ease 0s;
-	padding: 50px;
+	padding: 40px;
 }
 .game:hover {
 	border: 3px solid orange;
-	font-size: 50px;
+	padding: 45px;
 	transition: all 0.1s ease 0s;
 }
