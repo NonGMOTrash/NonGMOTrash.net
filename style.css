@@ -91,9 +91,7 @@ button:hover {
 
 
 .blog {
-	text-decoration: none;
 	transition: all 0.2s ease 0s;
-	text-align: center;
 }
 .blog:hover {
 	border: 3px solid orange;
