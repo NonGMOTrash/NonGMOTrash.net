@@ -51,6 +51,8 @@ p {
 	align-items: center;
 	transition: all 0.1s ease 0s;
 	padding: 40px;
+	width: 500px;
+	height: 600px;
 }
 .game:hover {
 	border: 3px solid orange;
