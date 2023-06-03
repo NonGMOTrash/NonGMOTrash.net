@@ -15,3 +15,10 @@ function FunnySound() {
 	audio.src = sounds[i];
 	audio.play();
 }
+
+const backrooms_count = 5;
+
+function Backrooms() {
+	var i = Math.floor(Math.random() * backrooms_count) + 1;
+	window.location.href = "./backrooms/"+i+"/index.html";
+}

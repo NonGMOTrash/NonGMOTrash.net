@@ -127,8 +127,17 @@ button:hover {
 	margin-top: 90px;
 }
 
+.threshold {
+	transition: all 0.1s ease 0s;
+}
+.threshold:hover {
+	border: 3px solid orange;
+	padding: 3px;
+	transition: all 0.1s ease 0s;
+}
+
 .him {
 	position: absolute;
-	margin-top: 400px;
-	margin-left: 420px;
+	margin-top: 50px;
+	margin-left: 1200px;
 }
