@@ -16,3 +16,10 @@ body {
 p {
 	font-size: 24px;
 }
+
+a {
+	position: absolute;
+	left: 250px;
+	top: 300px;
+	opacity: 0%;
+}

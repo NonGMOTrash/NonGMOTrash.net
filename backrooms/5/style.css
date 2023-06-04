@@ -15,5 +15,7 @@ p {
 }
 
 .mari {
-	transform: translateY(451px);
+	position: relative;
+	left: 0;
+	top: 0;
 }
