@@ -16,7 +16,7 @@ function FunnySound() {
 	audio.play();
 }
 
-const backrooms_count = 5;
+const backrooms_count = 14;
 
 function Backrooms() {
 	var i = Math.floor(Math.random() * backrooms_count) + 1;
