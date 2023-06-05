@@ -9,7 +9,7 @@ function Toggle() {
 		document.title = "[on]";
 		document.getElementById("music").play();
 	} else {
-		howlers.src = "howlers.png";
+		howlers.src = "howlers.webp";
 		document.title = "[off]";
 		document.getElementById("music").pause();
 	}
