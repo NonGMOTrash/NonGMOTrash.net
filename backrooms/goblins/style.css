@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@600&display=swap');
+
+body {
+	background-color: black;
+	color: white;
+	text-align: center;
+	position: absolute;
+	right: 5%; left: 5%; top: 5%; bottom: 20%;
+	font-size: 40px;
+	font-family: Bitter, Monospace;
+	background-image: url('goblin.webp');
+	background-repeat: repeat;
+	background-size: 5%;
+}
+
+p {
+	font-size: 24px;
+}
+
+img {
+	margin: 10px;
+}
+
+.table {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

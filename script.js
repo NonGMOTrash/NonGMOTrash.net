@@ -16,9 +16,8 @@ function FunnySound() {
 	audio.play();
 }
 
-const backrooms_count = 14;
-
 function Backrooms() {
+	var backrooms_count = 14;
 	var i = Math.floor(Math.random() * backrooms_count) + 1;
 	window.location.href = "./backrooms/"+i+"/index.html";
 }
