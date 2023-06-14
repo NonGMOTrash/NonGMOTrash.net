@@ -4,6 +4,17 @@ body {
 	background-color: black;
 }
 
+img { /* no antialiasing */
+    image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
+    image-rendering: -moz-crisp-edges;          /* Firefox                        */
+    image-rendering: -o-crisp-edges;            /* Opera                          */
+    image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+    image-rendering: pixelated;                 /* Universal support since 2021   */
+    image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
+    -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
+
+}
+
 p {
 	color: white;
 	font-family: 'Bitter', Serif;
@@ -140,4 +151,24 @@ button:hover {
 	position: absolute;
 	margin-top: 50px;
 	margin-left: 1200px;
+}
+
+.player {
+	position: fixed;
+	width: 90px;
+	height: 115px;
+	left: 0;
+	bottom: 0;
+	background: #190515;
+	padding: 3px;
+	overflow: hidden;
+	border: double;
+	border-color: pink;
+}
+
+.player_text {
+	font-family: 'Bitter';
+	width: 90px;
+	white-space: nowrap;
+	margin-top: 0px;
 }
