@@ -1,0 +1,115 @@
+body {
+	background-image: url("bg.gif");
+	background-attachment: fixed;
+	background-position: center;
+}
+
+.welcome {
+	background-image: url("welcome_bg.jpg");
+	overflow: hidden;
+}
+
+	.welcome-text {
+		width: 100%;
+		height: 5px; /* idk why this works, but it does */
+		font-size: 60px;
+		font-family: "BitterThick";
+		margin-top: 0;
+		white-space: nowrap;
+		animation: rainbow 2s infinite linear;
+	}
+
+.main {
+	width: 50%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 50px;
+	margin-bottom: -40px;
+	background: black;
+	border-style: double;
+	border-color: pink;
+	padding: 8px;
+}
+
+.side {
+	width: 20%;
+	padding: 4px;
+	overflow: hidden;
+}
+
+.banner {
+	display: block;
+	margin-top: 80px;
+	margin-bottom: 75px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	background: black;
+}
+
+.greeting {
+	background-color: black;
+	border: 5px purple dotted;
+	padding: 5px;
+}
+
+.the-thing {
+	background: black;
+	width: 250px;
+	border: 1px white solid;
+	margin: 5px;
+}
+
+.news {
+	background: black;
+	border: 2px gray solid;
+}
+
+.buttons {
+	margin-top: 50px;
+	margin-bottom: -95px;
+	width: 100%;
+	height: 86px;
+	overflow: hidden;
+	animation: marquee 30s linear infinite;
+	transform: translate(0px, 1000px);
+}
+
+.entrance {
+	display: inline-block;
+	width: 43%;
+	padding: 14px;
+	border: 4px solid black;
+	border-radius: 1px;
+	transition: all 0.3s ease 0s;
+}
+	.entrance:hover {
+		border: 4px solid orange;
+		transition: all 0.3s ease 0s;
+	}
+
+	.title {
+		font-size: 36px;
+		text-align: center;
+	}
+
+.important-videos {
+	background: #200508;
+	border: 1px solid #200508;
+	border-radius: 25px;
+	overflow: hidden;
+	width: 100%;
+	border: pink solid 1px;
+}
+
+.threshold {
+	padding: 3px;
+}
+
+.him {
+	position: absolute;
+	margin-top: 50px;
+	margin-left: 1200px;
+	width: 90px;
+}

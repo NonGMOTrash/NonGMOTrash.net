@@ -1,0 +1,75 @@
+body {
+	background-image: url("clouds.webp");
+	background-size: 200px 200px;
+}
+
+p {
+	font-size: 20px;
+}
+
+.main {
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	width: 60%;
+	background: black;
+	height: 100%;
+	padding: 5px;
+	display: inline-block;
+	z-index: 100;
+}
+
+.left-side {
+	display: inline-block;
+	width: 18%;
+	height: 100%;
+	vertical-align: top;
+	align-content: center;
+	overflow: hidden;
+}
+
+.right-side {
+	display: inline-block;
+	width: 18%;
+	height: 100%;
+	vertical-align: top;
+	align-content: center;
+	overflow: hidden;
+}
+
+.old-trash {
+	padding: 10px;
+	float: left;
+	border: 2px double purple;
+}
+
+	.old-trash-image {
+		width: 330px;
+	}
+
+	.old-trash-details {
+		font-style: italic;
+		font-size: 14px;
+		margin-top: -5px;
+	}
+	
+.info-question {
+	background-color: #110805;
+}	
+
+.info-entry {
+	background-color: #291d1b;
+}
+
+.things-list {
+	display: inline-block;
+	text-align: left;
+	vertical-align: top;
+	width: 50%;
+	margin-top: 15px;
+	font-size: 20px;
+}
+
+.link {
+	padding: 3px;
+}

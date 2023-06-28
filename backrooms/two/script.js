@@ -6,11 +6,11 @@ function Two() {
 	if (clicks == 1) {
 		document.body.style.backgroundImage = "url('earthbound_bg.gif')";
 		document.title = "battle time";
-		var audio = new Audio('music.wav');
+		var audio = new Audio('music.ogg');
 		audio.play();
 		document.getElementById("song").style.display = "block";
 	} else {
-		var audio = new Audio('youch.wav');
+		var audio = new Audio('youch.ogg');
 		audio.play();
 		
 		if (clicks == 21) {

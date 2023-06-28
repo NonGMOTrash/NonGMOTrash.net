@@ -1,0 +1,24 @@
+body {
+	background-image: url("bg.webp");
+	background-size: 100px;
+}
+
+.main {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	width: 50%;
+	background: black;
+	border: 3px pink double;
+}
+
+.site-button {
+	padding: 3px;
+}
+
+.link {
+	font-family: "Bitter", Serif;
+	font-size: 20px;
+	padding: 3px;
+	display: inline-block;
+}

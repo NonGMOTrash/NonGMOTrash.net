@@ -1,0 +1,21 @@
+.container {
+	position: fixed;
+	width: 90px;
+	height: 115px;
+	left: 0;
+	bottom: 0;
+	background: #190515;
+	padding: 3px;
+	overflow: hidden;
+	border: double;
+	border-color: pink;
+	margin: 0.5%;
+}
+
+	.text {
+		font-family: 'Bitter';
+		font-size: 16px;
+		width: 90px;
+		white-space: nowrap;
+		margin-top: 0px;
+	}

@@ -1,3 +1,11 @@
+var tick_vol = 0;
+
+window.onload = function() {
+	document.getElementById("time").style.color = "White";
+	updateTime();
+	setInterval(updateTime, 1000);
+};
+
 function updateTime() {
 	var endTime = new Date("Jan 1, 2122").getTime();
 	var currentTime = new Date().getTime();
@@ -31,8 +39,10 @@ function updateTime() {
 		months = "0" + months;
 	}
 
-	document.querySelectorAll("p")[1].innerText = years + "y " + months + "m " + days + "d " + hours + "h " + minutes + "m " + seconds + "s";
+	document.getElementById("time").innerText = years + "y " + months + "m " + days + "d " + hours + "h " + minutes + "m " + seconds + "s";
+	
+	// tick
+	tick_vol = Math.min(tick_vol + 0.0075, 1);
+	document.getElementById("tick").volume = tick_vol;
+	document.getElementById("tick").play();
 }
-
-updateTime();
-setInterval(updateTime, 1000);

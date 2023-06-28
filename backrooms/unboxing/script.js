@@ -10,7 +10,7 @@ function Open() {
 			break;
 		case 2:
 			box.src = "box_music_open.png";
-			var audio = new Audio('megalovania.wav');
+			var audio = new Audio('megalovania.ogg');
 			audio.play();
 			document.getElementById("header").textContent = "(from R3 Music Box on youtube)";
 			document.getElementById("buttons").style.display = "none";
@@ -27,7 +27,7 @@ function Open() {
 			break;
 		case 5:
 			box.src = "fnaf.gif";
-			var audio = new Audio('jumpscare.wav');
+			var audio = new Audio('jumpscare.ogg');
 			audio.play();
 			document.getElementById("header").textContent = "jumpscare";
 			document.getElementById("buttons").style.display = "none";
