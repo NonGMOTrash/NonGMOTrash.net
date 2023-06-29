@@ -25,9 +25,18 @@ p {
 
 .linkTwo {
 	position: absolute;
-	left: 57%;
+	left: 58%;
 	top: 20%;
-	width: 8%;
+	width: 6%;
+	height: 20%;
+	opacity: 0%;
+}
+
+.linkThree {
+	position: absolute;
+	left: 55%;
+	top: 22%;
+	width: 1.5%;
 	height: 20%;
 	opacity: 0%;
 }

@@ -107,6 +107,14 @@ body {
 	padding: 3px;
 }
 
+.webring {
+	display: inline-block;
+	background: black;
+	border: 3px solid orange;
+	padding-right: 3px;
+	padding-left: 3px;
+}
+
 .him {
 	position: absolute;
 	margin-top: 50px;
