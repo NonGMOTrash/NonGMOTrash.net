@@ -27,15 +27,15 @@ var hour = new Date().getHours();
 if (hour >= 23 || hour < 6) {
 	// night
 	greetingText.textContent = "..shouldn't you be asleep? :þ";
-	greetingImg.src = "moon.gif";
+	greetingImg.src = "time_night.gif";
 } else if (hour >= 6 && hour < 12) {
 	// morning
 	greetingText.textContent = "good morning! (*´▽｀)ゞ";
-	greetingImg.src = "tired.gif";
+	greetingImg.src = "time_morning.gif";
 } else {
 	// afternoon
 	greetingText.textContent = "good afternoon ᐛ";
-	greetingImg.src = "sun.gif";
+	greetingImg.src = "time_afternoon.gif";
 }
 
 // FUNNY SOUND BUTTON

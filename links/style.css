@@ -28,8 +28,8 @@ body {
 	font-family: "Bitter", Serif;
 	font-size: 32px;
 	padding: 3px;
-	display: inline-block;
-	margin: 0;
+	margin-left: 0;
+	margin-right: auto;
 }
 	
 .details {
