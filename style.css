@@ -2,15 +2,10 @@ body {
 	background-image: url("sunset.gif");
 	background-size: cover;
 	text-align: center;
-	margin: auto;
 }
 
 p, h1, h2, h3, h4, li {
 	color: orange;
-}
-
-a {
-	text-decoration: none;
 }
 
 .enter {
@@ -19,6 +14,7 @@ a {
 	text-decoration-color: red;
 	font-size: 60px;
 	transition: 1s;
+	cursor: pointer;
 }
 	.enter:hover {
 		text-decoration-style: double;
@@ -31,6 +27,15 @@ a {
 .notes {
 	text-align: left;
 	left: 0;
+	bottom: 0;
+	position: absolute;
+	width: 19%;
+	padding: 15px;
+}
+
+.webrings {
+	text-align: center;
+	right: 0;
 	bottom: 0;
 	position: absolute;
 	width: 19%;
