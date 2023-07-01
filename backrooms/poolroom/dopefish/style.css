@@ -8,20 +8,10 @@ body {
 	right: 5%; left: 5%; top: 20%; bottom: 20%;
 	font-size: 40px;
 	font-family: Bitter, Monospace;
-	cursor: pointer;
 }
 
 p {
 	font-size: 24px;
-}
-
-.link {
-	position: absolute;
-	left: 10%;
-	top: -20%;
-	width: 80%;
-	height: 150%;
-	opacity: 0%;
 }
 
 .bg {
@@ -32,3 +22,14 @@ p {
 	top: 0;
 	z-index: -1000;
 }
+
+.dopefish {
+	animation: bounce 5s linear infinite;
+}
+	@keyframes bounce {
+		0%   { margin-left: 700px; margin-top: 0px; }
+		25%  { margin-left: -200px; margin-top: -100px; }
+		50%  { margin-left: -400px; margin-top: 200px; }
+		75%  { margin-left: 80px; margin-top: -200px; }
+		100%   { margin-left: 700px; margin-top: 0px; }
+	}

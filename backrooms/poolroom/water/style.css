@@ -8,20 +8,10 @@ body {
 	right: 5%; left: 5%; top: 20%; bottom: 20%;
 	font-size: 40px;
 	font-family: Bitter, Monospace;
-	cursor: pointer;
 }
 
 p {
 	font-size: 24px;
-}
-
-.link {
-	position: absolute;
-	left: 10%;
-	top: -20%;
-	width: 80%;
-	height: 150%;
-	opacity: 0%;
 }
 
 .bg {
@@ -31,4 +21,31 @@ p {
 	left: 0;
 	top: 0;
 	z-index: -1000;
+}
+
+.back {
+	position: absolute;
+	opacity: 0%;
+	left: 62%;
+	top: -10%;
+	width: 20%;
+	height: 35%;
+}
+
+.up {
+	position: absolute;
+	opacity: 0%;
+	left: -5%;
+	top: -40%;
+	width: 50%;
+	height: 32%;
+}
+
+.left {
+	position: absolute;
+	opacity: 0%;
+	left: -5%;
+	top: 20%;
+	width: 6%;
+	height: 60%;
 }

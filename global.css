@@ -60,11 +60,13 @@
 
 body {
 	background: black;
+	width: 100%;
+	height: 100%;
 }
 
 p, h1, h2, h3, h4 {
 	color: white;
-	font-family: "Bitter", Serif;	
+	font-family: "Bitter", Serif;
 }
 
 	p {
@@ -192,4 +194,18 @@ a {
 	margin-bottom: 0;
 	text-align: center;
 	font-size: 10px;
+}
+
+/* cursors */
+
+body {
+	cursor: url("cur_default.cur"), auto;
+}
+
+p, h1, h2, h3, h4, table, li {
+	cursor: url("cur_text.cur"), auto;
+}
+
+a, button {
+	cursor: url("cur_pointer.cur"), auto;
 }
