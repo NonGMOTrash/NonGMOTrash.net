@@ -22,9 +22,32 @@ var greetingImg;
 
 greetingText = document.getElementById("greeting-text");
 greetingImg = document.getElementById("greeting-img");
+
+var day = new Date().getDate();
+var month = new Date().getMonth();
 var hour = new Date().getHours();
 
-if (hour >= 23 || hour < 6) {
+if (month === 7 && day === 3) {
+	// air conditioning appreciation day
+	greetingText.textContent = "i fucking love air conditioning";
+	greetingImg.src = "time_air.png";
+} else if (month === 7 && day === 4) {
+	// 4th of july
+	greetingText.textContent = "merica";
+	greetingImg.src = "time_4th.gif";
+} else if (month === 12 && day === 25) {
+	// halloween
+	greetingText.textContent = "have a sPoOkY hAlLoWeEn";
+	greetingImg.src = "time_halloween.gif";
+} else if (month === 12 && day === 25) {
+	// thanksgiving
+	greetingText.textContent = "happy free bird day";
+	greetingImg.src = "time_thanksgiving.gif";
+} else if (month === 12 && day === 25) {
+	// xmas
+	greetingText.textContent = "merry christmas";
+	greetingImg.src = "time_christmas.gif";
+} else if (hour >= 23 || hour < 6) {
 	// night
 	greetingText.textContent = "..shouldn't you be asleep? :þ";
 	greetingImg.src = "time_night.gif";
