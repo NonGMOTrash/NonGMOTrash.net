@@ -1,10 +1,11 @@
 function Funny() {
 	// loaded assets, comense funny
-	document.getElementById("funny").src = "cat.gif";
-	document.getElementById("funny").style.width = "800px";
-	document.getElementById("sfx").play();
+	document.getElementById("funny").style.display = "none";
+	document.getElementById("video").style.display = "block";
+	document.getElementById("video").style.width = "950px";
+	document.getElementById("video").play();
 	
-	window.setTimeout(function() {
-		window.location.href = "https://nongmotrash.github.io/";
-	}, 2300);
+	document.getElementById("video").addEventListener("ended", function() {
+		window.location.href = "https://nongmotrash.github.io/home/";
+	});
 }

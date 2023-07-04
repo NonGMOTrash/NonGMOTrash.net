@@ -7,5 +7,5 @@ function MySon() {
 
 function Warp() {
 	document.getElementById("son").style.display = "none";
-	window.location.href = "../../../skyrim/index.html";
+	window.location.href = "../skyrim/index.html";
 }
