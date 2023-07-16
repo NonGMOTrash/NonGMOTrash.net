@@ -13,13 +13,21 @@ body {
 
 .description {
 	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
 	margin-top: 0px;
-	margin-bottom: 80px;
+	margin-bottom: 50px;
+	width: 50%;
 }
 
 .blog {
 	text-decoration: none;
 	text-align: center;
+	padding: 5px;
+	margin: 5px;
+	width: 600px;
+	height: 500px;
+	background: black;
 }
 
 	.blog-title {
