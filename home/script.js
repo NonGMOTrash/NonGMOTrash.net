@@ -51,7 +51,7 @@ if (month === 7 && day === 3) {
 	// night
 	greetingText.textContent = "..shouldn't you be asleep? :þ";
 	greetingImg.src = "time_night.gif";
-} else if (hour >= 6 && hour < 12) {
+} else if (hour >= 6 && hour < 11) {
 	// morning
 	greetingText.textContent = "good morning! (*´▽｀)ゞ";
 	greetingImg.src = "time_morning.gif";
