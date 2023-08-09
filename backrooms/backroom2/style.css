@@ -49,6 +49,12 @@ p {
 	opacity: 0%;
 }
 
+.warp {
+	position: absolute;
+	left: 50%;
+	top: 40%;
+}
+
 .bg {
 	position: fixed;
 	width: 100%;

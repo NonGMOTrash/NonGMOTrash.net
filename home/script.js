@@ -5,14 +5,14 @@ const hscrollWelcome = [
 	{ offset: 1, transform: "translate(-100%, 0)" }
 ];
 const textRainbow = [
-	{ offset: 0/7, color: "#ff0000" },
-	{ offset: 1/7, color: "#ff00de" },
-	{ offset: 2/7, color: "#2b00ff" },
-	{ offset: 3/7, color: "#00baff" },
-	{ offset: 4/7, color: "#00ff53" },
-	{ offset: 5/7, color: "#d4ff00" },
-	{ offset: 6/7, color: "#ff6300" },
-	{ offset: 7/7, color: "#ff0000" }
+	{ offset: 0 / 7, color: "#ff0000" },
+	{ offset: 1 / 7, color: "#ff00de" },
+	{ offset: 2 / 7, color: "#2b00ff" },
+	{ offset: 3 / 7, color: "#00baff" },
+	{ offset: 4 / 7, color: "#00ff53" },
+	{ offset: 5 / 7, color: "#d4ff00" },
+	{ offset: 6 / 7, color: "#ff6300" },
+	{ offset: 7 / 7, color: "#ff0000" }
 ];
 
 // GREETING
@@ -23,9 +23,12 @@ var greetingImg;
 greetingText = document.getElementById("greeting-text");
 greetingImg = document.getElementById("greeting-img");
 
-var day = new Date().getDate();
-var month = new Date().getMonth();
-var hour = new Date().getHours();
+var today = new Date();
+var day = today.getDate();
+var month = today.getMonth() + 1;
+var hour = today.getHours();
+
+console.log("hour:"+hour+" day:"+day+" month:"+month)
 
 if (month === 7 && day === 3) {
 	// air conditioning appreciation day
