@@ -1,0 +1,40 @@
+
+body {
+	background-image: url("bg.webp");
+	position: absolute;
+	margin: auto;
+}
+
+ol, ul {
+	text-align: left;
+	font-size: 20px;
+	font-family: "CaskaydiaCove";
+}
+
+button {
+	width: 120px;
+}
+
+.commandments {
+	margin: auto;
+	margin-top: 10%;
+	width: 50%;
+}
+
+.buttons {
+	margin: auto;
+	width: 50%;
+	margin-top:100px;
+}
+
+.escape {
+	position: fixed;
+	margin: 0;
+	right: 0; left: 0; top: 0; bottom: 0;
+	padding: 10px;
+	transition: all 0.1s ease 0s;
+}
+.escape:hover {
+	border: 2px solid orange;
+	transition: all 0.1s ease 0s;
+}

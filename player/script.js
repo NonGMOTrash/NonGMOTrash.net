@@ -17,7 +17,7 @@ window.addEventListener('load', function () {
 	if (navigator.getAutoplayPolicy("mediaelement") === "allowed") {
 		ToggleMusic();
 	} else {
-		player_text.textContent = "[click to play]";
+		text.textContent = "[click to play]";
 		SetScrolling("120%", 4000);
 	}
 	
@@ -29,7 +29,6 @@ window.addEventListener('load', function () {
 
 function ToggleMusic() {
 	playing = !playing;
-	
 	
 	if (playing) {
 		music.play();
@@ -65,6 +64,9 @@ function ToggleMusic() {
 		} else if (song_name == "dadshop.ogg") {
 			text.textContent = "[now playing: Pedro Silva - I Think My Dad Shops Here]";
 			SetScrolling("515%", 8050);
+		} else if (song_name == "dorito.ogg") {
+			text.textContent = "[now playing: Coda - Dorito Dust]";
+			SetScrolling("318%", 6000);
 		}
 		
 	} else {

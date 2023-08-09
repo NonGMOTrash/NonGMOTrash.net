@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@600&display=swap');
+
+body {
+	background-color: black;
+	color: white;
+	text-align: center;
+	position: absolute;
+	/*right: 5%; left: 5%; top: 20%; bottom: 20%;*/
+	font-size: 40px;
+	font-family: Bitter, Monospace;
+	background-image: url("quirky.webp");
+}
+
+p {
+	font-size: 24px;
+}
+
+.omor {
+	position: absolute;
+	left: 1100px;
+	top: 700px;
+}
+
+.popup {
+	position: absolute;
+	left: 10px;
+	top: 10px;
+}
+
+.bg {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	z-index: -1000;
+}
