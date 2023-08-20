@@ -2,7 +2,7 @@ body {
 	background: black;
 	text-align: center;
 	position: absolute;
-	right: 5%; left: 5%; top: 10%; bottom: 20%;
+	right: 0%; left: 0%; top: 10%; bottom: 10%;
 	margin: auto;
 }
 
@@ -10,12 +10,6 @@ body {
 	padding: 10px;
 	transition: all 0.3s ease 0s;
 }
-	.game:hover {
-		border: 4px solid orange;
-		border-radius: 1px;
-		padding: 20px;
-		transition: all 0.3s ease 0s;
-	}
 
 .description {
 	text-align: left;
@@ -32,12 +26,3 @@ body {
 	gap: 20px;
 	margin-left: 20px;
 }
-	
-	.store {
-		transition: all 0.1s ease 0s;
-	}
-		.store:hover {
-			border: 2px solid orange;
-			padding: 2px;
-			transition: all 0.1s ease 0s;
-		}

@@ -5,7 +5,7 @@ body {
 	color: white;
 	text-align: center;
 	position: absolute;
-	right: 5%; left: 5%; top: 20%; bottom: 20%;
+	right: 0%; left: 0%; top: 20%; bottom: 20%;
 	margin: auto;
 	font-size: 40px;
 	font-family: Bitter, Monospace;
@@ -22,11 +22,13 @@ img {
 .title {
 	color: #ff3b79;
 	font-family: "BitterThick";
+	font-size: 80px;
+	letter-spacing: 50px;
 	margin-left: 200px;
 	margin-right: 200px;
-	margin-bottom: 80px;
-	margin-top: -50px;
-	animation: marquee 2s linear infinite;
+	margin-bottom: 20px;
+	margin-top: 50px;
+	animation: marquee 10s linear infinite;
 }
 
 .table {

@@ -1,5 +1,7 @@
-/*@import url("https://fonts.googleapis.com/css2?family=Bitter:wght@600&display=swap");*/
-
+/*
+i think this is slow as balls but idk its easy
+maybe later i'll try to optimize the fonts
+*/
 @font-face {
     font-family: "Bitter";
     src: url("Bitter.ttf") format('embedded-opentype'), /* Internet Explorer */
@@ -60,8 +62,6 @@
 
 body {
 	background: black;
-	width: 100%;
-	height: 100%;
 }
 
 p, h1, h2, h3, h4 {
@@ -94,16 +94,6 @@ p, h1, h2, h3, h4 {
 		font-family: "Bitter", Serif;
 	}
 
-img { /* no antialiasing */
-    image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
-    image-rendering: -moz-crisp-edges;          /* Firefox                        */
-    image-rendering: -o-crisp-edges;            /* Opera                          */
-    image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
-    image-rendering: pixelated;                 /* Universal support since 2021   */
-    image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
-    -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
-}
-
 button {
 	color: white;
 	font-family: "Bitter", Serif;
@@ -134,6 +124,16 @@ a {
 		color: orange;
 		transition: all 0.3s ease 0s;
 	}
+
+.pixel { /* no antialiasing */
+    image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
+    image-rendering: -moz-crisp-edges;          /* Firefox                        */
+    image-rendering: -o-crisp-edges;            /* Opera                          */
+    image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+    image-rendering: pixelated;                 /* Universal support since 2021   */
+    image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
+    -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
+}
 
 .center {
 	margin-left: auto;
@@ -215,6 +215,6 @@ p, h1, h2, h3, h4, table, li {
 	cursor: url("cur_text.cur"), auto;
 }
 
-a, button {
+a, button, .clickable {
 	cursor: url("cur_pointer.cur"), auto;
 }

@@ -3,7 +3,7 @@ body {
 	color: white;
 	text-align: center;
 	position: absolute;
-	right: 5%; left: 5%; top: 12%; bottom: 5%;
+	right: 0%; left: 0%; top: 5%; bottom: 5%;
 	margin: auto;
 }
 
@@ -17,7 +17,7 @@ p {
 	margin-left: 200px;
 	margin-right: 200px;
 	margin-bottom: 80px;
-	margin-top: -50px;
+	margin-top: 35px;
 }
 
 .get {
@@ -33,12 +33,7 @@ p {
 }
 
 .store {
-	transition: all 0.1s ease 0s;
-}
-.store:hover {
-	border: 3px solid orange;
-	padding: 4px;
-	transition: all 0.1s ease 0s;
+	padding: 6px;
 }
 
 .trailer {
@@ -46,3 +41,10 @@ p {
 	margin-right: auto;
 }
 
+.description {
+	margin: auto;
+	margin-top: 80px;
+	margin-bottom: 30px;
+	width: 50%;
+	text-align: left;
+}

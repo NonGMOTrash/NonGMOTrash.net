@@ -23,3 +23,10 @@ img {
 .sketch {
 	width: 900px;
 }
+
+.document {
+	font-size: 40px;
+	width: 30%;
+	background: black;
+	cursor: pointer;
+}

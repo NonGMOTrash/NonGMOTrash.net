@@ -13,12 +13,12 @@ window.addEventListener('load', function () {
 	cat = document.getElementById("cat");
 	
 	music.src = song_name;
+
+	text.textContent = "[click to play]";
+	SetScrolling("120%", 4000);
 	
 	if (navigator.getAutoplayPolicy("mediaelement") === "allowed") {
 		ToggleMusic();
-	} else {
-		text.textContent = "[click to play]";
-		SetScrolling("120%", 4000);
 	}
 	
 	// special
