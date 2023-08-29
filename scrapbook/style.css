@@ -12,12 +12,7 @@ p {
 }
 
 img {
-	margin: 50px;
-	image-rendering: auto;
-}
-
-.scraps {
-	margin: 50px auto;
+	margin: 20px;
 }
 
 .sketch {
@@ -25,8 +20,9 @@ img {
 }
 
 .document {
-	font-size: 40px;
 	width: 30%;
+	margin: auto;
+	font-size: 40px;
 	background: black;
 	cursor: pointer;
 }

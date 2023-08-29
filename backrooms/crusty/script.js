@@ -1,27 +1,29 @@
 var clicked = false;
-var activated = false;
+var laughing = false;
 
 function BigMode() {
-	if (activated) {
+	if (clicked) {
 		window.location.href = "../crusty_video/index.html";
 	}
 	if (clicked) {
 		return;
 	}
-	clicked = true;
-	
-	document.getElementById("skele").src = "skeletons.gif";
+	laughing = true;
+
+	document.getElementById("skele").style.display = "none";
+	document.getElementById("video").style.display = "block";
+	document.getElementById("video").play();
 	document.title = "so funny";
-	var audio = new Audio("laugh.mp3");
-	audio.play();
 	
-	activated = true;
-	setTimeout(Continue, 5500);
+	clicked = true;
+	setTimeout(Continue, 5600);
 }
 
 function Continue() {
-	activated = false;
+	console.log("!");
+	laughing = false;
 	document.title = "SO FUNNY";
+	document.getElementById("video").style.display = "none";
 	document.getElementById("why").style.display = "block";
-	document.getElementById("skele").src = "pe.jpg";
+	document.getElementById("pe").style.display = "block";
 }

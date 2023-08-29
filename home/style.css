@@ -71,9 +71,8 @@ body {
 	margin-bottom: -95px;
 	width: 100%;
 	height: 86px;
-	overflow: hidden;
 	animation: marquee 30s linear infinite;
-	transform: translate(0px, 1000px);
+	/* transform: translate(0px, 1000px); */
 }
 
 .entrance {
