@@ -67,11 +67,13 @@ body {
 }
 
 .buttons {
-	margin-top: 20px;
+	position: relative;
+	margin-top: 50px;
 	margin-bottom: -95px;
 	width: 100%;
 	height: 86px;
 	animation: marquee 30s linear infinite;
+	overflow: hidden;
 	/* transform: translate(0px, 1000px); */
 }
 
