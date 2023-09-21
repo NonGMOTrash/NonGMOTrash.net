@@ -58,9 +58,9 @@ function ToggleMusic() {
 		} else if (song_name == "scrybes.ogg") {
 			text.textContent = "[now playing: Jonah Senzel - The Four Scrybes]";
 			SetScrolling("485%", 8400);
-		} else if (song_name == "keychain.ogg") {
-			text.textContent = "[now playing: Jun Ishikawa - Keychain Collecting]";
-			SetScrolling("495%", 8300);
+		} else if (song_name == "viridian_city.ogg") {
+			text.textContent = "[now playing: Junichi Masuda - Viridian City (Mario's Mystery Meat Ver)]";
+			SetScrolling("800%", 12500);
 		} else if (song_name == "dadshop.ogg") {
 			text.textContent = "[now playing: Pedro Silva - I Think My Dad Shops Here]";
 			SetScrolling("515%", 8050);
@@ -85,3 +85,4 @@ function SetScrolling(distance, duration) {
 	
 	text.animate(anim, { duration: duration, iterations: Infinity });
 }
+
