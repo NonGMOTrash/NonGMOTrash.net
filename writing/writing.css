@@ -1,0 +1,86 @@
+@font-face {
+    font-family: "Bitter";
+    src: url("../Bitter.ttf") format('embedded-opentype'), /* Internet Explorer */
+         url("../Bitter.ttf") format('woff2'),             /* Super Modern Browsers */
+         url("../Bitter.ttf") format('woff'),              /* Pretty Modern Browsers */
+         url("../Bitter.ttf") format('truetype'),          /* Safari, Android, iOS */
+         url("../Bitter.ttf") format('svg');               /* Legacy iOS */
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+body {
+	background: black;
+	color: white;
+	font-family: "Bitter", Serif;
+}
+
+p, li {
+	font-size: 22px;
+}
+
+h1 {
+	font-size: 50px;
+	text-align: center;
+}
+
+h2 {
+	font-size: 40px;
+	text-align: center;
+}
+
+h3 {
+	font-size: 28px;
+	text-align: center;
+}
+
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3px;
+	margin-bottom: -15px;
+}
+
+.pixel { /* no antialiasing */
+    image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
+    image-rendering: -moz-crisp-edges;          /* Firefox                        */
+    image-rendering: -o-crisp-edges;            /* Opera                          */
+    image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+    image-rendering: pixelated;                 /* Universal support since 2021   */
+    image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
+    -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
+}
+
+.content {
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+
+.title-img {
+	max-width: 75%;
+	margin: auto;
+}
+
+.annotation {
+	font-size: 13px;
+	font-style: italic;
+	text-align: center;
+	margin-top: 2px;
+}
+
+.info-box {
+	border: 1px solid white;
+	padding: 10px;
+	margin: 20px;
+	font-size: 18px;
+}
+
+.signout {
+	margin-left: auto;
+	margin-right: 0;
+	text-align: right;
+	margin-top: 50px;
+}

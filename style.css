@@ -1,3 +1,14 @@
+@font-face {
+    font-family: "WeThePeople";
+    src: url("WeThePeople.ttf") format('embedded-opentype'), /* Internet Explorer */
+         url("WeThePeople.ttf") format('woff2'),             /* Super Modern Browsers */
+         url("WeThePeople.ttf") format('woff'),              /* Pretty Modern Browsers */
+         url("WeThePeople.ttf") format('truetype'),          /* Safari, Android, iOS */
+         url("WeThePeople.ttf") format('svg');               /* Legacy iOS */
+    font-weight: 500;
+    font-style: normal;
+}
+
 body {
 	text-align: center;
 }
@@ -15,6 +26,7 @@ a {
 	grid-template-areas:
 		"header header header"
 		"enter  enter  terms"
+		"warn   warn   warn"
 		"ad     ad     ad";
 }
 
@@ -24,6 +36,11 @@ a {
 	padding: 3px;
 	margin: 3px;
 	background: black;
+}
+
+.terms {
+	font-family: 'WeThePeople';
+	font-size: 40px;
 }
 
 .webrings {
@@ -45,3 +62,4 @@ a {
 	margin-right: 5px;
 	width:150px;
 }
+

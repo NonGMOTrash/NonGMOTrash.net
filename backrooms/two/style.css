@@ -20,6 +20,7 @@ p {
 	left: 30%;
 	top: 50%;
 	opacity: 100%;
+	cursor: url("sword.cur"), auto;
 }
 
 .bg {
@@ -30,3 +31,4 @@ p {
 	top: 0;
 	z-index: -1000;
 }
+

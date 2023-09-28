@@ -9,12 +9,13 @@ function Two() {
 		var audio = new Audio('music.ogg');
 		audio.play();
 		document.getElementById("song").style.display = "block";
-	} else {
-		var audio = new Audio('youch.ogg');
-		audio.play();
-		
-		if (clicks == 21) {
-			window.location.href = "../radio/index.html";
-		}
+	}
+	
+	var audio = new Audio('youch.ogg');
+	audio.play();
+	
+	if (clicks == 21) {
+		window.location.href = "../radio/index.html";
 	}
 }
+
