@@ -15,6 +15,19 @@ const textRainbow = [
 	{ offset: 7 / 7, color: "#ff0000" }
 ];
 
+// UPDATE DAY COUNTER
+
+const DAY = 1000 * 60 * 60 * 24;
+
+var lastUpdate = new Date("2023-10-16").getTime();
+var currentDay = new Date().getTime();
+var days = Math.floor(Math.abs((currentDay - lastUpdate) / DAY))
+var dayCount = document.getElementById("day-count");
+dayCount.textContent = days + " DAY";
+if (days !== 1) {
+	dayCount.textContent = dayCount.textContent + "S";
+}
+
 // GREETING
 
 var greetingText;
@@ -28,7 +41,7 @@ var day = today.getDate();
 var month = today.getMonth() + 1;
 var hour = today.getHours();
 
-console.log("hour:"+hour+" day:"+day+" month:"+month)
+console.log("hour:"+hour+" day:"+day+" month:"+month);
 
 if (month === 7 && day === 3) {
 	// air conditioning appreciation day
@@ -89,3 +102,4 @@ function Backrooms() {
 	var i = Math.floor(Math.random() * backrooms_count) + 1;
 	window.location.href = "./backrooms/"+i+"/index.html";
 }
+

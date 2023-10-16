@@ -97,6 +97,17 @@ body {
 		text-align: center;
 	}
 
+.last-update {
+	background: black;
+	border: 1px solid white;
+}
+	.day-count {
+		font-size: 40px;
+		font-family: 'BitterThick';
+		margin-bottom: -20px;
+		margin-top:-20px;
+	}
+
 .important-videos {
 	background: #200508;
 	border: 1px solid #200508;
@@ -130,3 +141,4 @@ body {
 	margin-left: 1200px;
 	width: 90px;
 }
+
