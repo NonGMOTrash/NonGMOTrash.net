@@ -35,7 +35,13 @@ body {
 		margin-top: 10px;
 	}
 
-	.blog-date {
+	.blog-tags {
 		font-size: 16px;
 		margin-top: -30px;
 	}
+
+	.blog-date {
+		font-size: 18px;
+		font-style: italic;
+	}
+
