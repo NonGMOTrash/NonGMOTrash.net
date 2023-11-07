@@ -19,9 +19,9 @@ const textRainbow = [
 
 const DAY = 1000 * 60 * 60 * 24;
 
-var lastUpdate = new Date("2023-11-1").getTime();
+var lastUpdate = new Date("2023-11-6").getTime();
 var currentDay = new Date().getTime();
-var days = Math.floor(Math.abs((currentDay - lastUpdate) / DAY))
+var days = Math.floor(Math.abs((currentDay - lastUpdate) / DAY)) - 1
 var dayCount = document.getElementById("day-count");
 dayCount.textContent = days + " DAY";
 if (days !== 1) {

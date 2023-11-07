@@ -1,0 +1,56 @@
+
+body {
+	background-image: url("bg.png");
+	text-align: center;
+	position: absolute;
+	right: 0%; left: 0%; top: 0%; bottom: 20%;
+	margin: auto;
+}
+
+p {
+	color: white;
+	font-family: 'Bitter', Comic Sans MS;
+	font-size: 24px;
+}
+
+b {
+	text-decoration: underline;
+}
+
+.bg {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	z-index: -1000;
+}
+
+.timeline {
+	overflow-x: auto;
+	overflow-y: hidden;
+	white-space: nowrap;
+	width: 100%;
+	height: 55%;
+	background: rgba(0, 0, 0, 0.2);
+}
+
+.project {
+	display: inline-block;
+	margin: 25px;
+	width: 40%;
+}
+	.project-title {
+		font-size: 36px;
+		margin-top: 0px;
+	}
+	.project-description {
+		font-size: 16px;
+		white-space: normal;
+	}
+	.project-status {
+		font-size: 18px;
+		font-family: "CaskaydiaCove";
+		text-align: left;
+	}
+

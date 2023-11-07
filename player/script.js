@@ -35,7 +35,7 @@ function ToggleMusic() {
 		cat.src = "cat_vibe.gif";
 		
 		if (song_name == "macroblank.ogg") {
-			text.textContent = "[now playing: Macroblank - あなたを許すのは難しい]";;
+			text.textContent = "[now playing: Macroblank - あなたを許すのは難しい]";
 			SetScrolling("428%", 7000);
 		} else if (song_name == "yoki_house.ogg") {
 			text.textContent = "[now playing: Camellia, Temmie Chang & Toby Fox - Yoki's House]";
@@ -67,6 +67,9 @@ function ToggleMusic() {
 		} else if (song_name == "dorito.ogg") {
 			text.textContent = "[now playing: Coda - Dorito Dust]";
 			SetScrolling("318%", 6000);
+		} else if (song_name == "faint_glow.ogg") {
+			text.textContent = "[now playing: Toby Fox - Faint Glow]";
+			SetScrolling("321%", 6100);
 		}
 		
 	} else {

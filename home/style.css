@@ -61,10 +61,23 @@ body {
 	margin: 5px;
 }
 
-.news {
+.machinations {
 	background: black;
 	border: 2px gray solid;
 }
+	.machinations-subtitle {
+		font-size: 10px;
+		font-style: italic;
+		margin-bottom: -20px;
+	}
+	.machinations-headline {
+		font-size: 22px;
+	}
+	.machinations-date {
+		font-size: 13px;
+		text-align: center;
+		margin-top: -20px;
+	}
 
 .buttons {
 	position: relative;
