@@ -26,8 +26,7 @@ body {
 	margin-top: 50px;
 	margin-bottom: -40px;
 	background: black;
-	border-style: double;
-	border-color: pink;
+	border: double pink;
 	padding: 8px;
 }
 
@@ -52,6 +51,8 @@ body {
 	background-color: black;
 	border: 5px purple dotted;
 	padding: 5px;
+	width: 60%;
+	transform: rotate(-8deg);
 }
 
 .the-thing {
@@ -112,11 +113,11 @@ body {
 
 .last-update {
 	background: black;
-	border: 1px solid white;
+	border: 2px gray solid;
 }
 	.day-count {
 		font-size: 40px;
-		font-family: 'BitterThick';
+		font-family: 'CaskaydiaCove';
 		margin-bottom: -20px;
 		margin-top:-20px;
 	}
