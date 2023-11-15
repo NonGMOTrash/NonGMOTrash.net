@@ -19,7 +19,7 @@ const textRainbow = [
 
 const DAY = 1000 * 60 * 60 * 24;
 
-var lastUpdate = new Date("2023-11-11").getTime();
+var lastUpdate = new Date("2023-11-14").getTime();
 var currentDay = new Date().getTime();
 var days = Math.floor(Math.abs((currentDay - lastUpdate) / DAY)) - 1
 var dayCount = document.getElementById("day-count");
