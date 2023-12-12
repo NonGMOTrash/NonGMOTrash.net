@@ -1,14 +1,3 @@
-@font-face {
-    font-family: "WeThePeople";
-    src: url("WeThePeople.ttf") format('embedded-opentype'), /* Internet Explorer */
-         url("WeThePeople.ttf") format('woff2'),             /* Super Modern Browsers */
-         url("WeThePeople.ttf") format('woff'),              /* Pretty Modern Browsers */
-         url("WeThePeople.ttf") format('truetype'),          /* Safari, Android, iOS */
-         url("WeThePeople.ttf") format('svg');               /* Legacy iOS */
-    font-weight: 500;
-    font-style: normal;
-}
-
 body {
 	text-align: center;
 }
