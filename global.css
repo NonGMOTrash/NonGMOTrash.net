@@ -118,12 +118,18 @@ table, tr, th {
 }
 
 a {
+	color: #3988d3;
 	transition: all 0.3s ease 0s;
 }
 	a:hover {
 		color: orange;
 		transition: all 0.3s ease 0s;
 	}
+
+::selection {
+  background: #92d0fc;
+  color: black;
+}
 
 .pixel { /* no antialiasing */
     image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
@@ -218,3 +224,4 @@ p, h1, h2, h3, h4, table, li {
 a, button, .clickable {
 	cursor: url("cur_pointer.cur"), auto;
 }
+

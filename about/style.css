@@ -38,9 +38,10 @@ p {
 }
 
 .old-trash {
-	padding: 10px;
+	padding: 3px;
+	margin: 2px;
 	float: left;
-	border: 2px double purple;
+	border: 1px double pink;
 }
 
 	.old-trash-image {
@@ -51,6 +52,7 @@ p {
 		font-style: italic;
 		font-size: 14px;
 		margin-top: -5px;
+		margin-bottom: -5px;
 	}
 	
 .info-question {
@@ -74,3 +76,4 @@ p {
 	padding: 3px;
 	width: 96px;
 }
+

@@ -26,11 +26,7 @@ a {
 	padding: 3px;
 	margin: 3px;
 	background: black;
-}
-
-.terms {
-	font-family: 'WeThePeople';
-	font-size: 40px;
+	overflow: hidden;
 }
 
 .webrings {
