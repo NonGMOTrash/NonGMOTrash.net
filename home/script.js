@@ -51,11 +51,11 @@ if (month === 7 && day === 3) {
 	// 4th of july
 	greetingText.textContent = "merica";
 	greetingImg.src = "time_4th.gif";
-} else if (month === 12 && day === 25) {
+} else if (month === 8 && day === 31) {
 	// halloween
 	greetingText.textContent = "have a sPoOkY hAlLoWeEn";
 	greetingImg.src = "time_halloween.gif";
-} else if (month === 12 && day === 25) {
+} else if (month === 11 && day === 23) {
 	// thanksgiving
 	greetingText.textContent = "happy free bird day";
 	greetingImg.src = "time_thanksgiving.gif";
