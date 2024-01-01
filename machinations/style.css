@@ -19,26 +19,26 @@ b {
 
 .bg {
 	position: fixed;
-	width: 100%;
+	left: 6.5%;
 	height: 100%;
-	left: 0;
-	top: 0;
 	z-index: -1000;
 }
 
-.timeline {
+.projects {
 	overflow-x: auto;
 	overflow-y: hidden;
 	white-space: nowrap;
 	width: 100%;
 	height: 55%;
-	background: rgba(0, 0, 0, 0.2);
+	background: rgba(0, 0, 0, 0.4);
 }
 
 .project {
 	display: inline-block;
 	margin: 25px;
 	width: 40%;
+	height: 100%;
+	top: 0;
 }
 	.project-title {
 		font-size: 36px;
@@ -54,3 +54,9 @@ b {
 		text-align: left;
 	}
 
+.entry {
+	margin: auto;
+	padding: 20px;
+	background: rgba(0, 0, 0, 0.4);
+	width: 50%;
+}
