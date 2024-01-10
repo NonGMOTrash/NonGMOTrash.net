@@ -211,7 +211,11 @@ a {
 	font-size: 10px;
 }
 
-/* cursors */
+.clickable {
+	cursor: pointer;
+}
+
+/* old custom cursors */
 /*
 body {
 	cursor: url("cur_default.cur"), auto;
