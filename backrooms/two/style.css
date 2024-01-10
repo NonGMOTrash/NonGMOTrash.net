@@ -23,6 +23,13 @@ p {
 	cursor: url("sword.cur"), auto;
 }
 
+.spare {
+	width: 200px;
+	position: absolute;
+	left: 60%;
+	top: 50%;
+}
+
 .bg {
 	position: fixed;
 	width: 100%;

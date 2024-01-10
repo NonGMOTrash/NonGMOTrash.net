@@ -57,6 +57,14 @@ p {
 	height: 200px;
 }
 
+.walkie {
+	position: absolute;
+	left: 48%;
+	top: 60%;
+	width: 5%;
+	transform: rotate(-30deg);
+}
+
 .bg {
 	position: fixed;
 	width: 100%;
