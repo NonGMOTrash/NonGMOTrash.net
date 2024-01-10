@@ -59,4 +59,9 @@ b {
 	padding: 20px;
 	background: rgba(0, 0, 0, 0.4);
 	width: 50%;
+	text-align: left;
 }
+	
+	.entry img {
+		width: 100%;
+	}
