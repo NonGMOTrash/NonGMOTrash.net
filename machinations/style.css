@@ -25,24 +25,24 @@ b {
 }
 
 .projects {
+	display: flex;
 	overflow-x: auto;
 	overflow-y: hidden;
 	white-space: nowrap;
 	width: 100%;
-	height: 55%;
 	background: rgba(0, 0, 0, 0.4);
 }
 
 .project {
 	display: inline-block;
 	margin: 25px;
-	width: 40%;
+	min-width: 40%;
 	height: 100%;
 	top: 0;
 }
 	.project-title {
 		font-size: 36px;
-		margin-top: 0px;
+		top: 0px;
 	}
 	.project-description {
 		font-size: 16px;
