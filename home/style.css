@@ -121,6 +121,12 @@ body {
 		margin-top:-20px;
 	}
 
+.fav-tunes {
+	background: black;
+	border: double pink;
+	padding: 4px;
+}
+
 .important-videos {
 	background: #200508;
 	border: 1px solid #200508;

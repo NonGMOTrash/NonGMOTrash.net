@@ -37,3 +37,10 @@ body {
 	text-align: left;
 	margin-right: 10px;
 }
+
+.webring {
+	font-family: "Bitter", Serif;
+	font-size: 24px;
+	padding: 8px;
+	white-space: nowrap;
+}

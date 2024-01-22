@@ -15,7 +15,7 @@ p {
 	width: 60%;
 	background: black;
 	height: 100%;
-	padding: 5px;
+	padding: 15px;
 	display: inline-block;
 	z-index: 100;
 }
@@ -39,8 +39,7 @@ p {
 }
 
 .old-trash {
-	padding: 3px;
-	margin: 2px;
+	margin: 10px;
 	float: left;
 	border: 1px double pink;
 }
@@ -50,10 +49,11 @@ p {
 	}
 
 	.old-trash-details {
+		text-align: center;
 		font-style: italic;
 		font-size: 14px;
 		margin-top: -5px;
-		margin-bottom: -5px;
+		margin-bottom: 0px;
 	}
 	
 .info-question {

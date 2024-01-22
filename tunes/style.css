@@ -1,0 +1,25 @@
+.category {
+	display: inline;
+	text-decoration: underline;
+	margin: 3px;
+	padding: 3px;
+}
+	.category:hover {
+		color: orange;
+		transition: all 0.3s linear;
+	}
+
+	.category-divider {
+		display: inline;
+	}
+
+.tracks {
+	width: 50%;
+	margin-left: 25%;
+	margin-right: 25%;
+}
+
+	.track {
+		font-size: 30px;
+		text-align: left;
+	}
