@@ -12,7 +12,7 @@ function ShowCategory(category)
 	document.getElementById(category).style.display = "block";
 }
 
-function PlaySound(url)
+function Play(songTitle, songUrl)
 {
-
+	SCM.play({title:songTitle,url:songUrl});
 }
