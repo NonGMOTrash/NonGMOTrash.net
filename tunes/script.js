@@ -11,3 +11,8 @@ function ShowCategory(category)
 
 	document.getElementById(category).style.display = "block";
 }
+
+function PlaySound(url)
+{
+
+}
