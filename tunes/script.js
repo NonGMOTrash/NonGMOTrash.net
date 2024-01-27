@@ -19,5 +19,5 @@ function Play(songTitle, songUrl)
 
 function Exit() // have to murder SCM player
 {
-
+	console.log()
 }
