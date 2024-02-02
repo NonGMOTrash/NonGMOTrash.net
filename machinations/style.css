@@ -17,6 +17,10 @@ b {
 	text-decoration: underline;
 }
 
+a {
+	background: rgba(0, 0, 0, 0.2);
+}
+
 .bg {
 	position: fixed;
 	left: 6.5%;
