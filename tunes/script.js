@@ -14,10 +14,5 @@ function ShowCategory(category)
 
 function Play(songTitle, songUrl)
 {
-	SCM.play({title:songTitle,url:songUrl});
-}
 
-function Exit() // have to murder SCM player
-{
-	console.log()
 }

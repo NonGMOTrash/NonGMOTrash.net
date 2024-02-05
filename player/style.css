@@ -15,7 +15,7 @@
 	.text {
 		font-family: 'Bitter';
 		font-size: 16px;
-		width: 90px;
 		white-space: nowrap;
 		margin-top: 0px;
+/* 		overflow-x: hidden; */
 	}
