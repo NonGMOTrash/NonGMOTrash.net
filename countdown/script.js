@@ -1,10 +1,12 @@
+var tick;
 var tick_vol = 0;
 
 window.onload = function() {
+	tick = document.getElementById("tick");
 	document.getElementById("time").style.color = "White";
 	updateTime();
 	setInterval(updateTime, 1000);
-};
+}
 
 function updateTime() {
 	var endTime = new Date("Jan 1, 2122").getTime();
@@ -43,6 +45,6 @@ function updateTime() {
 	
 	// tick
 	tick_vol = Math.min(tick_vol + 0.0075, 1);
-	document.getElementById("tick").volume = tick_vol;
-	document.getElementById("tick").play();
+	tick.volume = tick_vol;
+	tick.play();
 }
