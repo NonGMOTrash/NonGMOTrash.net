@@ -1,5 +1,5 @@
 var allCategories = [
-	"adhd", "attack-on-titan", "chiptune"
+	"adhd", "attack-on-titan", "chiptune", "chirpy"
 ];
 
 function ShowCategory(category)
