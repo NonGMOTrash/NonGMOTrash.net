@@ -1,8 +1,5 @@
 var o = 0;
-
-function scroll() {
-	
-}
+var frameTime = 1000/60;
 setInterval(function() {
 	o += 4;
 	document.body.style.backgroundPosition = 0 + "px " + o + "px";

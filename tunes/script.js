@@ -1,5 +1,5 @@
 var allCategories = [
-	"adhd", "attack-on-titan", "chiptune", "chirpy"
+	"adhd", "attack-on-titan", "chiptune", "chirpy", "night", "dream", "fnf"
 ];
 
 function ShowCategory(category)
@@ -49,3 +49,11 @@ function playSong(ID) {
 	player.loadVideoById(ID, 0);
 	player.playVideo();
 }
+
+// bg scorlling
+
+var o = 0;
+setInterval(function() {
+	o += 4;
+	document.body.style.backgroundPosition = o + "px " + o + "px";
+}, 2000/60);
