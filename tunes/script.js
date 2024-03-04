@@ -1,12 +1,16 @@
-var allCategories = [
-	"adhd", "attack-on-titan", "chiptune", "chirpy", "night", "dream", "fnf"
-];
+var categoryBlocks;
+
+document.addEventListener("DOMContentLoaded", function(){
+	categoryBlocks = document.getElementsByClassName("category-block");
+	ShowCategory("adhd");
+});
+
 
 function ShowCategory(category)
 {
-	for (let i = 0; i < allCategories.length; i++)
+	for (let i = 0; i < categoryBlocks.length; i++)
 	{
-		document.getElementById(allCategories[i]).style.display = "none";
+		categoryBlocks.item(i).style.display = "none";
 	}
 
 	document.getElementById(category).style.display = "block";

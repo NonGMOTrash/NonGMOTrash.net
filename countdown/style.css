@@ -16,4 +16,5 @@ p {
 	border: 3px white;
 	font-family: "CaskaydiaCove", Monospace;
 	font-size: 80px;
+	text-shadow: 0 4px 0px orange;
 }
