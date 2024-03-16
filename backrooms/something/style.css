@@ -4,8 +4,6 @@ body {
 	background-color: black;
 	color: white;
 	text-align: center;
-	position: absolute;
-	right: 5%; left: 5%; top: 20%; bottom: 20%;
 	font-size: 40px;
 	font-family: Bitter, Monospace;
 }
@@ -14,9 +12,24 @@ p {
 	font-size: 24px;
 }
 
-.mari {
-	position: relative;
+.bg {
+	position: fixed;
+	width: 100%;
+	height: 100%;
 	left: 0;
 	top: 0;
+	z-index: -1000;
+}
+
+.something {
+	margin: auto;
+	margin-top: 5%;
+}
+
+.option {
 	cursor: pointer;
+	text-decoration: underline;
+	display: inline-block;
+	margin-left: 25px;
+	margin-right: 25px;
 }
