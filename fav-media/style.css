@@ -26,3 +26,9 @@ p {
 	border: 2px solid orange;
 	transition: all 0.1s ease 0s;
 }
+
+.fav-tunes {
+	background: black;
+	border: double pink;
+	padding: 4px;
+}

@@ -6,20 +6,10 @@ body {
 	text-align: center;
 	font-size: 40px;
 	font-family: Bitter, Monospace;
-	background-image: url('bg.png');
-	background-repeat: no-repeat;
-	background-size: cover;
 }
 
 p {
 	font-size: 24px;
-}
-
-.rat {
-	position: fixed;
-	left: 70%;
-	top: 73%;
-	width: 17%;
 }
 
 .bg {
