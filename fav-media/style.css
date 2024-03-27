@@ -27,8 +27,18 @@ p {
 	transition: all 0.1s ease 0s;
 }
 
-.fav-tunes {
+.main {
+	display: flex;
+	width: 80%;
+	margin: auto;
+	background: black;
+	border: 3px pink double;
+}
+
+.category {
 	background: black;
 	border: double pink;
-	padding: 4px;
+	padding: 6px;
+	width: 50%;
+	margin: 25px;
 }
