@@ -8,11 +8,16 @@ a {
 }
 
 .main {
-	display: flex;
 	width: 50%;
 	height: 40%;
 	margin: auto;
 	margin-top: 10%;
+	display: grid;
+	grid-template-areas:
+		"header header header"
+		"enter  enter  terms"
+		"warn   warn   warn"
+		"ad     ad     ad";
 }
 
 .box {
