@@ -9,7 +9,7 @@
 
 	<link rel="stylesheet" href="../global.css">
 	<link rel="stylesheet" href="style.css">
-	<style></style>
+	<script src="script.js"></script>
 
 	<body>
 
@@ -17,29 +17,17 @@
 			<img src="../exit.gif" class="exit pixel">
 		</a>
 
-		<p>big WIP! currently they all redirect to the music page</p>
-
 		<div class="main">
-			<div class="flex-center">
-				<div class="category center highlight clickable" style="grid-area: games">
-					<a href="music/index.html">
-						<img src="music.gif" width="50%">
-						<p>games</p>
-					</a>
-				</div>
 
-				<a href="music/index.html" class="category center highlight clickable" style="grid-area: music">
-					<img src="music.gif" width="50%">
-					<p>music</p>
-				</a>
+			<p class="title">my favorite...</p>
+			<a href="games/index.html"><p id="games" style="color:orange;" class="media clickable">games</p></a>
+			<a href="music/index.html" id="music"><p style="color:lightblue;" class="media clickable">music</p></a>
+			<a href="shows/index.html" id="shows"><p style="color:yellow;" class="media clickable">shows</p></a>
 
-				<div class="category center highlight clickable" style="grid-area: comics">
-					<a href="music/index.html">
-						<img src="music.gif" width="50%">
-						<p>shows</p>
-					</a>
-				</div>
-			</div>
+			<p class="wip">heavy wip.. most pages aren't made yet</p>
+
+			<img src="heart.gif" id="heart" style="position:fixed; z-index:-99; display:none;">
+
 		</div>
 
 		
