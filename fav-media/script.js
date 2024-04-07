@@ -13,16 +13,17 @@ window.onload = function() {
 		console.log(heart.style.display);
 	}
 
-	document.getElementById("games").addEventListener("mouseover", show);
-	document.getElementById("games").addEventListener("mouseout", hide);
+	document.getElementById("games").addEventListener('mouseover', show);
+	document.getElementById("games").addEventListener('mouseleave', hide);
 
 	function show() {
 		heart.style.display = "fixed";
-		console.log("!");
+		console.log("enter");
 	}
 
 	function hide() {
 		heart.style.display = "none";
+		console.log("out");
 	}
 
 }
