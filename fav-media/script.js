@@ -1,6 +1,9 @@
 window.onload = function() {
 
 	let heart = document.getElementById("heart");
+	let games = document.getElementById("games");
+	let music = document.getElementById("music");
+	let shows = document.getElementById("shows");
 
 	document.addEventListener("mousemove", updateHeart);
 
@@ -10,22 +13,13 @@ window.onload = function() {
 		document.getElementById('heart').style.left  = x-96+"px";
 		document.getElementById('heart').style.top  = y-96+"px";
 
-		console.log(heart.style.display);
-	}
-
-	document.getElementById("games").addEventListener('mouseover', show);
-	document.getElementById("games").addEventListener('mouseleave', hide);
-
-	function show() {
-		heart.style.display = "fixed";
-		console.log("enter");
-	}
-
-	function hide() {
-		heart.style.display = "none";
-		console.log("out");
+		console.log(games.matches(':hover'));
+		if (games.matches(':hover') || music.matches(':hover') || shows.matches(':hover')) {
+			heart.style.visibility = "visible";
+		} else {
+			heart.style.visibility = "hidden";
+		}
 	}
 
 }
-
 
