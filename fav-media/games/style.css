@@ -1,17 +1,20 @@
 .games {
 	display: flex;
 	width: 100%;
-	height: 330px;
-	margin: auto;
+	height: 10%;
 	margin-top: 3%;
 	justify-content: center;
 	gap: 15px;
+	padding-bottom: 1.5%;
+	overflow-x: auto;
 }
 
 .game {
-	width: 220px;
-	height: 100%;
-	filter: drop-shadow(10px 10px 0 #ed1e59);
+	max-width: 14%;
+	max-height: 100%;
+	aspect-ratio 0.66 / 1.00
+	margin: 25px;
+	filter: drop-shadow(0px 0px 0 #ed1e59);
 	transition: 0.3s;
 }
 	.game:hover {
@@ -24,17 +27,18 @@
 	color: purple;
 	background: purple;
 	z-index: -99;
-	top: 5%;
-	left: -50%;
-	width: 200%;
-	height: 330px;
+	top: 13%;
+	left: -10%;
+	width: 110%;
+	height: 21%;
 	rotate: -3deg;
+	overflow-x: hidden;
 }
 
 .thoughts {
 	border: 3px solid white;
 	width: 60%;
-	height: 12em;
+	height: 100%; /* of parent div */
 	padding: 10px;
 	margin: auto;
 	margin-top: 3%;

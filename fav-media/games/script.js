@@ -15,5 +15,11 @@ function updateDescription(game) {
 		case "tf2":
 			document.getElementById("thoughts").innerHTML = "Team Fortress 2<br>my favorite multiplayer shooter by lightyears. it has a ton of depth while being very easy (and fun) to pick up and play. it's extremely well designed; all 9 classes and their interactions are well thought out, as were (for the most part) the plethora of unlockable weapons. the loadout system is amazing in this game; alternative weapons somehow completely change the way you play while simultaneously still feeling true to the class wielding them. i still have a vague sliver of hope for some kind of tf3 like CS, but even if that never happens i'll be content to play with my friends on community servers away from all the bots.";
 			break;
+		case "spelunky":
+			document.getElementById("thoughts").innerHTML = "Spelunky (also <3 spelunky 2)<br>my favorite roguelike. i don't mean to put down the more modern genre-mashup roguelikes, but i really don't like how <i>many</i> (not all) of them sandaway all the rough edges from the oldschool ascii roguelikes. i very much value every run being extremely unique and generating it's own story, and spelunky does this quite well. at the same time, it's very accessible and plays quite well in my opinion. of course, the downside of those rough edges is its not always as fair, which can be frustrating, but i think i have a higher tolerance for that but so i don't mind it too much";
+			break;
+		case "inscryption":
+			document.getElementById("thoughts").innerHTML = "Inscryption<br>this game is a trip. the less you know going in, the better. and while every part of the game isn't perfect, there's a <i>lot</i> of really smart ideas here, byfar the most interesting premise for a card game i've ever played."
+			break;
 	}
 }

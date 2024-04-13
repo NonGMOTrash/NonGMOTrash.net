@@ -60,6 +60,10 @@ maybe later i'll try to optimize the fonts
 	100% { color: #ff0000; }
 }
 
+:root {
+	--test: #f95473;
+}
+
 body {
 	background: black;
 }
@@ -203,6 +207,7 @@ a {
 	right: 0; left: 0; top: 0; bottom: 0;
 	width: 108px;
 	height: 48px;
+	z-index: 5;
 }
 
 .attribution {
