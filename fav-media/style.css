@@ -51,10 +51,18 @@ a {
 .title {
 	text-shadow: 10px 5px;
 	animation: rainbowShadow linear infinite 5s;
+	text-align: center;
+}
+
+.medias {
+	display: flex;
+	justify-content: center;
+	gap: 3%;
+	margin-top: 10%;
 }
 
 .media {
-	text-indent: 10%;
+	display: inline;
 }
 	.media:hover {
 		text-shadow: 8px 5px white;

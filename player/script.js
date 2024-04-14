@@ -46,6 +46,7 @@ function ToggleMusic() {
 		else if (song_name == "dadshop.ogg") { SetTitle("now playing: I Think My Dad Shops Here - OMORI OST- Pedro Silva") }
 		else if (song_name == "dorito.ogg") { SetTitle("now playing: Dorito Dust - Coda") }
 		else if (song_name == "faint_glow.ogg") { SetTitle("now playing: Faint Glow - Toby Fox") }
+		else if (song_name == "cheap_shop.ogg") { SetTitle("now playing: Cheap Shop - Anamanaguchi") }
 		else {
 			SetTitle(window.name);
 		}
