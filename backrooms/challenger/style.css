@@ -16,19 +16,37 @@ p {
 
 .left {
 	position: absolute;
-	left: 16%;
-	top: 3%;
-	width: 35%;
-	height: 40%;
+	left: -5%;
+	top: 30%;
+	width: 6%;
+	height: 60%;
+	opacity: 0%;
+}
+
+.left {
+	position: absolute;
+	left: 6%;
+	top: 10%;
+	width: 10%;
+	height: 60%;
+	opacity: 0%;
+}
+
+.middle {
+	position: absolute;
+	left: 38%;
+	top: 10%;
+	width: 8%;
+	height: 50%;
 	opacity: 0%;
 }
 
 .right {
 	position: absolute;
-	left: 81%;
-	top: 30%;
+	left: 74%;
+	top: 20%;
 	width: 8%;
-	height: 60%;
+	height: 40%;
 	opacity: 0%;
 }
 

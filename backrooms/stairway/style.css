@@ -14,29 +14,13 @@ p {
 	font-size: 24px;
 }
 
-.left {
+.hole {
 	position: absolute;
-	left: 16%;
-	top: 3%;
-	width: 35%;
-	height: 40%;
+	left: 52%;
+	top: -2%;
+	width: 10%;
+	height: 24%;
 	opacity: 0%;
-}
-
-.right {
-	position: absolute;
-	left: 81%;
-	top: 30%;
-	width: 8%;
-	height: 60%;
-	opacity: 0%;
-}
-
-.knight {
-	position: absolute;
-	left: 42%;
-	top: 56%;
-	width: 15%;
 }
 
 .bg {

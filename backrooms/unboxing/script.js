@@ -5,7 +5,7 @@ function Open() {
 	switch (box_num) {
 		case 1:
 			box.src = "potemkin_unboxing.gif";
-			document.getElementById("header").textContent = "you're gonna live to regret";
+			document.getElementById("header").textContent = "you're gonna live to regret it";
 			document.getElementById("buttons").style.display = "none";
 			break;
 		case 2:
