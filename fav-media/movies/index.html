@@ -1,0 +1,41 @@
+ <!DOCTYPE html>
+<html lang="en">
+	<meta charset="UTF-8">
+	<title>boopeboop</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="../../global.css">
+	<script src="script.js"></script>
+
+	<body class="center">
+
+
+		<a href="../index.html" class="exit" target="_top">
+			<img src="../../exit.gif" class="exit pixel">
+		</a>
+
+
+		<div class="games">
+			<img src="omori.jpg" style="visibility:hidden; width:60px;"> <!-- just for margin -->
+
+			<img src="everything.jpg" class="game clickable" onclick="updateDescription('everything');">
+			<img src="parasite.jpeg" class="game clickable" onclick="updateDescription('parasite');">
+
+			<img src="omori.jpg" style="visibility:hidden; width:30px;"> <!-- just for margin -->
+		</div>
+
+		<p class="backing">.</p>
+
+		<div style="display: flex; flex-grow: 1">
+			<p class="thoughts" id="thoughts">(click on a movie to see my thoughts)</p>
+		</div>
+
+		<div id="player-holder" style="opacity:0;">
+			<div id="player" style="position:fixed; bottom:5px; left:5px;"></div>
+		</div>
+
+		<iframe name="cheap_shop.ogg" src="../../player/index.html" class="player-frame" style="border:0" id="music-player">
+		</iframe>
+
+	</body>
+</html>
