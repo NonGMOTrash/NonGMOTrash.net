@@ -13,6 +13,7 @@ window.addEventListener('load', function () {
 	text = document.getElementById("text");
 	cat = document.getElementById("cat");
 	
+	music.volume = 0.5;
 	music.src = song_name;
 
 	SetTitle(noSongMsg)
@@ -20,7 +21,6 @@ window.addEventListener('load', function () {
 	if (navigator.getAutoplayPolicy("mediaelement") === "allowed") {
 		ToggleMusic();
 	}
-	
 	// special
 	if (song_name == "my_burden.ogg") {
 		cat.style.visibility = "hidden";
