@@ -57,6 +57,7 @@ img {
 	margin-left: auto;
 	margin-right: auto;
 	width: 50%;
+	min-width: 320px;
 }
 
 .title-img {
