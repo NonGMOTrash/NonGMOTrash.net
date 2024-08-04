@@ -1,12 +1,12 @@
 @font-face {
-    font-family: "Bitter";
-    src: url("../Bitter.ttf") format('embedded-opentype'), /* Internet Explorer */
-         url("../Bitter.ttf") format('woff2'),             /* Super Modern Browsers */
-         url("../Bitter.ttf") format('woff'),              /* Pretty Modern Browsers */
-         url("../Bitter.ttf") format('truetype'),          /* Safari, Android, iOS */
-         url("../Bitter.ttf") format('svg');               /* Legacy iOS */
-    font-weight: 500;
-    font-style: normal;
+	font-family: "Bitter";
+	src: url("../Bitter.ttf") format('embedded-opentype'), /* Internet Explorer */
+		url("../Bitter.ttf") format('woff2'),             /* Super Modern Browsers */
+		url("../Bitter.ttf") format('woff'),              /* Pretty Modern Browsers */
+		url("../Bitter.ttf") format('truetype'),          /* Safari, Android, iOS */
+		url("../Bitter.ttf") format('svg');               /* Legacy iOS */
+	font-weight: 500;
+	font-style: normal;
 }
 
 
@@ -18,6 +18,7 @@ body {
 
 p, li {
 	font-size: 22px;
+	line-height: 1.5em;
 }
 
 h1 {
@@ -35,6 +36,20 @@ h3 {
 	text-align: center;
 }
 
+a {
+	color: #3988d3;
+	transition: all 0.3s ease 0s;
+}
+	a:hover {
+		color: orange;
+		transition: all 0.3s ease 0s;
+	}
+
+::selection {
+  background: #92d0fc;
+  color: black;
+}
+
 img {
 	display: block;
 	margin-left: auto;
@@ -44,13 +59,13 @@ img {
 }
 
 .pixel { /* no antialiasing */
-    image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
-    image-rendering: -moz-crisp-edges;          /* Firefox                        */
-    image-rendering: -o-crisp-edges;            /* Opera                          */
-    image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
-    image-rendering: pixelated;                 /* Universal support since 2021   */
-    image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
-    -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
+	image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
+	image-rendering: -moz-crisp-edges;          /* Firefox                        */
+	image-rendering: -o-crisp-edges;            /* Opera                          */
+	image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+	image-rendering: pixelated;                 /* Universal support since 2021   */
+	image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
+	-ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
 }
 
 .content {
@@ -72,11 +87,22 @@ img {
 	margin-top: 2px;
 }
 
-.info-box {
-	border: 1px solid white;
+.sidenote {
+	position: relative;
+	width: 40%;
+	float: right;
+	clear: right;
+	margin-right: -46%;
+	border: 1px solid gray;
 	padding: 10px;
-	margin: 20px;
-	font-size: 18px;
+	font-size: 16px;
+	line-height: 1.1em;
+}
+
+.transition-marker {
+	text-align: center;
+	margin-top: 3em;
+	margin-bottom: 3em;
 }
 
 .signout {
@@ -84,4 +110,20 @@ img {
 	margin-right: 0;
 	text-align: right;
 	margin-top: 50px;
+}
+
+@media (width <= 700px) {
+
+	p {
+		font-size: 18px;
+	}
+
+	h1 {
+		font-size: 36px;
+	}
+
+	.sidenote {
+
+	}
+
 }
