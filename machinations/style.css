@@ -50,6 +50,7 @@ a {
 	.project-description {
 		font-size: 16px;
 		white-space: normal;
+		height: 6em;
 	}
 	.project-status {
 		font-size: 18px;
