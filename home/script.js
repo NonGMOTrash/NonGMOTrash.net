@@ -28,55 +28,6 @@ if (days !== 1) {
 	dayCount.textContent = dayCount.textContent + "S";
 }
 
-// GREETING
-
-var greetingText;
-var greetingImg;
-
-greetingText = document.getElementById("greeting-text");
-greetingImg = document.getElementById("greeting-img");
-
-var today = new Date();
-var day = today.getDate();
-var month = today.getMonth() + 1;
-var hour = today.getHours();
-
-console.log("hour:"+hour+" day:"+day+" month:"+month);
-
-if (month === 7 && day === 3) {
-	// air conditioning appreciation day
-	greetingText.textContent = "i fucking love air conditioning";
-	greetingImg.src = "time_air.png";
-} else if (month === 7 && day === 4) {
-	// 4th of july
-	greetingText.textContent = "merica";
-	greetingImg.src = "time_4th.gif";
-} else if (month === 8 && day === 31) {
-	// halloween
-	greetingText.textContent = "have a sPoOkY hAlLoWeEn";
-	greetingImg.src = "time_halloween.gif";
-} else if (month === 11 && day === 23) {
-	// thanksgiving
-	greetingText.textContent = "happy free bird day";
-	greetingImg.src = "time_thanksgiving.gif";
-} else if (month === 12 && day === 25) {
-	// xmas
-	greetingText.textContent = "merry christmas";
-	greetingImg.src = "time_christmas.gif";
-} else if (hour >= 23 || hour < 6) {
-	// night
-	greetingText.textContent = "..shouldn't you be asleep? :þ";
-	greetingImg.src = "time_night.gif";
-} else if (hour >= 6 && hour < 11) {
-	// morning
-	greetingText.textContent = "good morning! (*´▽｀)ゞ";
-	greetingImg.src = "time_morning.gif";
-} else {
-	// afternoon
-	greetingText.textContent = "good afternoon ᐛ";
-	greetingImg.src = "time_afternoon.gif";
-}
-
 // FUNNY SOUND BUTTON
 
 const sounds = [
