@@ -1,4 +1,4 @@
-let wait = setTimeout(boo, 2000);
+let wait = setTimeout(boo, 20000);
 
 function boo() {
 	document.body.style.backgroundImage = 'url(the_goblin.jpg)';

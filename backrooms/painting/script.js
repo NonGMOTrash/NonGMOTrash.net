@@ -22,7 +22,7 @@ function Warp() {
 	} else if (i == 9) {
 		window.location.href = "../tree/index.html";
 	} else if (i == 10) {
-		window.location.href = "../hornet/index.html";
+		window.location.href = "../lost/index.html";
 	}
 	
 }

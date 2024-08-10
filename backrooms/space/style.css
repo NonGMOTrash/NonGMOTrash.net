@@ -65,6 +65,14 @@ p {
 	transform: rotate(-30deg);
 }
 
+.frame {
+	position: absolute;
+	left: 0%;
+	top: 40%;
+	width: 10%;
+	transform: rotate(-5deg);
+}
+
 .bg {
 	position: fixed;
 	width: 100%;

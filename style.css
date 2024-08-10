@@ -29,6 +29,12 @@ a {
 	overflow: hidden;
 }
 
+.greeting {
+	margin: auto;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
 .webrings {
 	font-family: 'CaskaydiaCove';
 	font-size: 14px;

@@ -29,7 +29,7 @@ if (month === 7 && day === 3) {
 	greeting.textContent = "merry christmas!! :)";
 } else if (hour >= 23 || hour < 6) {
 	// night
-	greeting.textContent = "hello... you should probably be asleep, but i'm not exactly in a position to judge x)";
+	greeting.textContent = "you should probably be asleep, but i can't exactly judge x)";
 } else if (hour >= 6 && hour < 11) {
 	// morning
 	greeting.textContent = "good morning! (*´▽｀)ゞ";

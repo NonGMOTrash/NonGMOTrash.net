@@ -14,8 +14,6 @@ p {
 	font-size: 24px;
 }
 
-.mari {
-	position: relative;
-	left: 0;
-	top: 0;
+img:hover {
+	cursor: pointer;
 }
