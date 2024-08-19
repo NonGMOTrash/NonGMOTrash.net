@@ -11,9 +11,21 @@ p {
 	padding: 50px;
 }
 
-img {
-	margin: 20px;
+img, video {
+	position: static;
+	margin: 1%;
+	max-width: 25%;
+	transition: 0.5s ease-in-out;
 }
+/*img:hover {
+	max-width: 100%;
+	transition: 0.5s ease-in-out;
+}
+
+.scraps {
+	white-space: nowrap;
+	overflow: clip;
+}*/
 
 .sketch {
 	width: 900px;
