@@ -2,6 +2,21 @@ body {
 	background-image: url("bg.webp");
 }
 
+.tabs {
+	position: fixed;
+	top: -75px;
+	left: 10%;
+	width: 30%;
+	z-index: 99;
+	transition: 0.3s ease-in;
+}
+.tabs:hover {
+	top: -8px;
+	transition: 0.3s ease-out;
+}
+
+/* IMAGES */
+
 .closeup {
 	position: fixed;
 	display: flex;
@@ -61,10 +76,26 @@ body {
 	transition: all 0.3s ease 0s;
 }
 
-.tabs {
-	position: fixed;
-	top: -8px;
-	left: 10%;
-	width: 30%;
-	z-index: 99;
+/* VIDEOS */
+
+.yt-note {
+	width: 60%;
+	text-align: center;
+	color: black;
+	margin: auto;
+	margin-top: 2%;
+}
+
+.vids {
+	max-width: 90%:
+	display: flex;
+	justify-content: center;
+}
+.vids video {
+	max-width: 30%;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	row-gap: 3px;
+	column-gap: 3px;
+	align-self: start;
 }
