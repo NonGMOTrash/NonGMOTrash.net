@@ -5,6 +5,8 @@ var videosBtn = document.getElementById("videosBtn");
 var imagesTab = document.getElementById("imagesTab");
 var videosTab = document.getElementById("videosTab");
 
+videosTab.style.display = "none";
+
 imagesBtn.onclick = function() {
 	imagesTab.style.display = "block";
 	videosTab.style.display = "none";
