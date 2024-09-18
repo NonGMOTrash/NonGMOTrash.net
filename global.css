@@ -1,47 +1,47 @@
 /*
 i think this is slow as balls but idk its easy
 maybe later i'll try to optimize the fonts
-*/
+ */
 @font-face {
-    font-family: "Bitter";
-    src: url("Bitter.ttf") format('embedded-opentype'), /* Internet Explorer */
-         url("Bitter.ttf") format('woff2'),             /* Super Modern Browsers */
-         url("Bitter.ttf") format('woff'),              /* Pretty Modern Browsers */
-         url("Bitter.ttf") format('truetype'),          /* Safari, Android, iOS */
-         url("Bitter.ttf") format('svg');               /* Legacy iOS */
-    font-weight: 500;
-    font-style: normal;
+	font-family: "Bitter";
+	src: url("Bitter.ttf") format('embedded-opentype'), /* Internet Explorer */
+	url("Bitter.ttf") format('woff2'),             /* Super Modern Browsers */
+	url("Bitter.ttf") format('woff'),              /* Pretty Modern Browsers */
+	url("Bitter.ttf") format('truetype'),          /* Safari, Android, iOS */
+	url("Bitter.ttf") format('svg');               /* Legacy iOS */
+	font-weight: 500;
+	font-style: normal;
 }
-	@font-face {
-		font-family: "BitterThin";
-		src: url("Bitter.ttf") format('embedded-opentype'), /* Internet Explorer */
-			 url("Bitter.ttf") format('woff2'),             /* Super Modern Browsers */
-			 url("Bitter.ttf") format('woff'),              /* Pretty Modern Browsers */
-			 url("Bitter.ttf") format('truetype'),          /* Safari, Android, iOS */
-			 url("Bitter.ttf") format('svg');               /* Legacy iOS */
-		font-weight: 300;
-		font-style: normal;
-	}
-	@font-face {
-		font-family: "BitterThick";
-		src: url("Bitter.ttf") format('embedded-opentype'), /* Internet Explorer */
-			 url("Bitter.ttf") format('woff2'),             /* Super Modern Browsers */
-			 url("Bitter.ttf") format('woff'),              /* Pretty Modern Browsers */
-			 url("Bitter.ttf") format('truetype'),          /* Safari, Android, iOS */
-			 url("Bitter.ttf") format('svg');               /* Legacy iOS */
-		font-weight: 700;
-		font-style: normal;
-	}
+@font-face {
+	font-family: "BitterThin";
+	src: url("Bitter.ttf") format('embedded-opentype'), /* Internet Explorer */
+	url("Bitter.ttf") format('woff2'),             /* Super Modern Browsers */
+	url("Bitter.ttf") format('woff'),              /* Pretty Modern Browsers */
+	url("Bitter.ttf") format('truetype'),          /* Safari, Android, iOS */
+	url("Bitter.ttf") format('svg');               /* Legacy iOS */
+	font-weight: 300;
+	font-style: normal;
+}
+@font-face {
+	font-family: "BitterThick";
+	src: url("Bitter.ttf") format('embedded-opentype'), /* Internet Explorer */
+	url("Bitter.ttf") format('woff2'),             /* Super Modern Browsers */
+	url("Bitter.ttf") format('woff'),              /* Pretty Modern Browsers */
+	url("Bitter.ttf") format('truetype'),          /* Safari, Android, iOS */
+	url("Bitter.ttf") format('svg');               /* Legacy iOS */
+	font-weight: 700;
+	font-style: normal;
+}
 
 @font-face {
-    font-family: "CaskaydiaCove";
-    src: url("CaskaydiaCove.ttf") format('embedded-opentype'), /* Internet Explorer */
-         url("CaskaydiaCove.ttf") format('woff2'),             /* Super Modern Browsers */
-         url("CaskaydiaCove.ttf") format('woff'),              /* Pretty Modern Browsers */
-         url("CaskaydiaCove.ttf") format('truetype'),          /* Safari, Android, iOS */
-         url("CaskaydiaCove.ttf") format('svg');               /* Legacy iOS */
-    font-weight: 200;
-    font-style: normal;
+	font-family: "CaskaydiaCove";
+	src: url("CaskaydiaCove.ttf") format('embedded-opentype'), /* Internet Explorer */
+	url("CaskaydiaCove.ttf") format('woff2'),             /* Super Modern Browsers */
+	url("CaskaydiaCove.ttf") format('woff'),              /* Pretty Modern Browsers */
+	url("CaskaydiaCove.ttf") format('truetype'),          /* Safari, Android, iOS */
+	url("CaskaydiaCove.ttf") format('svg');               /* Legacy iOS */
+	font-weight: 200;
+	font-style: normal;
 }
 
 @keyframes marquee {
@@ -73,30 +73,30 @@ p, h1, h2, h3, h4 {
 	font-family: "Bitter", Serif;
 }
 
-	p {
-		font-size: 24px;
-	}
+p {
+	font-size: 24px;
+}
 
-	h1 {
-		font-size: 60px;
-	}
+h1 {
+	font-size: 60px;
+}
 
-	h2 {
-		font-size: 40px;
-	}
+h2 {
+	font-size: 40px;
+}
 
-	h3 {
-		font-size: 30px;
-	}
+h3 {
+	font-size: 30px;
+}
 
-	h4 {
-		font-size: 26px;
-	}
+h4 {
+	font-size: 26px;
+}
 
-	ul, ol {
-		color: white;
-		font-family: "Bitter", Serif;
-	}
+ul, ol {
+	color: white;
+	font-family: "Bitter", Serif;
+}
 
 button {
 	color: white;
@@ -106,12 +106,12 @@ button {
 	transition: all 0.3s ease 0s;
 	border: 3px solid orange;
 }
-	button:hover {
-		color: black;
-		background: orange;
-		border: 3px solid orange;
-		transition: all 0.3s ease 0s;
-	}
+button:hover {
+	color: black;
+	background: orange;
+	border: 3px solid orange;
+	transition: all 0.3s ease 0s;
+}
 
 table, tr, th {
 	color: white;
@@ -125,24 +125,24 @@ a {
 	color: #3988d3;
 	transition: all 0.3s ease 0s;
 }
-	a:hover {
-		color: orange;
-		transition: all 0.3s ease 0s;
-	}
+a:hover {
+	color: orange;
+	transition: all 0.3s ease 0s;
+}
 
 ::selection {
-  background: #92d0fc;
-  color: black;
+	background: #92d0fc;
+	color: black;
 }
 
 .pixel { /* no antialiasing */
-    image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
-    image-rendering: -moz-crisp-edges;          /* Firefox                        */
-    image-rendering: -o-crisp-edges;            /* Opera                          */
-    image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
-    image-rendering: pixelated;                 /* Universal support since 2021   */
-    image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
-    -ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
+	image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED  */
+	image-rendering: -moz-crisp-edges;          /* Firefox                        */
+	image-rendering: -o-crisp-edges;            /* Opera                          */
+	image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+	image-rendering: pixelated;                 /* Universal support since 2021   */
+	image-rendering: optimize-contrast;         /* CSS3 Proposed                  */
+	-ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
 }
 
 .center {
@@ -156,10 +156,10 @@ a {
 	border-radius: 1px;
 	transition: all 0.3s ease 0s;
 }
-	.highlight:hover {
-		border: 4px solid orange;
-		transition: all 0.3s ease 0s;
-	}
+.highlight:hover {
+	border: 4px solid orange;
+	transition: all 0.3s ease 0s;
+}
 
 .flex-center {
 	display: flex;
@@ -224,14 +224,14 @@ a {
 /* old custom cursors */
 /*
 body {
-	cursor: url("cur_default.cur"), auto;
+cursor: url("cur_default.cur"), auto;
 }
 
 p, h1, h2, h3, h4, table, li {
-	cursor: url("cur_text.cur"), auto;
+cursor: url("cur_text.cur"), auto;
 }
 
 a, button, .clickable {
-	cursor: url("cur_pointer.cur"), auto;
+cursor: url("cur_pointer.cur"), auto;
 }
-*/
+ */

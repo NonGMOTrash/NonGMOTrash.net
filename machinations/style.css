@@ -1,5 +1,4 @@
 body {
-	background-image: url("bg.png");
 	text-align: center;
 	position: absolute;
 	right: 0%; left: 0%; top: 0%; bottom: 20%;
@@ -16,15 +15,12 @@ b {
 	text-decoration: underline;
 }
 
-a {
-	background: black;
-}
-
 .bg {
 	position: fixed;
-	left: 6.5%;
-	height: 100%;
+	left: 0;
+	width: 100%;
 	z-index: -1000;
+	filter: brightness(60%);
 }
 
 .projects {
@@ -33,7 +29,6 @@ a {
 	overflow-y: hidden;
 	white-space: nowrap;
 	width: 100%;
-	background: rgba(0, 0, 0, 0.4);
 }
 
 .project {
@@ -61,7 +56,7 @@ a {
 .entry {
 	margin: auto;
 	padding: 20px;
-	background: rgba(0, 0, 0, 0.4);
+/*	background: rgba(0, 0, 0, 0.4);*/
 	width: 50%;
 	text-align: left;
 }
