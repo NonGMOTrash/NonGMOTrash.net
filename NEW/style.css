@@ -1,0 +1,52 @@
+.title-container {
+	width: 100%;
+}
+
+	.title-bg{
+		width: 1512px;
+		position: relative;
+		right: 0;
+		top: 0;
+		z-index: 0;
+	}
+
+	.title-logo {
+		width: 834px;
+		filter: drop-shadow(0 0 0.8rem orange);
+		position: absolute;
+		left: 657px;
+		top: 243px;
+		z-index: 1;
+	}
+
+	.title-sky {
+		width: 1326px;
+		position: absolute;
+		left: 99px;
+		top: 0;
+		z-index: 1;
+	}
+
+	.title-light {
+		width: 246px;
+		position: absolute;
+		left: 318px;
+		top: 357px;
+		z-index: 1;
+	}
+
+.main {
+	width: 90%;
+	margin: auto;
+	display: flex;
+	margin-top: -5%;
+}
+
+	.intro {
+		width: 50%;
+		margin: auto;
+	}
+
+	.news {
+		width: 50%;
+	}
