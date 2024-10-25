@@ -1,5 +1,6 @@
 .title-container {
 	width: 100%;
+	top: 0;
 }
 
 	.title-bg{
@@ -23,7 +24,7 @@
 		width: 1326px;
 		position: absolute;
 		left: 99px;
-		top: 0;
+		top: 6px;
 		z-index: 1;
 	}
 
@@ -33,6 +34,34 @@
 		left: 318px;
 		top: 357px;
 		z-index: 1;
+	}
+
+.news {
+	width: calc(75%-18px);
+	height: 10%;
+	margin-left: 25%;
+	z-index: 299;
+	border-top: solid var(--color-secondary) 9px;
+	border-bottom: solid var(--color-secondary) 9px;
+	background-color: var(--color-fg);
+}
+
+	.news-title {
+		margin-left: 0;
+		margin-bottom: 0;
+		background: repeating-linear-gradient(
+			55deg,
+			var(--color-fg),
+			var(--color-fg) 20px,
+			var(--color-secondary) 20px,
+			var(--color-secondary) 40px
+		);
+		padding: 10px;
+		padding-top: calc(10px + 0.5em);
+		letter-spacing: 0.5em;
+		text-align: center;
+		writing-mode: vertical-lr;
+		transform: rotate(180deg);
 	}
 
 .main {
@@ -45,8 +74,7 @@
 	.intro {
 		width: 50%;
 		margin: auto;
-	}
+		z-index: 2;
 
-	.news {
-		width: 50%;
-	}
+
+
