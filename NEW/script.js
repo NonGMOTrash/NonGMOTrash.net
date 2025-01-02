@@ -1,3 +1,5 @@
+// scroll indicator
+
 var hasScrolled = false;
 
 window.onscroll = function()
@@ -14,5 +16,11 @@ setTimeout(
 			document.getElementById('scroll-indicator').style.display = "block";
 		}
 	},
-	5000
+	10000
 );
+
+// chattable
+
+chattable.initialize({
+	stylesheet: "chattable.css"
+});
