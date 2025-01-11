@@ -65,6 +65,7 @@ body {
 	background: var(--color-bg);
 	font-family: "nunito";
 	overflow-x: hidden;
+	margin-right: -25px; /* i have no idea why i have to do this */
 }
 
 p, h1, h2, h3, h4, ol, ul {
@@ -78,8 +79,6 @@ p, li {
 
 h1, h2, h3, h4 {
 	font-family: "grape-soda";
-	font-smooth: never;
-	-webkit-font-smoothing : none;
 }
 
 h1 {

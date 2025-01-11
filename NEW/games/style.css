@@ -1,0 +1,111 @@
+body {
+	background: black;
+}
+
+#bg {
+	position: fixed;
+	top: 0;
+	left: 0;
+	min-width: 100%;
+	max-width: 100%;
+	z-index: -1;
+	opacity: 0;
+	transition: 0.5s;
+}
+
+#mainline {
+	margin: auto;
+	width: 100%;
+	max-width: 1100px;
+	background: var(--color-fg);
+
+	.game {
+		display: flex;
+		padding: 6px;
+		border: 6px solid var(--color-secondary);
+		transition: 0.3s;
+
+		img {
+			object-fit: contain;
+		}
+
+		.items {
+			margin-left: 10px;
+		}
+	}
+	.game:hover {
+		border: 6px solid var(--color-accent);
+		background: var(--color-secondary);
+		transition: 0.3s;
+
+		[class="bg"] {
+			opacity: 100;
+			transition: 1s;
+		}
+	}
+}
+
+.button {
+	padding: 3px;
+	border: 6px solid rgba(0,0,0,0);
+	z-index: 100;
+	transition: 0.3s;
+}
+.button:hover {
+	border: 6px solid var(--color-accent);
+	transition: 0.3s;
+}
+
+#arcade-title {
+	display: block;
+	margin: auto;
+	margin-top: 10%;
+	margin-bottom: 5%;
+}
+
+#arcade {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 6px;
+	width: 100%;
+	max-width: 1100px;
+	margin: auto;
+
+	.game {
+		width: 30%;
+		height: 25em;
+		background: var(--color-fg);
+		padding: 6px;
+		border: 6px solid var(--color-secondary);
+		display: flex;
+		flex-direction: column;
+		transition: 0.3s;
+
+		img {
+			object-fit: contain;
+			max-height: 60%;
+			margin: auto;
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+
+		h1 {
+			font-size: 40px;
+			height: 40px;
+			margin-top: 0;
+			text-align: center;
+		}
+
+		p {
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+
+	}
+	.game:hover {
+		border: 6px solid var(--color-accent);
+		background: var(--color-secondary);
+		transition: 0.3s;
+	}
+}
+
