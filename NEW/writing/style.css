@@ -1,0 +1,41 @@
+.main {
+	width: 100%;
+	max-width: 1400px;
+	margin: auto;
+	padding: 10px;
+	background: black;
+}
+
+.category {
+	width: 50%;
+	background: black;
+
+	h1 {
+		font-size: 70px;
+		text-decoration: underline;
+	}
+
+	.entry {
+		border: 3px solid var(--color-secondary);
+		padding: 3px;
+		margin-left: 2em;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		z-index: 1;
+
+		img {
+			width: 100%;
+			max-height: 15em;
+			object-fit: contain;
+			margin: auto;
+		}
+
+		h1 {
+			font-size: 40px;
+			font-family: "bitter";
+			text-align: center;
+			text-decoration: none;
+		}
+	}
+}
