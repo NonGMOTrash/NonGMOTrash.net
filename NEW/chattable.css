@@ -18,10 +18,11 @@ body {
 
 #timestamp {
 	height: 1em;
-	width: 30%;
+	min-width: 50%;
 	margin: 0;
 	margin-left: auto;
 	border: 1px solid gray;
+	border-top: 0;
 }
 
 #input {
