@@ -11,15 +11,21 @@
 	font-style: normal;
 }
 @font-face {
-	font-family: "bitter";
-	src: url("Bitter.woff2") format('woff2'); /* Internet Explorer */
+	font-family: "bakersville";
+	src: url("LibreBakersville.woff2") format('woff2'); /* Internet Explorer */
 	font-weight: 500;
 	font-style: normal;
 }
 @font-face {
+	font-family: "bakersville-italic";
+	src: url("LibreBakersville-Italic.woff2") format('woff2'); /* Internet Explorer */
+	font-weight: 500;
+	font-style: italic;
+}
+@font-face {
 	font-family: "kelvinch-italic";
 	src: url("Kelvinch-Italic.woff2") format('woff2'); /* Internet Explorer */
-	font-weight: 200;
+	font-weight: 500;
 	font-style: italic;
 }
 @font-face {
@@ -71,6 +77,10 @@ body {
 p, h1, h2, h3, h4, ol, ul {
 	color: var(--color-text);
 	text-shadow: 0 0.07em rgba(146, 232, 255, 0.4);
+
+	a {
+		text-wrap: nowrap;
+	}
 }
 
 p, li {
