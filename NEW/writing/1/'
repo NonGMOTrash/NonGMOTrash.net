@@ -1,0 +1,116 @@
+body {
+	background-image: url("bg.png");
+	padding: 0;
+}
+
+p, li, h1, h2, h3, h4, h5 {
+	color: white;
+	font-family: "bakersville", Times New Roman;
+}
+
+p, li {
+	font-size: 24px;
+	line-height: 1.5em;
+	text-indent: 50px;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+i {
+	font-family: "bakersville-italic";
+}
+
+h1 {
+	font-size: 50px;
+	text-align: center;
+	width: 120%;
+	margin-left: -10%;
+}
+
+h2 {
+	font-size: 40px;
+	text-align: center;
+}
+
+h3 {
+	font-size: 28px;
+	text-align: center;
+}
+
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 3px;
+	margin-bottom: -15px;
+}
+
+#content {
+	background: black;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 1em;
+	padding-top: 3em;
+	margin-top: -3em;
+	padding-bottom: 3em;
+	margin-bottom: -3em;
+	width: 50%;
+	min-width: 320px;
+}
+
+.title-img {
+	max-width: 75%;
+	margin: auto;
+}
+
+.annotation {
+	font-size: 13px;
+	font-style: italic;
+	text-align: center;
+	margin-top: 2px;
+}
+
+.sidenote {
+	position: relative;
+	width: 40%;
+	float: right;
+	clear: right;
+	margin-right: -46%;
+	border: 1px solid gray;
+	padding: 10px;
+	font-size: 16px;
+	line-height: 1.2em;
+	text-indent: 0;
+	background: black;
+}
+
+.transition-marker {
+	text-align: center;
+	margin-top: 3em;
+	margin-bottom: 3em;
+}
+
+.signout {
+	margin-left: auto;
+	margin-right: 0;
+	text-align: right;
+	margin-top: 50px;
+}
+
+
+@media (width <= 700px) {
+
+	p {
+		font-size: 18px;
+	}
+
+	h1 {
+		font-size: 36px;
+	}
+
+	.sidenote {
+
+	}
+
+}
+
