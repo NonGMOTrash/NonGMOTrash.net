@@ -31,6 +31,10 @@ body {
 
 		.items {
 			margin-left: 10px;
+
+			.buttons a::before {
+				width: 0;
+			}
 		}
 	}
 	.game:hover {
@@ -50,6 +54,7 @@ body {
 	border: 6px solid rgba(0,0,0,0);
 	z-index: 100;
 	transition: 0.3s;
+
 }
 .button:hover {
 	border: 6px solid var(--color-accent);

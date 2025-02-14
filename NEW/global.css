@@ -142,6 +142,7 @@ a {
 	text-decoration: none;
 	text-shadow: 0 0.07em rgba(146, 232, 255, 0.4);
 	cursor: pointer;
+	z-index: 1;
 	transition: all 0.3s ease 0s;
 }
 a:hover {

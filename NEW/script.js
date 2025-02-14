@@ -19,6 +19,19 @@ setTimeout(
 	10000
 );
 
+// project progress
+
+window.onload = function()
+{
+	var projects = document.getElementById("progress").children;
+
+	for (var i = 0; i < projects.length; i++)
+	{
+		var degrees = projects[i].getAttribute("completion") * 3.6;
+		projects[i].style.background = "conic-gradient(var(--color-accent) "+degrees+"deg, var(--color-highlight) 0deg";
+	}
+}
+
 // chattable
 
 var chattableCSS = `
