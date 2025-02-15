@@ -118,24 +118,35 @@
 		margin-top: -9px;
 		margin-bottom: 0;
 		width: 92%;
-		min-height: 20vh;
+		height: 15vmin;
 		background: var(--color-fg);
 		border: 9px var(--color-secondary) solid;
 		border-right: 0;
 		display: flex;
 
 		.project {
-			width: 18%;
-			height: 100%;
-			/* background image set by JS */
+				height: 90%;
+				aspect-ratio: 1/1;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				/* background set by JS */
+				border-radius: 50%;
+				border: 2px solid var(--color-highlight);
+				margin: 6px;
+				margin-bottom: 12px;
 
-			p {
+			.text {
 				text-align: center;
-				color: black;
+				text-shadow: /* used for outline */
+					1px 1px 0 var(--color-fg),
+					-1px 1px 0 var(--color-fg),
+					-1px -1px 0 var(--color-fg),
+					1px -1px 0 var(--color-fg);
+				font-size: 18px;
 			}
 		}
 	}
-		
 }
 
 .news-entries {

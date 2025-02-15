@@ -27,8 +27,12 @@ window.onload = function()
 
 	for (var i = 0; i < projects.length; i++)
 	{
-		var degrees = projects[i].getAttribute("completion") * 3.6;
-		projects[i].style.background = "conic-gradient(var(--color-accent) "+degrees+"deg, var(--color-highlight) 0deg";
+		var completion = projects[i].getAttribute("completion");
+		projects[i].style.background = ( //          \/ convert % into degrees
+				"conic-gradient(var(--color-highlight) "+completion*3.6+"deg, var(--color-fg) 0deg");
+
+		var text = projects[i].querySelector(".text");
+		text.textContent += "\n("+completion+"%)";
 	}
 }
 
