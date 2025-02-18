@@ -1,0 +1,35 @@
+body {
+	background: black;
+	text-align: center;
+	position: absolute;
+	right: 0%; left: 0%; top: 0%; bottom: 20%;
+	margin: auto;
+}
+
+p {
+	color: white;
+	font-family: 'Bitter', Comic Sans MS;
+	font-size: 24px;
+}
+
+h1 {
+	color: white;
+}
+
+b {
+	text-decoration: underline;
+}
+
+.entry {
+	margin: auto;
+	padding: 20px;
+	width: 50%;
+	text-align: left;
+}
+	.entry img {
+		width: 100%;
+	}
+
+.return {
+	text-align: center;
+}

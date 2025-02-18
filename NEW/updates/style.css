@@ -1,0 +1,36 @@
+.main {
+	display: flex;
+	flex-direction: column;
+	right: 0%; left: 0; top: 0; bottom: 20%;
+	margin: auto;
+	width: 60%;
+	background: rgba(0, 0, 0, 0.4);
+}
+
+#note {
+	position: absolute;
+	right: 8px;
+	width: 15%;
+	font-size: 16px;
+}
+
+h1 {
+	text-align: center;
+}
+
+hr {
+	width: 40%;
+	color: white;
+}
+.entry {
+	margin-left: 1em;
+	margin-right: 1em;
+
+	b {
+		text-decoration: underline;
+	}
+
+	img {
+		width: 100%;
+	}
+}
