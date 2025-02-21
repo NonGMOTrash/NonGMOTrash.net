@@ -42,11 +42,15 @@
 		}
 
 		h1 {
-			font-size: 35px;
-			font-family: "bitter";
+			font-size: 30px;
+			font-family: "baskersville";
 			text-align: center;
 			text-decoration: none;
 			/*min-height: 2.3em;*/
+
+			i {
+				font-family: "baskersville-italic";
+			}
 		}
 
 		.details {

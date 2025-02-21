@@ -7,8 +7,10 @@
 		<meta name="viewport" content="width=device-width,initial-scale=1">
 	</head>
 
-	<link rel="stylesheet" href="../writing.css">
+	<link rel="stylesheet" href="../../../global.css">
+	<link rel="stylesheet" href="../../writing.css">
 
+	<script src="../../writing.js"></script>
 
 	<body>
 		
@@ -17,9 +19,28 @@
 			.stats {
 				display: flex;
 				justify-content: center;
-				gap: 3%;
-				width: 200%;
+				gap: 0;
+				width: 100vw;
 				margin-left: -50%;
+				background: black;
+				padding-top: 3%;
+				padding-bottom: 3%;
+
+				p {
+					display: flex;
+					flex-direction: column;
+					text-align: center;
+					font-size: 22px;
+					font-family: "caskaydia-cove";
+					background: black;
+
+					b { /* the number */
+						font-size: 55px;
+						font-family: "caskaydia-cove";
+						text-align: center;
+					}
+				}
+
 			}
 				@media (width <= 700px) {
 					.stats {
@@ -28,25 +49,17 @@
 						flex-wrap: wrap;
 					}
 				}
-			.stats p {
-				text-align: center;
-			}
-			.stats p b {
-				font-size: 70px;
-			}
 
 		</style>
 
+		<div id="outline">
+			<!-- items inserted here with JS -->
+		</div>
 
-		<a href="../index.html">
-			<p><< back to blog</p>
-		</a>
-
-
-		<div class="content">
+		<div id="content">
 		
-			<h1>STATE OF THE TRASH 2024</h1>
-			<img src="../blog7.png" class="title-img pixel" width="100%">
+			<h1>state of the trash 2024</h1>
+			<img src="cover.png" class="title-img pixel" width="100%">
 
 
 			<p>um... hi.</p>
@@ -54,7 +67,7 @@
 			<p>these past 9 months have been a very transitional period for me, both creatively and as a person. it has been the beginning of my attempts to finally get out of the rut i've been stuck in and learn to love making things again. i'm also recently undergone probably the biggest change in my life: moving away to college.<p>
 
 
-			<h1>ESCAPING THE RUT</h1>
+			<h1>escaping the rut</h1>
 
 
 			<p class="sidenote">if you want more context, read <a href="../4/index.html">this</a></p>
@@ -66,32 +79,32 @@
 			<p>going forward, my new routine will be to mark on my calender everyday that i work, and then every sunday write a reflection on what i worked on and how i did.</p>
 
 
-			<h1>BY THE NUMBERS</h1>
+			<h1>by the numbers</h1>
 
 
 			<div class="stats">
 				<p>
-					<b>400</b><br>
+					<b>400</b>
 					lines of code
 				</p>
 				<p>
-					<b>22</b><br>
+					<b>22</b>
 					pages of art
 				</p>
 				<p>
-					<b>0</b><br>
+					<b>0</b>
 					minutes of music
 				</p>
 				<p>
-					<b>8100</b><br>
+					<b>8100</b>
 					words
 				</p>
 				<p>
-					<b>93</b><br>
+					<b>93</b>
 					minutes of video
 				</p>
 				<p>
-					<b>4043</b><br>
+					<b>4043</b>
 					lines of html/css/js
 				</p>
 			</div>
@@ -100,7 +113,7 @@
 
 			<p>i don't wanna toot my own horn too much, since realistically this isn't <i>that</i> impressive, but the i think at the very least this represents a pretty sizable improvement over the 2022-23 rut. if i took these statistics last year, i suspect they would have (almost) all been much lower. i say almost because there's one stat that is glaring low: i have barely programmed anything this year. in fact, it's now been <i>over two years</i> since i released a game, and it kind of terrifies me that it's been that long. so there's definitely lots of room for improvement, but i'll get to that.</p>
 
-			<h1>BLOOD (RED), SWEAT, & TEARS</h1>
+			<h1>blood (red), sweat, and tears</h1>
 
 			<p>the project that easily caused me the most pain this year was the <i>first chapter</i> of <a href="../6/index.html">blood red harmony</a> which took me a ludicrous <i>10 months</i> to write. in my defense, i was definitely working off and on and i only considered it my 'main' priority for probably around 2 of those months, but it's still pretty staggering how long it took me to write just 6000 words. for some background: i have been wanting to write a short story for <i>years</i> but i just never got around to it, or writing any sort of story, until now. not even a story in a game. i don't know why, maybe it's as simple as just a confidence issue, but i feel so much more vulnerable writing stories compared to designing a game. i suppose it just has a lot of heart in it. whatever it is, it's often left me quite fearful when i write, and i often find myself editing excessively <i>as i'm writing</i> because i'm not confident enough to just write something that's bad and fix it later, even though i know it's just a first draft. this, combined with simple lack of experience, is why i've been writing so slowly. there's really only one solution, i think, which is to just keep going. the more i write, the faster and better i will be, and the more i will be able to just ease up and get words on the page. while grueling, i did finally manage to start enjoying the process a bit more towards the ending of writing this first chapter. although i'm far from finished, i'm glad i took up this challenge, and i hope i can face the next chapter with more confidence, skill, and maaaaybe i could try to finish it a little faster, too.</p>
 
@@ -108,7 +121,7 @@
 
 			<p>making videos has also served as a similar outlet for me, although my motivation sort of comes in much briefer (but stronger) bursts. but i definitely see it as more of a hobby. gamedev is also a hobby of course, but i would definitely say that i take it more seriously and have much a level of... i guess 'pride' that i just don't have with video editing. i'm perfectly content to just keep making videos whenever i randomly feel like it. my only concern with quality is whether i'm skilled enough to edit my own trailer, which as far as i'm concerned, i already am. one thing i don't like about youtube is how analytics driven it feels - every inch of the youtube creator studio is just chock full of numbers and graphs and advice and how you can get even bigger numbers and graphs. despite telling myself that i don't care about """"making it"""" on youtube, i admittedly found the urge a little hard to ignore, especially after one of my videos randomly got thousands of views. so because of that, i'm not sure if my video output is going to remain consistent, or perhaps it'll increase even more. time will tell.
 
-			<h1>MAKING THINGS WORK</h1>
+			<h1>making things work</h1>
 
 			<p>all my life, i've been worried about growing out of creativity. i've always heard people talk about it, i've seen it happen to some of my friends, and honestly, i don't think it's unfounded. in all likelihood, every step forward from here on is going to leave me with less and less time to pursue my creative endeavors.</p>
 
@@ -120,7 +133,7 @@
 
 			<p>i know that there's a very small chance that i ever make this into a living. but what i've realized is that if i ever do, it's probably going to be from making something <i>great</i>. something that deserves support. and the way to do that is to not focus on monetizing my creativity. this desire to make money will make my games worse. i'll rush games. i'll follow trends. i'll push what i really want to make out of the queue just to... what, make a thousand bucks or so per game, at most? what i've realized is that my best shot at being successful is to not try to be. so i've decided that until then, i will never charge money for anything that i make. i don't want money, or fame, or "success," i just want to make something that really resonates with someone.</p>
 
-			<h1>FUTURE TRASH</h1>
+			<h1>future trash</h1>
 
 			<p>while i am proud of what i accomplished this year, there were still a lot of struggles. for next year, i aim to try and improve my output a little, especially inregards to game development. i have three major projects planned.</p>
 
@@ -134,11 +147,12 @@
 
 			<p>i've often felt like i've been working <i>so</i> incredibly slowly, but i think if there's one thing i've learned this year is that i have to be patient with myself. while i don't intend to squander it, i still have so much time ahead of me.</p>
 
-			<p>i don't have to rush. i don't have to be perfect.</p>
-
-			<p>all i have to do</p>
-
-			<p>is keep going.</p>
+			<p>
+				<br>
+				i don't have to rush. i don't have to be perfect.<br><br>
+				all i have to do<br><br>
+				is keep going.<br><br>
+			</p>
 
 			<p class="signout">
 				NonGMOTrash<br>
@@ -148,9 +162,9 @@
 
 		</div>
 
-	</body>
+		<div id="footer"></div>
 
-	<script src="script.js"></script>
+	</body>
 
 </html>
 
