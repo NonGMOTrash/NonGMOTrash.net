@@ -267,6 +267,7 @@
 	flex-wrap: wrap;
 	row-gap: 2%;
 	column-gap: 2%;
+	margin-top: 0.5%;
 }
 
 .tile {

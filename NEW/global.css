@@ -11,21 +11,15 @@
 	font-style: normal;
 }
 @font-face {
-	font-family: "bakersville";
+	font-family: "baskersville";
 	src: url("LibreBakersville.woff2") format('woff2'); /* Internet Explorer */
 	font-weight: 500;
 	font-style: normal;
 }
 @font-face {
-	font-family: "bakersville-italic";
+	font-family: "baskersville-italic";
 	src: url("LibreBakersville-Italic.woff2") format('woff2'); /* Internet Explorer */
-	font-weight: 500;
-	font-style: italic;
-}
-@font-face {
-	font-family: "kelvinch-italic";
-	src: url("Kelvinch-Italic.woff2") format('woff2'); /* Internet Explorer */
-	font-weight: 500;
+	font-weight: 100;
 	font-style: italic;
 }
 @font-face {

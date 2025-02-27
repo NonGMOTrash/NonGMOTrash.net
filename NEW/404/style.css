@@ -1,0 +1,72 @@
+#content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	height: 50vh;
+
+	h1 {
+		font-family: "caskaydia-cove";
+		font-size: 40vh;
+		text-shadow: 0 0 black;
+		filter: drop-shadow(0 0 0.8rem rgba(256, 256, 256, 1.0));
+		z-index: -2;
+	}
+
+	p {
+		font-family: "caskaydia-cove";
+		filter: drop-shadow(0 0 0.2rem rgba(256, 256, 256, 1.0));
+	}
+}
+
+@keyframes flicker {
+	0%   { filter: drop-shadow(0 0 0.8rem rgba(256, 256, 256, 1.0)) }
+	20%  { filter: drop-shadow(0 0 0.8rem rgba(256, 256, 256, 1.0)) }
+	21%  { filter: drop-shadow(0 0 0.8rem rgba(256, 256, 256, 0.0)) }
+	22%  { filter: drop-shadow(0 0 0.8rem rgba(256, 256, 256, 1.0)) }
+	38%  { filter: drop-shadow(0 0 0.8rem rgba(256, 256, 256, 1.0)) }
+	39%  { filter: drop-shadow(0 0 0.8rem rgba(256, 256, 256, 0.0)) }
+	40%  { filter: drop-shadow(0 0 0.8rem rgba(256, 256, 256, 1.0)) }
+	99%  { filter: drop-shadow(0 0 0.8rem rgba(256, 256, 256, 1.0)) }
+	100% { filter: drop-shadow(0 0 0.8rem rgba(256, 256, 256, 0.0)) }
+}
+
+#title {
+	display: flex;
+
+
+	#loose {
+		margin-left: -0.55em;
+		z-index: 0;
+
+		#letter {
+			font-family: "caskaydia-cove";
+			font-size: 40vh;
+			text-shadow: 0 0 black;
+			z-index: 0;
+			display: inline-block; /* needed for transform to work apparantly */
+			animation: flicker 5s infinite;
+			transform: rotate(4deg);
+			pointer-events: none;
+		}
+
+		#portal {
+			position: relative;
+			margin-left: -64%;
+			top: -8%;
+			z-index: -1;
+			pointer-events: none;
+
+			img {
+				width: 90px;
+				z-index: 999;
+			}
+		}
+		#portal::before {
+			height: 0;
+		}
+	}
+}
+
+

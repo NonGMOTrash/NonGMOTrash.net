@@ -19,25 +19,28 @@
 			.stats {
 				display: flex;
 				justify-content: center;
-				gap: 0;
-				width: 100vw;
-				margin-left: -50%;
+				row-gap: 1em;
+				width: 100%;
+				flex-wrap: wrap;
 				background: black;
 				padding-top: 3%;
 				padding-bottom: 3%;
 
-				p {
+				.stat {
 					display: flex;
 					flex-direction: column;
 					text-align: center;
-					font-size: 22px;
-					font-family: "caskaydia-cove";
-					background: black;
 
 					b { /* the number */
 						font-size: 55px;
 						font-family: "caskaydia-cove";
-						text-align: center;
+					}
+
+					p { /* the descriptor */
+						font-size: 22px;
+						font-family: "caskaydia-cove";
+						display: block;
+						text-indent: 0;
 					}
 				}
 
@@ -70,7 +73,7 @@
 			<h1>escaping the rut</h1>
 
 
-			<p class="sidenote">if you want more context, read <a href="../4/index.html">this</a></p>
+			<p class="sidenote">if you want more context, read <a href="../1/index.html">this</a></p>
 			
 			<p>i started this year with the goal to work on my projects for at least 30 minutes every single day. but predictably, i fell... a bit short of that. i only actually logged ~66% of days. so, there's definitely room for improvement, but... overall i'd say i'm still quite happy with this. at the very least, it's a huge improvement over years past and i can say that writing in that log every* day was a very useful reflection for me.</p>
 
@@ -83,30 +86,30 @@
 
 
 			<div class="stats">
-				<p>
+				<div class="stat">
 					<b>400</b>
-					lines of code
-				</p>
-				<p>
+					<p>lines of code</p>
+				</div>
+				<div class="stat">
 					<b>22</b>
-					pages of art
-				</p>
-				<p>
+					<p>pages of art</p>
+				</div>
+				<div class="stat">
 					<b>0</b>
-					minutes of music
-				</p>
-				<p>
+					<p>mins of music</p>
+				</div>
+				<div class="stat">
 					<b>8100</b>
-					words
-				</p>
-				<p>
+					<p>words</p>
+				</div>
+				<div class="stat">
 					<b>93</b>
-					minutes of video
-				</p>
-				<p>
+					<p>mins of video</p>
+				</div>
+				<div class="stat">
 					<b>4043</b>
-					lines of html/css/js
-				</p>
+					<p>lines of html/css/js</p>
+				</div>
 			</div>
 
 			<p class="sidenote">i know i haven't started making any music yet but i put it in there just for the futuuuuuuuuuuure</p>
