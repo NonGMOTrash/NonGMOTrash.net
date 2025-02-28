@@ -65,7 +65,6 @@ body {
 	background: var(--color-bg);
 	font-family: "nunito";
 	overflow-x: hidden;
-	margin-right: -25px; /* i have no idea why i have to do this */
 }
 
 p, h1, h2, h3, h4, ol, ul {
@@ -229,16 +228,16 @@ a:hover::before {
 }
 
 /* old custom cursors */
-/*
-body {
-cursor: url("cur_default.cur"), auto;
-}
-
-p, h1, h2, h3, h4, table, li {
-cursor: url("cur_text.cur"), auto;
-}
-
-a, button, .clickable {
-cursor: url("cur_pointer.cur"), auto;
-}
- */
+/**/
+/*body {*/
+/*	cursor: url("cur_default.cur"), auto;*/
+/*}*/
+/**/
+/*p, h1, h2, h3, h4, table, li {*/
+/*	cursor: url("cur_text.cur"), auto;*/
+/*}*/
+/**/
+/*a, button, .clickable {*/
+/*	cursor: url("cur_pointer.cur"), auto;*/
+/*}*/
+/**/
