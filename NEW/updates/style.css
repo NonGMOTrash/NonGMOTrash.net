@@ -1,3 +1,8 @@
+@keyframes wave {
+	0%, 100%  { transform: translateY(0em) }
+	50%       { transform: translateY(0.1em) }
+}
+
 .main {
 	display: flex;
 	flex-direction: column;
@@ -15,7 +20,16 @@
 }
 
 h1 {
+	display: flex;
+	justify-content: center;
+	gap: -0.15em;
 	text-align: center;
+
+	span {
+		display: inline-block;
+		animation: wave 3s ease-in-out infinite;
+		animation-delay: calc(0.1s * var(--i));
+	}
 }
 
 hr {

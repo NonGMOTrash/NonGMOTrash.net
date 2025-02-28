@@ -16,12 +16,14 @@
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
-	width: 100%;
-	background: black;
+	background: var(--color-fg);
+	padding: 1em;
+	margin-top: 3em;
 
 	h1 {
 		font-size: 70px;
 		text-decoration: underline;
+		margin-top: 0;
 	}
 
 	.entry {

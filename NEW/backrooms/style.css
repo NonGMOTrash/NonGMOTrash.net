@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@600&display=swap');
+
+body {
+	background-color: black;
+	color: white;
+	text-align: center;
+	position: absolute;
+	right: 5%; left: 5%; top: 20%; bottom: 20%;
+	font-size: 40px;
+	font-family: Bitter, Monospace;
+}
+
+p {
+	font-size: 30px;
+}
+
+.linkOne {
+	position: absolute;
+	left: -5%;
+	top: -10%;
+	width: 25%;
+	height: 140%;
+	opacity: 0%;
+}
+
+.linkTwo {
+	position: absolute;
+	left: 58%;
+	top: 20%;
+	width: 6%;
+	height: 20%;
+	opacity: 0%;
+}
+
+.linkThree {
+	position: absolute;
+	left: 55%;
+	top: 22%;
+	width: 1.5%;
+	height: 20%;
+	opacity: 0%;
+}
+
+.bg {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	z-index: -1000;
+}
