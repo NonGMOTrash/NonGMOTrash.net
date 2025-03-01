@@ -20,26 +20,46 @@
 
 
 		<div id="sidebar">
-			<p onclick="switchSection('digital')">digital art</p>
-			<p onclick="switchSection('pixel')">pixel art</p>
-			<p onclick="switchSection('traditional')">traditional art</p>
-			<p onclick="switchSection('drawabox')">DrawABox</p>
-			<p onclick="switchSection('images')">images</p>
-			<p onclick="switchSection('videos')">videos</p>
-			<p onclick="switchSection('photos')">photos</p>
+			<p onclick="switchSection('digital')" id="digital-button">digital art</p>
+			<p onclick="switchSection('pixel')" id="pixel-button">pixel art</p>
+			<p onclick="switchSection('traditional')" id="traditional-button">traditional art</p>
+			<p onclick="switchSection('drawabox')" id="drawabox-button">DrawABox</p>
+			<p onclick="switchSection('images')" id="images-button">images</p>
+			<p onclick="switchSection('videos')" id="videos-button">videos</p>
+			<p onclick="switchSection('photos')" id="photos-button">photos</p>
 		</div>
 
 		<div id="content">
-			<img src="sans.jpg">
-			<img src="sans.jpg">
-			<img src="sans.jpg">
-			<img src="sans.jpg">
-			<img src="sans.jpg">
-			<img src="sans.jpg">
-			<img src="sans.jpg">
-			<img src="sans.jpg">
-			<img src="sans.jpg">
-			<img src="sans.jpg">
+			
+			<div id="digital">
+				<img src="sans.jpg" title="Bingus" date="September 16, 2016" description="hi">
+				<p></p></img> <!-- without this, child p elements added w/ JS don't appear !?!?!?!? -->
+			</div>
+
+			<div id="pixel">
+
+			</div>
+
+			<div id="traditional">
+
+			</div>
+
+			<div id="drawabox">
+
+			</div>
+
+			<div id="images">
+
+			</div>
+
+			<div id="videos">
+
+			</div>
+
+			<div id="photos">
+
+			</div>
+
 		</div>
 
 

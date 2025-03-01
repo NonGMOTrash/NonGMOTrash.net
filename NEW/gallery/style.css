@@ -34,8 +34,16 @@
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: flex-begin;
+	justify-content: left;
 	gap: 1em;
-	overflow-y: scroll; 
+	overflow-y: scroll;
+
+	div {
+		img {
+			p {
+				font-size: 50px;
+			}
+		}
+	}
 }
 
