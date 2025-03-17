@@ -1,60 +1,28 @@
-.title-container {
+.cover {
 	width: 100%;
-	margin-bottom: -10%;
-	overflow: hidden;
-	float: left;
-}
-
-@media (min-width: 1000px) {
-	.title-container {
-		margin-left: calc(1512px - 100vw);
+	max-width: 100%;
+	
+	img {
+		min-width: 100%;
+		max-width: 100%;
+		object-fit: fill;
 	}
-}
 
-.title-bg {
-	width: 1512px;
-	position: relative;
-	right: 0;
-	top: 0;
-	z-index: 0;
-}
+	.scroll-indicator {
+		position: relative;
+		display: none;
+		width: 100%;
+		text-align: center;
+		font-family: grape-soda;
+		top: 92%;
+		z-index: 3;
+	}
 
-.title-logo {
-	width: 834px;
-	filter: drop-shadow(0 0 0.3rem rgba(247, 125, 22, 1.0));
-	position: relative;
-	left: 41em;
-	top: -41.5em;
-	z-index: 1;
 }
-
-.title-sky {
-	width: 1326px;
-	filter: drop-shadow(0 0 0.3rem rgba(247, 255, 74, 0.7));
-	position: absolute;
-	left: 4em;
-	top: 0.3em;
-	z-index: 1;
-}
-
-.title-light {
-	width: 246px;
-	/*filter: drop-shadow(0 0 0.1rem orange);*/
-	position: absolute;
-	left: 18.5em;
-	top: 22em;
-	z-index: 3;
-	animation: flicker 1s infinite;
-}
-
-.scroll-indicator {
-	position: absolute;
-	display: none;
-	width: 100%;
-	text-align: center;
-	font-family: grape-soda;
-	top: 92%;
-	z-index: 3;
+@media screen and (max-width: 100px) {
+	* {
+		display: none;
+	}
 }
 
 .main {
@@ -107,7 +75,6 @@
 	height: 200%;
 	max-height: 200%;
 	margin-top: 0;
-	left: 0;
 	z-index: 10;
 
 	#progress {
@@ -123,24 +90,25 @@
 		display: flex;
 
 		.project {
-				height: 90%;
-				aspect-ratio: 1/1;
-				display: flex;
-				justify-content: center;
-				align-items: center;
-				/* background set by JS */
-				border-radius: 50%;
-				border: 2px solid var(--color-highlight);
-				margin: 6px;
-				margin-bottom: 12px;
+			max-width: 100px;
+			height: 100px;
+			aspect-ratio: 1/1;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			/* background set by JS */
+			border-radius: 50%;
+			border: 2px solid var(--color-highlight);
+			margin: 6px;
+			margin-bottom: 12px;
 
 			.text {
 				text-align: center;
 				text-shadow: /* used for outline */
-					1px 1px 0 var(--color-fg),
-					-1px 1px 0 var(--color-fg),
-					-1px -1px 0 var(--color-fg),
-					1px -1px 0 var(--color-fg);
+				1px 1px 0 var(--color-fg),
+				-1px 1px 0 var(--color-fg),
+				-1px -1px 0 var(--color-fg),
+				1px -1px 0 var(--color-fg);
 				font-size: 18px;
 			}
 		}
@@ -314,7 +282,7 @@
 		text-align: center;
 		text-decoration: underline;
 	}
-		
+
 	div {
 		font-family: caskaydia-cove;
 		font-size: 14px;
