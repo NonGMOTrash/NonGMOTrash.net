@@ -27,7 +27,6 @@ if (headers.length > 1)
 		outlineItems.appendChild(element);
 	}
 
-	console.log(outlineItems.offsetWidth);
 	outline.style.setProperty("--item-width", String(outlineItems.getBoundingClientRect().width+11)+"px");
 
 } else {
