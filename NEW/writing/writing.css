@@ -16,7 +16,7 @@ p, li {
 }
 
 p {
-	text-indent: 50px;
+	text-indent: 4rem;
 }
 
 i {
@@ -26,8 +26,6 @@ i {
 h1 {
 	font-size: 3.125rem;
 	text-align: center;
-	width: 120%;
-	margin-left: -10%;
 }
 
 h2 {
@@ -56,27 +54,32 @@ summary {
 	left: 0;
 	top: 0;
 	display: flex;
-	flex-direction: column;
-	justify-content: left;
-	width: 23%;
+	min-width: 21.5%;
 	background: var(--color-bg);
 	padding: 6px;
 	border: 4px solid var(--color-secondary);
 	margin: 6px;
 	margin-left: -6px;
 
-	a {
-		font-family: "baskersville";
-		font-size: 1.25rem;
-		color: var(--color-text);
-		margin-left: 0;
-	}
-	a:hover {
-		color: var(--color-accent);
-		margin-left: 4%;
-	}
-	a::before {
-		width: 0;
+	.items {
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+
+		a {
+			font-family: "baskersville";
+			font-size: 1.25rem;
+			text-wrap: nowrap;
+			color: var(--color-text);
+			margin-left: 0;
+		}
+		a:hover {
+			color: var(--color-accent);
+			margin-left: 6%;
+		}
+		a::before {
+			width: 0;
+		}
 	}
 }
 
@@ -89,14 +92,15 @@ summary {
 	margin-top: -3em;
 	padding-bottom: 3em;
 	margin-bottom: -3em;
-	width: 50%;
-	min-width: 320px;
+	width: 792px;
+	max-width: 90%;
 }
 
 #footer {
 	display: flex;
 	justify-content: space-evenly;
-	width: 25%;
+	width: 380px;
+	max-width: 80%;
 	margin: auto;
 	margin-top: 1em;
 	margin-bottom: 0;
@@ -158,18 +162,66 @@ summary {
 }
 
 
-@media (width <= 700px) {
+@media (width <= 600px) {
+
+	html {
+		overflow-x: hidden;
+	}
 
 	p {
 		font-size: 1.125rem;
+		text-indent: 2rem;
 	}
 
 	h1 {
 		font-size: 2rem;
 	}
 
-	.sidenote {
+	h2 {
+		font-size: 1.8rem;
+	}
 
+	.annotation, .sidenote {
+		font-size: 0.7rem;
+	}
+
+
+}
+
+@media screen and (max-width: 1000px) {
+	#outline {
+		--item-width: 300px; /* set in JS */
+		left: calc(var(--item-width)*-1);
+		transition: 0.5s;
+
+		.items {
+			a:hover {
+				margin-left: 2%;
+			}
+		}
+	}
+	#outline:hover, #outline:active {
+		left: 0;
+	}
+	#outline:after {
+		content: "outline";
+		background: var(--color-secondary);
+		color: white;
+		writing-mode: vertical-lr;
+		text-align: center;
+		transform: rotate(180deg);
+		margin-left: 2px;
+		margin-right: -2px;
+		padding-top: 2px;
+		padding-bottom: 2px;
+	}
+
+	.sidenote {
+		right: 0;
+		transition: 0.5s;
+	}
+	.sidenote:hover, .sidenote:active {
+		right: 40%;
 	}
 
 }
