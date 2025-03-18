@@ -22,7 +22,7 @@
 	margin-top: 3em;
 
 	h1 {
-		font-size: 70px;
+		font-size: 4.375rem;
 		text-decoration: underline;
 		margin-top: 0;
 	}
@@ -45,7 +45,7 @@
 		}
 
 		h1 {
-			font-size: 30px;
+			font-size: 1.875rem;
 			font-family: "baskersville";
 			text-align: center;
 			text-decoration: none;
@@ -57,7 +57,7 @@
 		}
 
 		.details {
-			font-size: 14px;
+			font-size: 0.875rem;
 			position: absolute;
 			top: -1em;
 			right: 0.2em;

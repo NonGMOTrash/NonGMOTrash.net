@@ -59,6 +59,7 @@
 	--color-accent: #f87424;
 	--color-secondary: #a5267f;
 	--color-alert: #ff6361;
+	/* typically: 1rem = 16px */
 }
 
 body {
@@ -77,7 +78,7 @@ p, h1, h2, h3, h4, ol, ul {
 }
 
 p, li {
-	font-size: 24px;
+	font-size: 1.5rem;
 }
 
 h1, h2, h3, h4 {
@@ -85,21 +86,21 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-	font-size: 90px;
+	font-size: 5.625rem;
 	margin-bottom: 2%;
 }
 
 h2 {
-	font-size: 60px;
+	font-size: 3.75rem;
 	margin-bottom: 1%;
 }
 
 h3 {
-	font-size: 30px;
+	font-size: 1.875rem;
 }
 
 h4 {
-	font-size: 24px;
+	font-size: 1.5rem;
 }
 
 b {
@@ -109,7 +110,7 @@ b {
 button {
 	color: var(--color-text);
 	font-family: "nunito", Serif;
-	font-size: 30px;
+	font-size: 1.875rem;
 	background-color: black;
 	transition: all 0.3s ease 0s;
 	border: 3px solid orange;

@@ -96,7 +96,7 @@ body {
 		}
 
 		h1 {
-			font-size: 40px;
+			font-size: 2.5rem;
 			height: 40px;
 			margin-top: 0;
 			text-align: center;
@@ -111,7 +111,7 @@ body {
 			position: absolute;
 			top: 0px;
 			right: 0px;
-			font-size: 16px;
+			font-size: 1rem;
 			--border-size: 5px;
 			border: var(--border-size) solid var(--color-secondary);
 			margin-top: calc(var(--border-size)*-1);

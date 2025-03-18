@@ -9,7 +9,7 @@ p, li, h1, h2, h3, h4, h5, b, details {
 }
 
 p, li {
-	font-size: 24px;
+	font-size: 1.5rem;
 	line-height: 1.5em;
 	margin-top: 0;
 	margin-bottom: 0;
@@ -24,19 +24,19 @@ i {
 }
 
 h1 {
-	font-size: 50px;
+	font-size: 3.125rem;
 	text-align: center;
 	width: 120%;
 	margin-left: -10%;
 }
 
 h2 {
-	font-size: 40px;
+	font-size: 2.5rem;
 	text-align: center;
 }
 
 h3 {
-	font-size: 28px;
+	font-size: 1.75rem;
 	text-align: center;
 }
 
@@ -67,7 +67,7 @@ summary {
 
 	a {
 		font-family: "baskersville";
-		font-size: 20px;, details
+		font-size: 1.25rem;
 		color: var(--color-text);
 		margin-left: 0;
 	}
@@ -106,7 +106,7 @@ summary {
 	p {
 		font-family: "nunito";
 		text-align: center;
-		font-size: 16px;
+		font-size: 1rem;
 		text-indent: 0;
 	}
 }
@@ -117,7 +117,7 @@ summary {
 }
 
 .annotation {
-	font-size: 14px;
+	font-size: 0.875rem;
 	font-style: italic;
 	text-align: center;
 	width: 100%;
@@ -133,7 +133,7 @@ summary {
 	margin-right: -46%;
 	border: 1px solid gray;
 	padding: 10px;
-	font-size: 16px;
+	font-size: 1rem;
 	line-height: 1.2em;
 	text-indent: 0;
 	background: black;
@@ -161,11 +161,11 @@ summary {
 @media (width <= 700px) {
 
 	p {
-		font-size: 18px;
+		font-size: 1.125rem;
 	}
 
 	h1 {
-		font-size: 36px;
+		font-size: 2rem;
 	}
 
 	.sidenote {

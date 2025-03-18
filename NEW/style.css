@@ -65,7 +65,7 @@
 	color: white;
 	font-family: caskaydia-cove;
 	font-style: italic;
-	font-size: 25px;
+	font-size: 1.5rem;
 	z-index: -1;
 	transform: scaleY(1.1);
 }
@@ -109,7 +109,7 @@
 				-1px 1px 0 var(--color-fg),
 				-1px -1px 0 var(--color-fg),
 				1px -1px 0 var(--color-fg);
-				font-size: 18px;
+				font-size: 1.125rem;
 			}
 		}
 
@@ -128,7 +128,7 @@
 
 			p {
 				text-align: center;
-				font-size: 16px;
+				font-size: 1rem;
 				margin-top: 0;
 				line-height: 0.8em;
 			}
@@ -176,7 +176,7 @@
 }
 
 .news-entry h1{
-	font-size: 32px;
+	font-size: 2rem;
 	text-align: center;
 	text-wrap: nowrap;
 	margin: 0;
@@ -192,12 +192,12 @@
 }
 
 .news-entry p {
-	font-size: 14px;
+	font-size: 0.875rem;
 }
 
 
 .news-footer > a > p {
-	font-size: 16px;
+	font-size: 1rem;
 	margin-top: 0.3rem;
 }
 
@@ -211,7 +211,7 @@
 
 @media (max-width: 1200px) {
 	.news-footer > h1 {
-		font-size: 30px;
+		font-size: 1.875rem;
 	}
 }
 
@@ -252,7 +252,7 @@
 .tile > h1 {
 	margin-top: -10%;
 	text-align: center;
-	font-size: 60px;
+	font-size: 3.75rem;
 }
 
 #chattable {
@@ -278,14 +278,14 @@
 	gap: 1em;
 
 	h1 {
-		font-size: 26px;
+		font-size: 1.625rem;
 		text-align: center;
 		text-decoration: underline;
 	}
 
 	div {
 		font-family: caskaydia-cove;
-		font-size: 14px;
+		font-size: 0.875rem;
 		text-align: center;
 
 		a {
@@ -302,7 +302,7 @@
 
 .footer {
 	font-family: caskaydia-cove;
-	font-size: 16px;
+	font-size: 1rem;
 	text-align: center;
 	bottom: 0;
 	margin-bottom: 1em;
