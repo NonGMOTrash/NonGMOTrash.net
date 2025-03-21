@@ -5,16 +5,18 @@ window.onload = function() {
 
 function setBg(background) {
 	if (background == "teralite") {
-		bg.src = "bg-teralite.png";
+		bg.style.backgroundImage = "url(bg-teralite.png)";
 		bg.style.opacity = 100;
 		bg.classList.add("pixel");
 	} else if (background == "arcade") {
-		bg.src = "bg-arcade.png";
+		bg.style.backgroundImage = "url(bg-arcade.png)";
 		bg.style.opacity = 100;
 		bg.classList.add("pixel");
 	} else {
 		bg.style.opacity = 0;
 	}
+
+	console.log(bg.style.backgroundImage);
 }
 
 window.addEventListener("scroll", (event) => {
@@ -24,5 +26,4 @@ window.addEventListener("scroll", (event) => {
 	} else {
 		setBg("");
 	}
-	console.log(transitioning);
 });
