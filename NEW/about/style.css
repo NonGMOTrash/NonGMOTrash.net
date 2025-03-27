@@ -1,0 +1,9 @@
+body {
+	background: url("bg.png");
+	min-height: 100vh;
+}
+
+.intro
+{
+	background: black;
+}
