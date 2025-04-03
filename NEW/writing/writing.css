@@ -54,7 +54,8 @@ summary {
 	left: 0;
 	top: 0;
 	display: flex;
-	min-width: 21.5%;
+	min-width: 20.0%;
+	max-width: 23%;
 	background: var(--color-bg);
 	padding: 6px;
 	border: 4px solid var(--color-secondary);
@@ -188,10 +189,11 @@ summary {
 
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1400px) {
 	#outline {
 		--item-width: 300px; /* set in JS */
 		left: calc(var(--item-width)*-1);
+		max-width: 100%; /* bc it pops out on mobile, it can pretty much be as wide as needed */
 		transition: 0.5s;
 
 		.items {

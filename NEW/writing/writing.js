@@ -19,6 +19,10 @@ if (headers.length > 1)
 		const element = document.createElement("a");
 		if (i != 0) {
 			element.innerText = headers[i].innerText;
+			//if (headers[i].innerText.length > 30) {
+			//	element.style.transform = "scaleX(0.85)";
+			//	element.style.left = "-1.8rem"; // i have no idea why this is necessary
+			//}
 		} else {
 			element.innerText = "Intro";
 		}
@@ -27,7 +31,9 @@ if (headers.length > 1)
 		outlineItems.appendChild(element);
 	}
 
-	outline.style.setProperty("--item-width", String(outlineItems.getBoundingClientRect().width+11)+"px");
+	var textWidth = outlineItems.getBoundingClientRect().width;
+	textWidth = 0;
+	outline.style.setProperty("--item-width", String(textWidth+11)+"px");
 
 } else {
 	outline.style.display = "none";
