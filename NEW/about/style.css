@@ -1,6 +1,21 @@
 body {
-	background: url("bg.png");
+	background: radial-gradient(#e2c4b7 50%, gray);
 	min-height: 100vh;
+	overflow-x: hidden;
+}
+
+.light {
+	position: absolute;
+	top: 0;
+	filter: drop-shadow(0 0 1.8rem #fcc480);
+	pointer-events: none;
+}
+.light.left {
+	left: 0;
+}
+.light.right{
+	right: 0;
+	transform: scaleX(-1);
 }
 
 .content {
@@ -10,24 +25,27 @@ body {
 	justify-content: center;
 	align-items: center;
 	margin: auto;
+	margin-top: 4rem;
 }
 
 .intro
 {
-	display: flex;
-	background: black;
+	border: 0.4rem solid #ededed;
 	width: 800px;
 	max-width: 95%;
+	color: white;
+	font-size: 24px;
 
 	.picture {
+		float: left;
 		width: 30%;
+		min-width: 30%;
 		margin: 1rem;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 
 		img {
-			float: left;
 			width: 100%;
 		}
 
