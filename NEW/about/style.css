@@ -44,6 +44,9 @@ body {
 		margin-bottom: -1rem;
 	}
 
+	underline {
+		text-decoration: underline;
+	}
 }
 
 .picture {
