@@ -1,12 +1,13 @@
 body {
 	background: radial-gradient(#e2c4b7 50%, gray);
 	min-height: 100vh;
-	overflow-x: hidden;
+	overflow: hidden;
 }
 
 .light {
 	position: absolute;
 	top: 0;
+	width: 900px; /* 300% scale */
 	filter: drop-shadow(0 0 1.8rem #fcc480);
 	pointer-events: none;
 }
@@ -19,43 +20,51 @@ body {
 }
 
 .content {
-	width: 100%;
+	width: 800px;
+	max-width: 97%;
+	height: 700px;
+	max-height: 95%;
+	overflow-y: scroll;
+	margin: auto;
+	border: 0.4rem solid #ededed;
+	border-top: 0;
+	border-bottom: 0;
+	padding: 1rem;
+
+	p {
+		color: white;
+		font-size: 1.5rem;
+		margin-bottom: 1rem;
+	}
+
+	h1 {
+		font-size: 3rem;
+		text-align: center;
+		margin-top: 0;
+		margin-bottom: -1rem;
+	}
+
+}
+
+.picture {
+	float: left;
+	width: 30%;
+	min-width: 30%;
+	margin: 1rem;
+	margin-bottom: 0;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;
-	margin: auto;
-	margin-top: 4rem;
-}
 
-.intro
-{
-	border: 0.4rem solid #ededed;
-	width: 800px;
-	max-width: 95%;
-	color: white;
-	font-size: 24px;
-
-	.picture {
-		float: left;
-		width: 30%;
-		min-width: 30%;
-		margin: 1rem;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-
-		img {
-			width: 100%;
-		}
-
-		p {
-			margin-top: 0;
-			text-align: center;
-			font-style: italic;
-			line-height: 1rem;
-			margin-top: 0.3rem;
-		}
+	img {
+		width: 100%;
 	}
 
+	p {
+		text-align: center;
+		font-style: italic;
+		line-height: 1rem;
+		margin-top: 0.3rem;
+		margin-bottom: 0;
+	}
 }
