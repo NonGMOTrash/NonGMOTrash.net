@@ -10,6 +10,7 @@ body {
 	width: 900px; /* 300% scale */
 	filter: drop-shadow(0 0 1.8rem #fcc480);
 	pointer-events: none;
+	z-index: 99;
 }
 .light.left {
 	left: 0;
@@ -34,7 +35,7 @@ body {
 	p {
 		color: white;
 		font-size: 1.5rem;
-		margin-bottom: 1rem;
+		margin-top: 1rem;
 	}
 
 	button {
@@ -69,7 +70,7 @@ body {
 			transition: all 0.3s ease 0s;
 		}
 		h1:hover::before{
-			width: 92%;
+			width: calc(100% - 2.75rem);
 			transition: all 0.3s ease 0s;
 		}
 	}
@@ -84,9 +85,11 @@ body {
 	overflow: hidden;
 	transition: 1.5s ease-in-out;
 }
+.section p:first-child {
+	margin-top: 3rem;
+}
 
 .picture {
-	float: left;
 	width: 30%;
 	min-width: 30%;
 	margin: 1rem;
@@ -106,4 +109,10 @@ body {
 		margin-top: 0.3rem;
 		margin-bottom: 0;
 	}
+}
+.picture.left {
+	float: left;
+}
+.picture.right {
+	float: right;
 }

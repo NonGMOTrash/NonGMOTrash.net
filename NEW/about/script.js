@@ -3,14 +3,13 @@ function toggleSection(sectionId)
 	let section = document.getElementById(sectionId);
 	let sectionHeight = section.getBoundingClientRect().height;
 
-	console.log(sectionHeight);
 	if (sectionHeight > 0)
 	{
 		section.style.maxHeight = "0px";
 	}
 	else
 	{
-		section.style.maxHeight = "100%";
-		// small issue: if the section is on the shorter side, there will appear to be a delay when closing the seciton bc it starts from 100% down rather than from the bottom of the content
+		section.style.maxHeight = "130%";
+		// TODO: this value should be dynamically chosen based on the height of the section. if the section is too short, closing it will have a weird delay because it starts from 130% down, rather than the bottom of the section. and if the section is longer than 130%, then the bottom will be cut off :(
 	}
 }
