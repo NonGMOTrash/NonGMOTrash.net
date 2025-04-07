@@ -37,16 +37,52 @@ body {
 		margin-bottom: 1rem;
 	}
 
-	h1 {
-		font-size: 3rem;
-		text-align: center;
-		margin-top: 0;
+	button {
+		position: relative;
+		margin: 0;
+		margin-top: 2rem;
 		margin-bottom: -1rem;
+		padding: 0;
+		border: none;
+		background: none;
+		font-size: 3rem;
+		cursor: pointer;
+
+		h1 {
+			color: white;
+			font-size: 3rem;
+			font-family: "nunito";
+			border: 0.3rem solid white;
+			padding-left: 1rem;
+			padding-right: 1rem;
+		}
+		h1::before{
+			content: '';
+			background-color: white;
+			display: inline-block;
+			position: absolute;
+			bottom: 1.3rem;
+			left: 1.5rem;
+			width: 0;
+			height: 0.1em;
+			z-index: -1;
+			transition: all 0.3s ease 0s;
+		}
+		h1:hover::before{
+			width: 92%;
+			transition: all 0.3s ease 0s;
+		}
 	}
 
 	underline {
 		text-decoration: underline;
 	}
+}
+
+.section {
+	max-height: 0px;
+	overflow: hidden;
+	transition: 1.5s ease-in-out;
 }
 
 .picture {
