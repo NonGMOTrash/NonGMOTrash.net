@@ -36,6 +36,15 @@ body {
 		color: white;
 		font-size: 1.5rem;
 		margin-top: 1rem;
+
+		a {
+			color: white;
+			transition: 0.5s;
+		}
+		a:hover {
+			color: black;
+			transition: 0.5s;
+		}
 	}
 
 	button {
@@ -115,4 +124,43 @@ body {
 }
 .picture.right {
 	float: right;
+}
+
+#follow {
+	.button-row {
+		display: flex;
+		margin-bottom: 1rem;
+
+		p {
+			text-align: center;
+			margin-top: auto;
+			margin-bottom: auto;
+			writing-mode: vertical-lr;
+			transform: rotate(180deg);
+			text-decoration: underline;
+		}
+
+		a {
+			padding: 3px;
+			border: 6px solid transparent;
+		}
+		a::before {
+			height: 0;
+		}
+		a:hover {
+			border: 6px solid var(--color-accent);
+		}
+
+		img {
+			min-width: 96px;
+			min-height: 96px;
+		}
+	}
+}
+
+p.footer {
+	position: relative;
+	top: 5rem;
+	text-align: center;
+	font-size: 1rem;
 }
