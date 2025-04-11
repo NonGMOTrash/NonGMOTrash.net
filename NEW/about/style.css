@@ -1,3 +1,11 @@
+@font-face {
+	font-family: "marker";
+	src: url("CoveredByYourGrace.woff2") format('woff2');
+	font-weight: 600;
+	font-style: normal;
+}
+
+
 body {
 	background: radial-gradient(#e2c4b7 50%, gray);
 	min-height: 100vh;
@@ -8,7 +16,7 @@ body {
 	position: absolute;
 	top: 0;
 	width: 900px; /* 300% scale */
-	filter: drop-shadow(0 0 1.8rem #fcc480);
+	filter: drop-shadow(0 0 0.8rem #fcc480);
 	pointer-events: none;
 	z-index: 99;
 }
@@ -71,7 +79,7 @@ body {
 			background-color: white;
 			display: inline-block;
 			position: absolute;
-			bottom: 1.3rem;
+			bottom: 3vh;
 			left: 1.5rem;
 			width: 0;
 			height: 0.1em;
@@ -79,7 +87,7 @@ body {
 			transition: all 0.3s ease 0s;
 		}
 		h1:hover::before{
-			width: calc(100% - 2.75rem);
+			width: calc(100% - 3rem);
 			transition: all 0.3s ease 0s;
 		}
 	}
@@ -164,4 +172,54 @@ p.footer {
 	top: 5rem;
 	text-align: center;
 	font-size: 1rem;
+}
+
+.polaroid {
+	position: fixed;
+	background: white;
+	width: 10rem;
+	height: 13rem;
+	box-shadow: 0 0.5rem 15px rgba(0, 0, 0, 0.5);
+
+	a::before {
+		height: 0;
+	}
+
+	img {
+		margin-left: 5%;
+		margin-right: 5%;
+		margin-top: 10%;
+		width: 9rem;
+		height: 9rem;
+	}
+
+	figcaption {
+		text-align: center;
+		font-size: 1.5rem;
+		line-height: 1.2rem;
+		font-family: "marker";
+		color: black;
+		text-shadow: none;
+	}
+
+	.tack {
+		position: absolute;
+		bottom: 11.25rem;
+		left: 2.5rem;
+		width: 3rem;
+		height: 3rem;
+		aspect-ratio: 1 / 1;
+		z-index: 2;
+
+	}
+	.flip{
+		transform: scaleX(-100%);
+		left: 3.25rem;
+	}
+}
+
+.polaroid:hover {
+	figcaption {
+		text-decoration: underline;
+	}
 }

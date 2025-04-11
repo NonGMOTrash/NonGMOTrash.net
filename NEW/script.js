@@ -103,8 +103,6 @@ body {
 	color: gray;
 	content: "meow";
 }
-
-
 `
 
 window.addEventListener("load", function() {
