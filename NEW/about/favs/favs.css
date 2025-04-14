@@ -1,0 +1,55 @@
+.media-list {
+	width: 100%;
+	height: 10%;
+	padding-bottom: 1.25%;
+	margin-top: 1rem;
+	margin-bottom: 0.5%;
+	display: flex;
+	justify-content: center;
+	gap: 15px;
+	overflow-x: auto;
+}
+
+.media {
+	max-width: 14%;
+	max-height: 100%;
+	/*aspect-ratio 0.66 / 1.00;*/
+	filter: drop-shadow(0px 0px 0 #ed1e59);
+	transition: 0.3s;
+}
+	.media:hover {
+		filter: drop-shadow(10px 10px 0 orange);
+		transition: 0.3s;
+	}
+
+.backing {
+	position: absolute;
+	color: purple;
+	background: purple;
+	z-index: -99;
+	top: 13%;
+	left: -10%;
+	width: 110%;
+	height: 21%;
+	transform: rotate(-3deg);
+	overflow-x: hidden;
+}
+
+#thoughts {
+	display: flex;
+	align-items: center;
+
+	p {
+		border: 3px solid white;
+		width: 1000px;
+		max-width: 97%;
+		height: 100%;
+		padding: 10px;
+		margin: auto;
+
+		em {
+			text-decoration: underline;
+		}
+	}
+}
+
