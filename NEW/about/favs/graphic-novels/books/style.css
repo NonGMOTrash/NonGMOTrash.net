@@ -24,11 +24,11 @@
 
 .backing {
 	position: absolute;
-	color: lightblue;
-	background: lightblue;
+	color: purple;
+	background: purple;
 	z-index: -99;
 	top: 13%;
-	left: -8%;
+	left: -10%;
 	width: 110%;
 	height: 21%;
 	rotate: -3deg;

@@ -1,42 +1,51 @@
  <!DOCTYPE html>
 <html lang="en">
 	<meta charset="UTF-8">
-	<title>boopeboop</title>
+	<title>(not) home movies</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="../../global.css">
-	<script src="script.js"></script>
+
+	<link rel="stylesheet" href="../../../global.css">
+	<link rel="stylesheet" href="../favs.css">
+
+	<script src="../favs.js" defer></script>
 
 	<body class="center">
 
 
-		<a href="../index.html" class="exit" target="_top">
-			<img src="../../exit.gif" class="exit pixel">
+		<a href="../../index.html">
+			<img src="../../../exit.gif" class="exit pixel">
 		</a>
 
-
-		<div class="games">
-			<img src="omori.jpg" style="visibility:hidden; width:150px;"> <!-- just for margin -->
-
-			<img src="arcane.jpg" class="game clickable" onclick="updateDescription('arcane');">
-			<img src="atla.jpg" class="game clickable" onclick="updateDescription('atla');">
-			<img src="paranoia_agent.jpg" class="game clickable" onclick="updateDescription('paranoia_agent');">
-
-			<img src="omori.jpg" style="visibility:hidden; width:30px;"> <!-- just for margin -->
+		<div class="media-list">
+			<img src="arcane.jpg" class="media clickable" onclick="switchThought('arcane');">
+			<img src="atla.jpg" class="media clickable" onclick="switchThought('atla');">
+			<img src="aot.jpg" class="media clickable" onclick="switchThought('aot');">
+			<img src="boochi.jpg" class="media clickable" onclick="switchThought('boochi');">
 		</div>
 
 		<p class="backing">.</p>
 
-		<div style="display: flex; flex-grow: 1">
-			<p class="thoughts" id="thoughts">(click on a show to see my thoughts)</p>
+		<div id="thoughts">
+			<p id="none">
+				(click on a show to see my thoughts)
+			</p>
+			<p id="arcane">
+				<em>Arcane</em><br>
+				the thought of a league of legends tv show, too me at least, sounds downright horrific, but this managed to break past that and become my favorite ever. season 1 is like, borderline perfect in my opinion - it's hard to find anything that isn't brilliantly well done. the only thing i don't like is the intro (imagine dragons 😠😠😠), but the multiple plotlines and characters are all great and i was impressed by how well everything was woven together. genuinely feels like 2-3 shows in one. i haven't fully hashed out my thoughts on season 2 just yet (i've only watched it once)... a lot of people have been critical of it, and i think it's mostly deserved, but tbh i still felt like it was pretty dang good. i do agree though that it could have <i>really</i> used some more time to cook, probably 3-6 more episodes. i'd say season 1 was already near the limit for how dense a story could realistically be before it became hard to follow, and so when all the plot lines it set up diverged in season 2 it was a <i>lot</i>.
+			</p>
+			<p id="atla">
+				<em>Avatar: The Last Airbender</em><br>
+				a close second for my favorite show. i personally see this as the architypical 'perfect story.' it doens't do anything particularly unique, just executed to perfection. i really appreciate stories that are really well rounded like this, though the world building stands out to me as particularly strong. i also consider prince zuko to be my favorite character <i>ever</i>, in anything. my only complanit is i think the first few episodes don't make the <i>best</i> first impression.. it's not terrible, but it comes off as a little kidish. amazing show though.
+			</p>
+			<p id="aot">
+				<em>Attack on Titan</em><br>
+				i have a hard time placing this because it has a loooooooooooooot of problems, especially in seasons 1 and 4. i genuinely don't think i would have watched past the first 5 episodes if i wasn't watching it with a friend. but the highs are so good that they honestly outweigh all of that. i thought the world and mythos behind it was very well done, and i loved how the scope of the story expands (i've heard a lot of people say that they kinda liked the show more in seasons 1-2 when things were "simplier," but i personally loved the change). it also has a lot of great character moments. unfortunately, this show does have the typical anime curse of having really awkard and melodramatic sounding lines at times (<i>especially</i> in season 1... the internal monologue 🤮🤮), and some things towards the end of season 3 and all throughout season 4 weren't given enough time to cook. but like i said, it's still pretty good.
+			</p>
+			<p id="boochi">
+				<em>Boochi the Rock</em><br>
+				this is peak for socially awkward people lol. seriously though, this was reaaaaally charming. it gave me quite a good laugh many times (and was embarrassingly relatable at others)... i've heard some people say that the comedy in this is kinda, um, unsophisticated let's say... but it tickled my ape brain in just the right way. i genuinely had a smile on my face almost the whole way through this thing, it was great. it does have the typical slice of life problem of having a very abrupt and inconclusive ending... i tried reading the manga, but this story works waaaaay better animated tbh, so i'm waiting for season 2 :3
+			</p>
 		</div>
-
-		<div id="player-holder" style="opacity:0;">
-			<div id="player" style="position:fixed; bottom:5px; left:5px;"></div>
-		</div>
-
-		<iframe name="cheap_shop.ogg" src="../../player/index.html" class="player-frame" style="border:0" id="music-player">
-		</iframe>
 
 	</body>
 </html>
