@@ -1,14 +1,16 @@
 .main {
 	display: flex;
+	flex-direction: row;
 	justify-content: space-evenly;
-	width: 90%;
-	max-width: 1600px;
+	width: 1350px;
+	max-width: 98%;
 	margin: auto;
-	margin-top: -3.5em;
+	margin-top: -3.5rem;
 }
 
 .column {
-	width: 45%;
+	width: 675px;
+	max-width: 47%;
 	height: 100%;
 	background: black;
 }
@@ -19,7 +21,7 @@
 	flex-direction: column;
 	background: var(--color-fg);
 	padding: 1em;
-	margin-top: 3em;
+	margin-top: 5%;
 
 	h1 {
 		font-size: 4.375rem;
@@ -72,14 +74,34 @@
 	}
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1100px) {
 	.category {
+		h1 {
+			font-size: 3rem;
+			text-align: center;
+		}
+
 		.entry {
+			h1 {
+				font-size: 1.25rem;
+			}
+
 			.details {
 				background: var(--color-bg);
 				border-right: 3px solid var(--color-secondary);
 				border-top: 3px solid var(--color-secondary);
 			}
 		}
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.main {
+		flex-direction: column;
+	}
+
+	.column {
+		max-width: 95%;
+		margin: auto;
 	}
 }
