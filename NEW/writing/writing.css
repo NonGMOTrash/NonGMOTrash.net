@@ -39,6 +39,7 @@ h3 {
 }
 
 img {
+	max-width: 95%;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -50,11 +51,12 @@ summary {
 }
 
 #outline {
+	--item-width: 300px; /* placeholder, set in JS */
 	position: fixed;
 	left: 0;
 	top: 0;
 	display: flex;
-	min-width: 20.0%;
+	width: calc(var(--item-width) + 0.5rem);
 	max-width: 23%;
 	background: var(--color-bg);
 	padding: 6px;
@@ -76,7 +78,7 @@ summary {
 		}
 		a:hover {
 			color: var(--color-accent);
-			margin-left: 6%;
+			margin-left: 0.5rem;
 		}
 		a::before {
 			width: 0;
@@ -191,7 +193,6 @@ summary {
 
 @media screen and (max-width: 1400px) {
 	#outline {
-		--item-width: 300px; /* set in JS */
 		left: calc(var(--item-width)*-1);
 		max-width: 100%; /* bc it pops out on mobile, it can pretty much be as wide as needed */
 		transition: 0.5s;

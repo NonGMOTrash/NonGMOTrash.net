@@ -19,10 +19,11 @@ if (headers.length > 1)
 		const element = document.createElement("a");
 		if (i != 0) {
 			element.innerText = headers[i].innerText;
-			//if (headers[i].innerText.length > 30) {
-			//	element.style.transform = "scaleX(0.85)";
-			//	element.style.left = "-1.8rem"; // i have no idea why this is necessary
-			//}
+			console.log(document.body.clientWidth );
+			if (document.body.clientWidth > 1400 && headers[i].innerText.length > 30) {
+				element.style.transform = "scaleX(0.825)";
+				element.style.left = "-2.1rem"; // i have no idea why this is necessary
+			}
 		} else {
 			element.innerText = "Intro";
 		}
@@ -32,7 +33,6 @@ if (headers.length > 1)
 	}
 
 	var textWidth = outlineItems.getBoundingClientRect().width;
-	textWidth = 0;
 	outline.style.setProperty("--item-width", String(textWidth+11)+"px");
 
 } else {
@@ -41,10 +41,10 @@ if (headers.length > 1)
 
 // INSERT FOOTER BUTTONS
 document.getElementById("footer").innerHTML = `
-		<p>
-			<a href="../../index.html">read some more?</a>
-			//
-			<a href="../../../index.html">go home</a>
-		</p>
-	`;
+	<p>
+		<a href="../../index.html">read some more?</a>
+		//
+		<a href="../../../index.html">go home</a>
+	</p>
+`;
 
