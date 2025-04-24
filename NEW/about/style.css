@@ -30,7 +30,7 @@ body {
 
 .content {
 	width: 800px;
-	max-width: 97%;
+	max-width: 95%;
 	height: 700px;
 	max-height: 95%;
 	overflow-y: scroll;
@@ -73,6 +73,7 @@ body {
 			border: 0.3rem solid white;
 			padding-left: 1rem;
 			padding-right: 1rem;
+			text-align: left;
 		}
 		h1::before{
 			content: '';
@@ -221,5 +222,54 @@ p.footer {
 .polaroid a:hover {
 	figcaption {
 		text-decoration: underline;
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.light.left {
+		left: -45vw;
+	}
+	.light.right {
+		right: -45vw;
+	}
+
+	.polaroid {
+		/* !important is needed to override inline style */
+		transform: none !important;
+		/* left: 0 !important; */
+
+		.tack {
+			visibility: hidden;
+		}
+	}
+
+	.polaroid:not(.tack.flip) {
+		left: -12rem !important;
+		transition: 0.3s;
+	}
+	.polaroid:not(.tack.flip):hover {
+		left: -2.5rem !important;
+		transition: 0.5s;
+	}
+
+	.polaroid:has(.tack.flip) {
+		left: unset !important;
+		right: -12rem !important;
+		transition: 0.3s;
+	}
+	.polaroid:has(.tack.flip):hover {
+		left: unset !important;
+		right: -2.5rem !important;
+		transition: 0.5s;
+	}
+
+	.polaroid:nth-child(1), .polaroid:nth-child(4) {
+		top: 5vh !important;
+	}
+	.polaroid:nth-child(2), .polaroid:nth-child(5) {
+		top: 35vh !important;
+	}
+	.polaroid:nth-child(3), .polaroid:nth-child(6) {
+		top: 65vh !important;
 	}
 }
