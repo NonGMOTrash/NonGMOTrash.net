@@ -244,20 +244,20 @@ p.footer {
 	}
 
 	.polaroid:not(.tack.flip) {
-		left: -12rem !important;
+		left: -11rem !important;
 		transition: 0.3s;
 	}
-	.polaroid:not(.tack.flip):hover {
+	.polaroid:not(.tack.flip):hover .polaroid:not(.tack.flip):active {
 		left: -2.5rem !important;
 		transition: 0.5s;
 	}
 
 	.polaroid:has(.tack.flip) {
 		left: unset !important;
-		right: -12rem !important;
+		right: -11rem !important;
 		transition: 0.3s;
 	}
-	.polaroid:has(.tack.flip):hover {
+	.polaroid:has(.tack.flip):hover, .polaroid:has(.tack.flip):active {
 		left: unset !important;
 		right: -2.5rem !important;
 		transition: 0.5s;
