@@ -8,36 +8,31 @@
 		object-fit: fill;
 	}
 
-	.scroll-indicator {
-		position: relative;
-		display: none;
+	#scroll-indicator {
+		position: fixed;
+		visibility: hidden;
 		width: 100%;
 		text-align: center;
 		font-family: grape-soda;
-		top: 92%;
-		z-index: 3;
+		font-size: 3rem;
+		top: 80%;
+		z-index: 30;
 	}
 
-}
-@media screen and (max-width: 100px) {
-	* {
-		display: none;
-	}
 }
 
 .main {
-	width: 95%;
+	width: 100%;
 	height: 20%;
-	min-height: 20%;
-	margin: auto;
 	display: flex;
+	flex-direction: row;
 }
 
 .intro {
-	width: 40%;
+	width: 9999rem;
+	max-width: 40%;
 	height: 100%;
 	margin-left: 0;
-	margin-right: 0;
 	z-index: 2;
 }
 
@@ -75,6 +70,7 @@
 	height: 200%;
 	max-height: 200%;
 	margin-top: 0;
+	margin-left: 0;
 	z-index: 10;
 
 	#progress {
@@ -88,6 +84,7 @@
 		border: 9px var(--color-secondary) solid;
 		border-right: 0;
 		display: flex;
+		flex-wrap: wrap;
 
 		.project {
 			max-width: 100px;
@@ -165,7 +162,6 @@
 
 .news-entry {
 	min-width: 300px;
-	width: 30%;
 	max-height: 100%;
 	padding-left: 2px;
 	padding-right: 2px;
@@ -184,9 +180,9 @@
 }
 
 .news-entry img {
-	min-width: 95%;
+	width: 95%;
 	max-width: 95%;
-	min-height: 55%;
+	height: 55%;
 	max-height: 55%;
 	object-fit: contain;
 }
@@ -209,11 +205,6 @@
 	height: 8em;
 }
 
-@media (max-width: 1200px) {
-	.news-footer > h1 {
-		font-size: 1.875rem;
-	}
-}
 
 .buttons {
 	width: 100%;
@@ -307,4 +298,26 @@
 	bottom: 0;
 	margin-bottom: 1em;
 	margin-top: 1.5em;
+}
+
+@media (max-width: 1200px) {
+	.intro {
+		max-width: 60%;
+	}
+
+	.news {
+		max-width: 40%;
+
+		#progress {
+			height: 100%;
+		}
+	}
+
+	.news-entry {
+		max-width: 60%;
+	}
+
+	.news-footer > h1 {
+		font-size: 1.875rem;
+	}
 }

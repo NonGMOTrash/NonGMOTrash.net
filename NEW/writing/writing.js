@@ -20,7 +20,7 @@ if (headers.length > 1)
 		if (i != 0) {
 			element.innerText = headers[i].innerText;
 			console.log(document.body.clientWidth );
-			if (document.body.clientWidth > 1400 && headers[i].innerText.length > 30) {
+			if (headers[i].innerText.length > 33) {
 				element.style.transform = "scaleX(0.825)";
 				element.style.left = "-2.1rem"; // i have no idea why this is necessary
 			}

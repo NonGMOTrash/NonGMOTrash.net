@@ -5,19 +5,17 @@ var hasScrolled = false;
 window.onscroll = function()
 {
 	hasScrolled = true;
-	document.getElementById('scroll-indicator').style.display = "none";
+	document.getElementById('scroll-indicator').style.visibility = "hidden";
 }
 
-setTimeout(
-	function()
+setTimeout(function()
+{
+	if (!hasScrolled)
 	{
-		if (!hasScrolled)
-		{
-			document.getElementById('scroll-indicator').style.display = "block";
-		}
-	},
-	10000
-);
+		document.getElementById('scroll-indicator').style.visibility = "visible";
+	}
+},
+3000);
 
 // project progress
 
