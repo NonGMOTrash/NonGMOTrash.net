@@ -8,7 +8,8 @@
 	flex-direction: column;
 	right: 0%; left: 0; top: 0; bottom: 20%;
 	margin: auto;
-	width: 60%;
+	width: 850px;
+	max-width: 99%;
 	background: rgba(0, 0, 0, 0.4);
 }
 
@@ -30,6 +31,10 @@ h1 {
 		animation: wave 3s ease-in-out infinite;
 		animation-delay: calc(0.1s * var(--i));
 	}
+
+	br {
+		display: none; /* disables the line break */
+	}
 }
 
 hr {
@@ -46,5 +51,23 @@ hr {
 
 	img {
 		width: 100%;
+	}
+}
+
+@media screen and (max-width: 800px)
+{
+	/* h1 span:nth-child(8)::after { */
+	/* 	content: "\a "; */
+	/* } */
+	h1 {
+		text-align: left;
+		left: -50px;
+		right: auto;
+		font-size: 4rem;
+		flex-wrap: wrap;
+	}
+
+	#note {
+		display: none;
 	}
 }
