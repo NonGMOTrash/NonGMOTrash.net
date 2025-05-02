@@ -28,7 +28,7 @@ body {
 	transform: scaleX(-1);
 }
 
-.content {
+#content {
 	width: 800px;
 	max-width: 95%;
 	height: 700px;

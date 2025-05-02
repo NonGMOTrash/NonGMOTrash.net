@@ -1,6 +1,6 @@
 function toggleSection(sectionId)
 {
-	console.log(sectionId);
+	// console.log(sectionId);
 	if (sectionId === "")
 	{
 		return;
@@ -21,4 +21,7 @@ function toggleSection(sectionId)
 }
 
 toggleSection((window.location.hash).slice(1)); // slice() is needed to remove the first character (#) from the beginning
-
+setTimeout(function()
+{
+	document.getElementById("content").scrollTop += 200;
+}, 500)
