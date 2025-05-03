@@ -1,3 +1,5 @@
+// SECTION TOGGLES
+
 function toggleSection(sectionId)
 {
 	// console.log(sectionId);
@@ -20,8 +22,33 @@ function toggleSection(sectionId)
 	}
 }
 
-toggleSection((window.location.hash).slice(1)); // slice() is needed to remove the first character (#) from the beginning
-setTimeout(function()
+// opens the correct section and scrolls down when using has links (i.e. nongmotrash/about#follow-me)
+if (window.location.hash !== "")
 {
-	document.getElementById("content").scrollTop += 200;
-}, 500)
+	toggleSection((window.location.hash).slice(1)); // slice() is needed to remove the first character (#) from the beginning
+	setTimeout(function()
+	{
+		document.getElementById("content").scrollTop += 200;
+	}, 500);
+}
+
+
+// HANDELING POLAROID ONCLICK
+
+var activePolaroid = "";
+
+function polaroidClicked(polaroid)
+{
+	let thisPolaroid = document.getElementById(polaroid);
+
+	if (document.documentElement.scrollWidth > 1200 || activePolaroid === polaroid)
+	{
+		window.location = "./favs/"+polaroid+"/index.html";
+	}
+	else
+	{
+		thisPolaroid.focus();
+		activePolaroid = polaroid;
+	}
+}
+

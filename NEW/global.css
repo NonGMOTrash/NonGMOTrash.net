@@ -231,7 +231,9 @@ a:hover::before {
 	right: 0; left: 0; top: 0; bottom: 0;
 	width: 108px;
 	height: 48px;
-	z-index: 5;
+}
+a:has(.exit) {
+	z-index: 999;
 }
 
 /* old custom cursors */

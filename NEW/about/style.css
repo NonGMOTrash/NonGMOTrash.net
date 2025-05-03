@@ -186,6 +186,15 @@ p.footer {
 		height: 0;
 	}
 
+	span {
+		cursor: pointer;
+	}
+	span:hover {
+		figcaption {
+			text-decoration: underline;
+		}
+	}
+
 	img {
 		margin-left: 5%;
 		margin-right: 5%;
@@ -219,18 +228,14 @@ p.footer {
 	}
 }
 
-.polaroid a:hover {
-	figcaption {
-		text-decoration: underline;
-	}
-}
-
 @media screen and (max-width: 1200px) {
 	.light.left {
-		left: -45vw;
+		left: -55vw;
+		z-index: 5;
 	}
 	.light.right {
-		right: -45vw;
+		right: -55vw;
+		z-index: 5;
 	}
 
 	.polaroid {
@@ -241,26 +246,30 @@ p.footer {
 		.tack {
 			visibility: hidden;
 		}
+
+		--popped-out: 0; /* 0 = false, 1 = true */
 	}
 
-	.polaroid:not(.tack.flip) {
+	.polaroid:not(.tack.flip) { /* all left side polaroids */
 		left: -11rem !important;
 		transition: 0.3s;
 	}
-	.polaroid:not(.tack.flip):hover .polaroid:not(.tack.flip):active {
+	.polaroid:not(.tack.flip):focus {
 		left: -2.5rem !important;
 		transition: 0.5s;
+		--popped-out: 1;
 	}
 
-	.polaroid:has(.tack.flip) {
+	.polaroid:has(.tack.flip) { /* all right side polaroids */
 		left: unset !important;
 		right: -11rem !important;
 		transition: 0.3s;
 	}
-	.polaroid:has(.tack.flip):hover, .polaroid:has(.tack.flip):active {
+	.polaroid:has(.tack.flip):focus {
 		left: unset !important;
 		right: -2.5rem !important;
 		transition: 0.5s;
+		--popped-out: 1;
 	}
 
 	.polaroid:nth-child(1), .polaroid:nth-child(4) {

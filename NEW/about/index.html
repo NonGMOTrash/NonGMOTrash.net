@@ -33,7 +33,7 @@
 
 				<p>
 					hiii ₍˶ •. • ⑅₎<br>
-					i'm an aspiring game devleoper / artist / storyteller / whatever else. i call myself a "jack of all trades" on the homepage for a reason... i wear a lot of hats! i'm also in college. unfortunately, i'm a <underline title="compooter science🤓">CS</underline> major... you better not tell anyone!!! can't have people thinking i'm more antisocial than i already am (ᵕ-ᗜ-)
+					i'm an aspiring game devleoper / artist / storyteller / whatever else. i call myself a "full time doer" on the homepage for a reason... i wear a lot of hats! i'm also in college. unfortunately, i'm a <underline title="compooter science🤓">CS</underline> major... you better not tell anyone!!! can't have people thinking i'm more antisocial than i already am (ᵕ-ᗜ-)
 				</p>
 
 				<br>
@@ -155,56 +155,60 @@
 				<div id="contact" class="section">
 					<p>if it's formal, email me at</p>
 					<img src="email.png" style="max-height:30%; display:inline">
-					<p>if it's not, DM on discord. i'm <b>nongmotrash</b></p>
+					<p>
+						if it's not, DM me on discord. i'm <b>nongmotrash</b>.<br>
+						don't be afraid to reach out!!!
+					</p>
 				</div>
 
 				<p class="footer">ok, that's all. gotta stop writing about myself before i turn narcisistic</p>
 		</div>
 
 		<div class="polaroid-container"> <!-- only used for mobile layout -->
-			<figure class="polaroid" style="top: 6.75%; left:0%; transform:rotate(4deg)">
+
+			<figure class="polaroid" id="games" tabindex=100 style="top: 6.75%; left:0%; transform:rotate(4deg)">
 				<img src="tack.png" class="tack">
-				<span onclick="this.focus()" ondblclick="window.location='./favs/games/index.html'" tabindex=0>
+				<span onclick="polaroidClicked('games')">
 					<img src="fav-games.png" class="pixel">
 					<figcaption>favorite games</figcaption>
 				</span>
 			</figure>
 			
-			<figure class="polaroid" style="top: 47%; left:9%; transform:rotate(-3deg)">
+			<figure class="polaroid" id="music" tabindex=101 style="top: 47%; left:9%; transform:rotate(-3deg)">
 				<img src="tack.png" class="tack">
-				<a href="./favs/music/index.html">
+				<span onclick="polaroidClicked('music')">
 					<img src="fav-music.jpg">
 					<figcaption>favorite music</figcaption>
 				</a>
 			</figure>
 
-			<figure class="polaroid" style="top: 65%; left:-2%; transform:rotate(1deg)">
+			<figure class="polaroid" id="books" tabindex=102 style="top: 65%; left:-2%; transform:rotate(1deg)">
 				<img src="tack.png" class="tack">
-				<a href="./favs/books/index.html">
+				<span onclick="polaroidClicked('books')">
 					<img src="fav-books.jpeg">
 					<figcaption>favorite books</figcaption>
 				</a>
 			</figure>
 
-			<figure class="polaroid" style="top: 2%; left:80%; transform:rotate(-3deg)">
+			<figure class="polaroid" id="movies" tabindex=103 style="top: 2%; left:80%; transform:rotate(-3deg)">
 				<img src="tack.png" class="tack flip">
-				<a href="./favs/movies/index.html">
+				<span onclick="polaroidClicked('movies')">
 					<img src="fav-movies.jpg">
 					<figcaption>favorite movies</figcaption>
 				</a>
 			</figure>
 
-			<figure class="polaroid" style="top: 35%; left:76%; transform:rotate(2deg)">
+			<figure class="polaroid" id="shows" tabindex=104 style="top: 35%; left:76%; transform:rotate(2deg)">
 				<img src="tack.png" class="tack flip">
-				<a href="./favs/shows/index.html">
+				<span onclick="polaroidClicked('shows')">
 					<img src="fav-shows.jpg">
 					<figcaption>favorite shows</figcaption>
 				</a>
 			</figure>
 
-			<figure class="polaroid" style="top: 64%; left:85%; transform:rotate(-5deg)">
+			<figure class="polaroid" id="graphic-novels" tabindex=105 style="top: 64%; left:85%; transform:rotate(-5deg)">
 				<img src="tack.png" class="tack flip">
-				<a href="./favs/graphic-novels/index.html">
+				<span onclick="polaroidClicked('graphic-novels')">
 					<img src="fav-graphic-novels.png">
 					<figcaption>favorite graphic novels</figcaption>
 				</a>

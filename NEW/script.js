@@ -15,7 +15,7 @@ setTimeout(function()
 		document.getElementById('scroll-indicator').style.visibility = "visible";
 	}
 },
-3000);
+4000);
 
 // project progress
 
