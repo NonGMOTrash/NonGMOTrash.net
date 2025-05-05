@@ -8,14 +8,17 @@ window.onscroll = function()
 	document.getElementById('scroll-indicator').style.visibility = "hidden";
 }
 
-setTimeout(function()
+if (document.documentElement.scrollWidth > 1500)
 {
-	if (!hasScrolled)
+	setTimeout(function()
 	{
-		document.getElementById('scroll-indicator').style.visibility = "visible";
-	}
-},
-4000);
+		if (!hasScrolled)
+		{
+			document.getElementById('scroll-indicator').style.visibility = "visible";
+		}
+	},
+	4000);
+}
 
 // project progress
 

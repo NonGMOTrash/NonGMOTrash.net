@@ -144,11 +144,11 @@
 
 .news-title {
 	background: repeating-linear-gradient(
-	55deg,
-	var(--color-secondary),
-	var(--color-secondary) 20px,
-	var(--color-fg) 20px,
-	var(--color-fg) 40px
+		55deg,
+		var(--color-secondary),
+		var(--color-secondary) 20px,
+		var(--color-fg) 20px,
+		var(--color-fg) 40px
 	);
 	margin-left: 0;
 	margin-right: 0;
@@ -247,48 +247,67 @@
 }
 
 #chattable {
-	min-width: 33%;
-	max-width: 33%;
+	width: 50%;
 	margin: 6px;
-	margin-right: 2%;
 }
 
 .webrings {
+	margin-top: 3%;
+	margin-right: -10.5%;
 	min-width: 11%;
-	background: var(--color-fg);
-	padding-top: 6em;
-	padding-bottom: 6em;
-	padding-right: 1em;
-	margin: auto;
-	margin-left: -0.5%;
+	padding-right: 1rem;
 	border: 3px solid var(--color-secondary);
 	border-right: 0;
+	background: var(--color-fg);
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
+	flex-direction: row;
 	gap: 1em;
+	transition: 0.5s;
 
 	h1 {
-		font-size: 1.625rem;
+		font-size: 2rem;
+		line-height: 1;
 		text-align: center;
-		text-decoration: underline;
+		writing-mode: vertical-lr;
+		transform: rotate(180deg);
+		margin: 0;
+		background: repeating-linear-gradient(
+			55deg,
+			var(--color-secondary),
+			var(--color-secondary) 20px,
+			var(--color-fg) 20px,
+			var(--color-fg) 40px
+		);
 	}
 
-	div {
-		font-family: caskaydia-cove;
-		font-size: 0.875rem;
-		text-align: center;
+	.rings {
+		margin-left: -0.5rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 1rem;
 
-		a {
-			color: white;
-		}
-		a:hover {
-			text-decoration: underline;
-		}
-		a::before {
-			width: 0;
+		.webring {
+			font-family: caskaydia-cove;
+			font-size: 0.875rem;
+			text-align: center;
+
+			a {
+				color: white;
+			}
+			a:hover {
+				text-decoration: underline;
+			}
+			a::before {
+				width: 0;
+			}
 		}
 	}
+}
+.webrings:hover, .webrings:focus {
+	margin-right: 0;
+	transition: 0.5s;
 }
 
 .footer {
