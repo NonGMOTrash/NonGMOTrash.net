@@ -251,21 +251,37 @@
 	margin: 6px;
 }
 
-.webrings {
-	margin-top: 3%;
-	margin-right: -10.5%;
-	min-width: 11%;
-	padding-right: 1rem;
-	border: 3px solid var(--color-secondary);
-	border-right: 0;
-	background: var(--color-fg);
+.side-container {
 	display: flex;
-	flex-direction: row;
-	gap: 1em;
-	transition: 0.5s;
+	flex-direction: column;
+	justify-content: space-evenly;
+	margin-left: -8.5%;
 
-	h1 {
+	>div {
+		position: relative;
+		right: -8.5rem;
+		padding-right: 2rem;
+		border: 3px solid var(--color-secondary);
+		border-right: 0;
+		background: var(--color-fg);
+		display: flex;
+		flex-direction: row;
+		gap: 1em;
+		transition: 0.5s;
+
+		>div {
+			margin-left: 0.5rem;
+		}
+	}
+	>div:hover, >div:focus {
+		right: -1rem;
+		transition: 0.5s;
+	}
+
+	>div>h1 {
 		font-size: 2rem;
+		padding-top: 2rem;
+		padding-bottom: 2rem;
 		line-height: 1;
 		text-align: center;
 		writing-mode: vertical-lr;
@@ -279,35 +295,48 @@
 			var(--color-fg) 40px
 		);
 	}
+}
 
-	.rings {
-		margin-left: -0.5rem;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		gap: 1rem;
+#my-button>div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 
-		.webring {
-			font-family: caskaydia-cove;
-			font-size: 0.875rem;
-			text-align: center;
+	img {
+		width: 88px;
+		height: 31px;
+	}
 
-			a {
-				color: white;
-			}
-			a:hover {
-				text-decoration: underline;
-			}
-			a::before {
-				width: 0;
-			}
-		}
+	p {
+		max-width: 88px;
+		word-break: break-all;
+		font-size: 0.5rem;
+		font-family: caskaydia-cove;
 	}
 }
-.webrings:hover, .webrings:focus {
-	margin-right: 0;
-	transition: 0.5s;
+
+#webrings>div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1rem;
+
+	.webring {
+		font-family: caskaydia-cove;
+		font-size: 0.875rem;
+		text-align: center;
+
+		a {
+			color: white;
+		}
+		a:hover {
+			text-decoration: underline;
+		}
+		a::before {
+			width: 0;
+		}
+	}
 }
 
 .footer {
