@@ -18,6 +18,12 @@
 		stylesheet : "chattable.css",
 	});
 </script>
+<!-- for bsky embed -->
+<script type="module" src="https://cdn.jsdelivr.net/npm/bluesky-profile-feed-embed@^1.0.0/+esm"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bluesky-profile-feed-embed@^1.0.0/dist/core.min.css">
+<!-- (theme) -->
+<link rel="stylesheet" href="bsky-embed.css">
+
 <body>
 
 	<div class="cover">
@@ -55,9 +61,9 @@
 			</p>
 			<ul style="font-size:20px">
 				<li>i made a open source action game called <a href="https://nongmotrash.itch.io/teralite">teralite</a></li>
-				<li>i was (used to be :c) one of the top <a href="https://20xx.io">20xx.io</a> players</li>
 				<li>i've made lots of <a href="https://www.youtube.com/@nongmotrash">videos</a>, including one about Your Only Move is Hustle</li> 
 				<li>i was a very prolific <a href="https://krunker.io/social.html?p=profile&q=NonGMOTrash">map maker</a> for Krunker</a></li>
+				<li>i was (used to be :c) one of the top <a href="https://20xx.io">20xx.io</a> players</li>
 				<li>i play bridget a lot <u title="Guilty Gear -Strive-">GGST</u>... i've even contributed to <a href="https://www.dustloop.com/w/Special:Contributions/NonGMOTrash">Dustloop wiki</a> 😳</li>
 				<li>i am █████ ██ ████ ███ ████ ████ ████ in <a href="./countdown/index.html">98 years</a></li>
 <!--                 going to make the best game ever  -->
@@ -228,6 +234,12 @@
 				</a>
 
 			</div>
+			
+			<bluesky-profile-feed actor="did:plc:3beruda2rezlvgw5akovtq6b" include-pins>
+				<a target="_blank" href="https://bsky.app/profile/did:plc:3beruda2rezlvgw5akovtq6b" class="bluesky-profile-feed-fallback">
+					oooo nooooo bsky embed broke :(((
+				</a>
+			</bluesky-profile-feed>
 
 		</div>
 

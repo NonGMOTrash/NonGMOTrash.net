@@ -1,0 +1,42 @@
+.bluesky-embed {
+	max-height: 200px;
+	left: 22%;
+
+	--font-size: 20px;
+	--font-family: "nunito";
+	--max-feed-height: 200px; /* doesn't work? */
+
+	--text-primary: #f1f3f5;
+	--text-secondary: #8c9eb2;
+	--text-link: #f87424; /* --color-accent */
+	--background-primary: #1f1a2d; /* --color-fg */
+	--background-secondary: #a5267f; /* --color-secondary */
+	--divider: #a5267f; /* --color-secondary */
+	--divider-hover: rgb(66, 87, 108);
+	--button: #208bfe;
+	--button-text: white;
+	--button-hover: #4ca2fe;
+
+	* {
+		display: unset;
+		font-size: unset;
+		line-height: unset;
+	}
+
+	a::before {
+		width: 0;
+	}
+
+	.profile-feed-header {
+		display: none;
+	}
+
+	.contexts {
+		display: none;
+	}
+
+	.feed-post {
+		margin-bottom: 10rem;
+	}
+}
+

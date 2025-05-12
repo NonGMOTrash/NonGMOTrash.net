@@ -208,6 +208,19 @@ a:hover::before {
 	z-index: -1000;
 }
 
+.hidden {
+	color: transparent;
+	text-shadow: 0 0 transparent;
+	background: var(--color-fg);
+	transition: 0.5;
+}
+.hidden:hover {
+	color: unset;
+	text-shadow: unset;
+	background: unset;
+	transition: 0.5;
+}
+
 .glow {
 	filter: blur(2px) brightness(1.5);
 	border-radius: 0.5%;

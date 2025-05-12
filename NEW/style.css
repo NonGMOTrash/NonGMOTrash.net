@@ -84,7 +84,8 @@
 		border: 9px var(--color-secondary) solid;
 		border-right: 0;
 		display: flex;
-		flex-wrap: wrap;
+		/* flex-wrap: wrap; */
+		overflow-x: scroll;
 
 		.project {
 			max-width: 100px;
