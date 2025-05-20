@@ -1,3 +1,7 @@
+/* * { */
+/*   outline: 1px solid red; */
+/* } */
+
 .cover {
 	width: 100%;
 	max-width: 100%;
@@ -250,7 +254,8 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: space-evenly;
-	margin-left: calc(-100% - 4rem); /* i have no idea how this worked lol */
+	margin-left: calc(-100% - 4.5rem); /* i have no idea how this worked lol */
+	overflow-x: hidden;
 
 	>div {
 		position: relative;

@@ -230,11 +230,11 @@ p.footer {
 
 @media screen and (max-width: 1200px) {
 	.light.left {
-		left: -55vw;
+		left: -85vw;
 		z-index: 5;
 	}
 	.light.right {
-		right: -55vw;
+		right: -85vw;
 		z-index: 5;
 	}
 
