@@ -6,15 +6,10 @@ body {
 	margin: auto;
 }
 
-h1 {
-	color: white;
-	font-family: 'Bitter', Serif;
-	font-size: 30px;
-}
-
 p {
 	border: 3px white;
-	font-family: "caskaydia-cove", Monospace;
+	font-family: "caskaydia-cove";
 	font-size: 100px;
-	text-shadow: 0 4px 0px orange;
+	font-weight: bold;
+	text-shadow: 0 0.3rem 0px var(--color-secondary);
 }
