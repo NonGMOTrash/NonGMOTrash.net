@@ -5,6 +5,7 @@ var sections = [
 	document.getElementById("pixel"),
 	document.getElementById("traditional"),
 	document.getElementById("drawabox"),
+	document.getElementById("sketches"),
 	document.getElementById("images"),
 	document.getElementById("videos"),
 	document.getElementById("photos")
@@ -15,6 +16,7 @@ var buttons = [
 	document.getElementById("pixel-button"),
 	document.getElementById("traditional-button"),
 	document.getElementById("drawabox-button"),
+	document.getElementById("sketches-button"),
 	document.getElementById("images-button"),
 	document.getElementById("videos-button"),
 	document.getElementById("photos-button")
