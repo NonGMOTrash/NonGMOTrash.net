@@ -27,25 +27,26 @@
 
 <body>
 
-	<h1>page not found</h1>
+	<h1>redirecting...</h1>
 	<p>(i moved to <a href="https://nongmotrash.net">nongmotrash.net</a>)</p>
 
 </body>
 
 <script>
 	let ref = Document.referrer;
-	ref = "https://nongmotrash.github.io/bingus";
 	if (ref !== undefined && ref.endsWith("index.html"))
 	{
 		ref = ref.slice(ref.size, -11);
 	}
-	console.log(ref);
 
 	switch(ref)
 	{
 		case "https://nongmotrash.github.io/writing/1": window.location = "https://nongmotrash.net/writing/game-design/1"; break;
+		case "https://nongmotrash.github.io/blog/1": window.location = "https://nongmotrash.net/writing/game-design/1"; break;
 		case "https://nongmotrash.github.io/writing/2": window.location = "https://nongmotrash.net/writing/internet/1"; break;
+		case "https://nongmotrash.github.io/blog/2": window.location = "https://nongmotrash.net/writing/internet/1"; break;
 		case "https://nongmotrash.github.io/writing/3": window.location = "https://nongmotrash.net/game-design/2"; break;
+		case "https://nongmotrash.github.io/blog/3": window.location = "https://nongmotrash.net/writing/internet/3"; break;
 		case "https://nongmotrash.github.io/writing/4": window.location = "https://nongmotrash.net/introspective/1"; break;
 		case "https://nongmotrash.github.io/writing/5": window.location = "https://nongmotrash.net/game-design/3"; break;
 		case "https://nongmotrash.github.io/writing/6": window.location = "https://nongmotrash.net/fiction/1"; break;
