@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="UTF-8">
+<title>404</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<style>
+	body {
+		background: black;
+		color: white;
+		min-width: 100vw;
+		min-height: 100vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		overflow: hidden;
+	}
+
+	a {
+		color: orange;
+	}
+	a:hover {
+		color: red;
+	}
+</style>
+
+<body>
+
+	<h1>page not found</h1>
+	<p>(i moved to <a href="https://nongmotrash.net">nongmotrash.net</a>)</p>
+
+</body>
+
+<script>
+	let ref = Document.referrer;
+	ref = "https://nongmotrash.github.io/bingus";
+	if (ref !== undefined && ref.endsWith("index.html"))
+	{
+		ref = ref.slice(ref.size, -11);
+	}
+	console.log(ref);
+
+	switch(ref)
+	{
+		case "https://nongmotrash.github.io/writing/1": window.location = "https://nongmotrash.net/writing/game-design/1"; break;
+		case "https://nongmotrash.github.io/writing/2": window.location = "https://nongmotrash.net/writing/internet/1"; break;
+		case "https://nongmotrash.github.io/writing/3": window.location = "https://nongmotrash.net/game-design/2"; break;
+		case "https://nongmotrash.github.io/writing/4": window.location = "https://nongmotrash.net/introspective/1"; break;
+		case "https://nongmotrash.github.io/writing/5": window.location = "https://nongmotrash.net/game-design/3"; break;
+		case "https://nongmotrash.github.io/writing/6": window.location = "https://nongmotrash.net/fiction/1"; break;
+		case "https://nongmotrash.github.io/writing/7": window.location = "https://nongmotrash.net/fiction/introspective/2"; break;
+		case "https://nongmotrash.github.io/teralite": window.location = "https://nongmotrash.net/games"; break;
+		case "https://nongmotrash.github.io/contact": window.location = "https://nongmotrash.net/about#contact"; break;
+		case "https://nongmotrash.github.io/fav-media/books": window.location = "https://nongmotrash.net/about/favs/books"; break;
+		case "https://nongmotrash.github.io/fav-media/books": window.location = "https://nongmotrash.net/about/favs/books"; break;
+		case "https://nongmotrash.github.io/fav-media/movies": window.location = "https://nongmotrash.net/about/favs/movies"; break;
+		case "https://nongmotrash.github.io/fav-media/music": window.location = "https://nongmotrash.net/about/favs/music"; break;
+		case "https://nongmotrash.github.io/fav-media/shows": window.location = "https://nongmotrash.net/about/favs/shows"; break;
+		default: window.location = "https://nongmotrash.net" + ref.slice(29);
+	}
+</script>
+
+</html> 
