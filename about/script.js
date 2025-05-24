@@ -1,42 +1,54 @@
-// MUSIC PLAYER
+// SECTION TOGGLES
 
-const music = new Audio("music.ogg");
-music.loop = true;
-const hscrollClick = [ // getting this scrolling to work made me want to die
-	{ offset: 0, transform: "translate(0, 0)" },
-	{ offset: 0.5, transform: "translate(-120%, 0)" },
-	{ offset: 0.500001, transform: "translate(120%, 0)" },
-	{ offset: 1, transform: "translate(0, 0)" }
-];
-const hscrollPlaying = [
-	{ offset: 0, transform: "translate(0, 0)" },
-	{ offset: 0.5, transform: "translate(-428%, 0)" },
-	{ offset: 0.500001, transform: "translate(428%, 0)" },
-	{ offset: 1, transform: "translate(0, 0)" }
-];
-var playing = false;
+function toggleSection(sectionId)
+{
+	// console.log(sectionId);
+	if (sectionId === "")
+	{
+		return;
+	}
 
-player_text.animate(hscrollClick, { duration: 4000, iterations: Infinity });
-if (navigator.getAutoplayPolicy("mediaelement") === "allowed") {
-	ToggleMusic();
-}
+	let section = document.getElementById(sectionId);
+	let sectionHeight = section.getBoundingClientRect().height;
 
-function ToggleMusic() {
-	playing = !playing;
-	
-	var player_text = document.getElementById("player_text");
-	var player_cat = document.getElementById("player_cat");
-	
-	if (playing) {
-		music.play();
-		player_text.textContent = "[now playing: Camellia, Temmie Chang & Toby Fox - Yoki's House - Dweller's Empty Path OST]";
-		player_text.animate(hscrollPlaying, { duration: 13000, iterations: Infinity });
-		player_cat.src = "cat_vibe.gif";
-	} else {
-		music.pause();
-		player_text.textContent = "[click to play]";
-		player_text.animate(hscrollClick, { duration: 4000, iterations: Infinity });
-		player_cat.src = "cat_sleep.png";
-		
+	if (sectionHeight > 0)
+	{
+		section.style.maxHeight = "0px";
+	}
+	else
+	{
+		section.style.maxHeight = "130%";
+		// TODO: this value should be dynamically chosen based on the height of the section. if the section is too short, closing it will have a weird delay because it starts from 130% down, rather than the bottom of the section. and if the section is longer than 130%, then the bottom will be cut off :(
 	}
 }
+
+// opens the correct section and scrolls down when using has links (i.e. nongmotrash/about#follow-me)
+if (window.location.hash !== "")
+{
+	toggleSection((window.location.hash).slice(1)); // slice() is needed to remove the first character (#) from the beginning
+	setTimeout(function()
+	{
+		document.getElementById("content").scrollTop += 200;
+	}, 500);
+}
+
+
+// HANDELING POLAROID ONCLICK
+
+var activePolaroid = "";
+
+function polaroidClicked(polaroid)
+{
+	let thisPolaroid = document.getElementById(polaroid);
+
+	if (document.documentElement.scrollWidth > 1200 || activePolaroid === polaroid)
+	{
+		window.location = "./favs/"+polaroid+"/index.html";
+	}
+	else
+	{
+		thisPolaroid.focus();
+		activePolaroid = polaroid;
+	}
+}
+

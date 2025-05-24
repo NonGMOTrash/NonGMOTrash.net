@@ -1,46 +1,37 @@
-/*
-i think this is slow as balls but idk its easy
-maybe later i'll try to optimize the fonts
- */
 @font-face {
-	font-family: "Bitter";
-	src: url("Bitter.ttf") format('embedded-opentype'), /* Internet Explorer */
-	url("Bitter.ttf") format('woff2'),             /* Super Modern Browsers */
-	url("Bitter.ttf") format('woff'),              /* Pretty Modern Browsers */
-	url("Bitter.ttf") format('truetype'),          /* Safari, Android, iOS */
-	url("Bitter.ttf") format('svg');               /* Legacy iOS */
+	font-family: "nunito";
+	src: url("Nunito.woff2") format('woff2'); /* Internet Explorer */
+	font-weight: 600;
+	font-style: normal;
+}
+@font-face {
+	font-family: "nunito-bold";
+	src: url("Nunito.woff2") format('woff2'); /* Internet Explorer */
+	font-weight: 900;
+	font-style: normal;
+}
+@font-face {
+	font-family: "baskersville";
+	src: url("LibreBakersville.woff2") format('woff2'); /* Internet Explorer */
 	font-weight: 500;
 	font-style: normal;
 }
 @font-face {
-	font-family: "BitterThin";
-	src: url("Bitter.ttf") format('embedded-opentype'), /* Internet Explorer */
-	url("Bitter.ttf") format('woff2'),             /* Super Modern Browsers */
-	url("Bitter.ttf") format('woff'),              /* Pretty Modern Browsers */
-	url("Bitter.ttf") format('truetype'),          /* Safari, Android, iOS */
-	url("Bitter.ttf") format('svg');               /* Legacy iOS */
-	font-weight: 300;
+	font-family: "baskersville-italic";
+	src: url("LibreBakersville-Italic.woff2") format('woff2'); /* Internet Explorer */
+	font-weight: 100;
+	font-style: italic;
+}
+@font-face {
+	font-family: "grape-soda";
+	src: url("GrapeSoda.woff2") format('woff2'); /* Internet Explorer */
+	font-weight: 400;
 	font-style: normal;
 }
 @font-face {
-	font-family: "BitterThick";
-	src: url("Bitter.ttf") format('embedded-opentype'), /* Internet Explorer */
-	url("Bitter.ttf") format('woff2'),             /* Super Modern Browsers */
-	url("Bitter.ttf") format('woff'),              /* Pretty Modern Browsers */
-	url("Bitter.ttf") format('truetype'),          /* Safari, Android, iOS */
-	url("Bitter.ttf") format('svg');               /* Legacy iOS */
-	font-weight: 700;
-	font-style: normal;
-}
-
-@font-face {
-	font-family: "CaskaydiaCove";
-	src: url("CaskaydiaCove.ttf") format('embedded-opentype'), /* Internet Explorer */
-	url("CaskaydiaCove.ttf") format('woff2'),             /* Super Modern Browsers */
-	url("CaskaydiaCove.ttf") format('woff'),              /* Pretty Modern Browsers */
-	url("CaskaydiaCove.ttf") format('truetype'),          /* Safari, Android, iOS */
-	url("CaskaydiaCove.ttf") format('svg');               /* Legacy iOS */
-	font-weight: 200;
+	font-family: "caskaydia-cove";
+	src: url("CaskaydiaCove.woff2") format('woff2'); /* Internet Explorer */
+	font-weight: 400;
 	font-style: normal;
 }
 
@@ -60,79 +51,127 @@ maybe later i'll try to optimize the fonts
 	100% { color: #ff0000; }
 }
 
+@keyframes pageLoad {
+	from { opacity: 0;   }
+	to   { opacity: 100; }
+}
+
 :root {
-	--test: #f95473;
+	--color-text: #fcedf2;
+	--color-bg: #000000;
+	--color-fg: #1f1a2d;
+	--color-highlight: #bee2ff;
+	--color-accent: #f87424;
+	--color-secondary: #a5267f;
+	--color-alert: #ff6361;
+	/* typically: 1rem = 16px */
 }
 
 body {
-	background: black;
+	background: var(--color-bg);
+	font-family: "nunito";
+	overflow-x: hidden;
+	animation: 0.5s pageLoad ease-in;
 }
 
-p, h1, h2, h3, h4 {
-	color: white;
-	font-family: "Bitter", Serif;
+p, h1, h2, h3, h4, ol, ul {
+	color: var(--color-text);
+	text-shadow: 0 0.07em rgba(146, 232, 255, 0.4);
+
+	a {
+		text-wrap: nowrap;
+	}
 }
 
-p {
-	font-size: 24px;
+p, li {
+	font-size: 1.5rem;
+}
+
+h1, h2, h3, h4 {
+	font-family: "grape-soda";
 }
 
 h1 {
-	font-size: 60px;
+	font-size: 5.625rem;
+	margin-bottom: 2%;
 }
 
 h2 {
-	font-size: 40px;
+	font-size: 3.75rem;
+	margin-bottom: 1%;
 }
 
 h3 {
-	font-size: 30px;
+	font-size: 1.875rem;
 }
 
 h4 {
-	font-size: 26px;
+	font-size: 1.5rem;
 }
 
-ul, ol {
-	color: white;
-	font-family: "Bitter", Serif;
+b {
+	font-family: "nunito-bold"
 }
 
 button {
-	color: white;
-	font-family: "Bitter", Serif;
-	font-size: 30px;
+	color: var(--color-text);
+	font-family: "nunito", Serif;
+	font-size: 1.875rem;
 	background-color: black;
 	transition: all 0.3s ease 0s;
 	border: 3px solid orange;
 }
 button:hover {
-	color: black;
-	background: orange;
-	border: 3px solid orange;
+	color: var(--color-bg);
+	background: var(--color-accent);
+	border: 3px solid var(--color-accent);
 	transition: all 0.3s ease 0s;
 }
 
 table, tr, th {
-	color: white;
-	border: 1px solid white;
-	font-family: "Bitter", Serif;
+	color: var(--color-text);
+	border: 1px solid var(--color-text);
+	font-family: "bitter", Serif;
 	padding: 5px;
 	text-align: left;
 }
 
 a {
-	color: #3988d3;
+	color: var(--color-text);
+	position: relative;
+	text-decoration: none;
+	text-shadow: 0 0.07em rgba(146, 232, 255, 0.4);
+	cursor: pointer;
+	z-index: 1;
 	transition: all 0.3s ease 0s;
 }
 a:hover {
-	color: orange;
+	color: var(--color-bg);
+	text-shadow: 0 0.07em #852429;
+	transition: all 0.3s ease 0s;
+}
+a::before
+{
+	content: '';
+	background-color: var(--color-accent);
+	position: absolute;
+	left: 0;
+	bottom: 0.0em;
+	width: 100%;
+	height: 0.3em;
+	z-index: -1;
+	transition: all 0.3s ease 0s;
+}
+a:hover::before {
+	height: 100%;
+	bottom: 0;
 	transition: all 0.3s ease 0s;
 }
 
 ::selection {
-	background: #92d0fc;
-	color: black;
+	background: var(--color-highlight);
+	color: var(--color-bg);
+	text-shadow: 0 0.07em #558ABB;
 }
 
 .pixel { /* no antialiasing */
@@ -145,48 +184,46 @@ a:hover {
 	-ms-interpolation-mode: nearest-neighbor;   /* IE8+                           */
 }
 
-.center {
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
-}
-
 .highlight {
-	border: 4px solid transparent;
+	border: 4px solid var(--color-secondary);
 	border-radius: 1px;
 	transition: all 0.3s ease 0s;
 }
 .highlight:hover {
-	border: 4px solid orange;
+	border: 4px solid var(--color-accent);
 	transition: all 0.3s ease 0s;
+	cursor: pointer;
 }
 
-.flex-center {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	text-align: center;
-}
-.flex-right {
-	display: flex;
-	justify-content: right;
-	align-items: right;
-	text-align: right;
-}
-.flex-left {
-	display: flex;
-	justify-content: left;
-	align-items: left;
-	text-align: left;
+.clickable {
+	cursor: pointer;
 }
 
-.background {
+.wallpaper {
 	position: fixed;
 	width: 100%;
 	height: 100%;
 	left: 0;
 	top: 0;
 	z-index: -1000;
+}
+
+.hidden {
+	color: transparent;
+	text-shadow: 0 0 transparent;
+	background: var(--color-fg);
+	transition: 0.5;
+}
+.hidden:hover {
+	color: unset;
+	text-shadow: unset;
+	background: unset;
+	transition: 0.5;
+}
+
+.glow {
+	filter: blur(2px) brightness(1.5);
+	border-radius: 0.5%;
 }
 
 .player-frame {
@@ -207,31 +244,22 @@ a:hover {
 	right: 0; left: 0; top: 0; bottom: 0;
 	width: 108px;
 	height: 48px;
-	z-index: 5;
 }
-
-.attribution {
-	margin-top: 20px;
-	margin-bottom: 0;
-	text-align: center;
-	font-size: 10px;
-}
-
-.clickable {
-	cursor: pointer;
+a:has(.exit) {
+	z-index: 999;
 }
 
 /* old custom cursors */
-/*
-body {
-cursor: url("cur_default.cur"), auto;
-}
-
-p, h1, h2, h3, h4, table, li {
-cursor: url("cur_text.cur"), auto;
-}
-
-a, button, .clickable {
-cursor: url("cur_pointer.cur"), auto;
-}
- */
+/**/
+/*body {*/
+/*	cursor: url("cur_default.cur"), auto;*/
+/*}*/
+/**/
+/*p, h1, h2, h3, h4, table, li {*/
+/*	cursor: url("cur_text.cur"), auto;*/
+/*}*/
+/**/
+/*a, button, .clickable {*/
+/*	cursor: url("cur_pointer.cur"), auto;*/
+/*}*/
+/**/

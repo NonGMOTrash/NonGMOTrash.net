@@ -1,40 +1,81 @@
-// NAVIGATION
+// SECTION SWITCHING
 
-var imagesBtn = document.getElementById("imagesBtn");
-var videosBtn = document.getElementById("videosBtn");
-var imagesTab = document.getElementById("imagesTab");
-var videosTab = document.getElementById("videosTab");
+var sections = [
+	document.getElementById("digital"),
+	document.getElementById("pixel"),
+	document.getElementById("traditional"),
+	document.getElementById("drawabox"),
+	document.getElementById("sketches"),
+	document.getElementById("images"),
+	document.getElementById("videos"),
+	document.getElementById("photos")
+]
 
-videosTab.style.display = "none";
+var buttons = [
+	document.getElementById("digital-button"),
+	document.getElementById("pixel-button"),
+	document.getElementById("traditional-button"),
+	document.getElementById("drawabox-button"),
+	document.getElementById("sketches-button"),
+	document.getElementById("images-button"),
+	document.getElementById("videos-button"),
+	document.getElementById("photos-button")
+]
 
-imagesBtn.onclick = function() {
-	imagesTab.style.display = "block";
-	videosTab.style.display = "none";
-	console.log("images");
-}
-videosBtn.onclick = function() {
-	imagesTab.style.display = "none";
-	videosTab.style.display = "block";
-}
+function switchSection(section) {
+	for (var i = 0; i < sections.length; i++)
+	{
+		if (sections[i].id == section) {
+			sections[i].style.display = "flex";
+			buttons[i].style.textDecoration = "underline";
 
-
-// IMAGES
-
-var pic = document.getElementsByClassName("pic")[0];
-var picTitle = document.getElementsByClassName("title")[0];
-var scrapsList = document.getElementById("scraps").children;
-
-for (const scrap of scrapsList) {
-	scrap.onclick = function() {
-		pic.src = scrap.src;
-		picTitle.innerText = scrap.title;
+		}
+		else {
+			sections[i].style.display = "none";
+			buttons[i].style.textDecoration = "none";
+		}
 	}
 }
 
-window.addEventListener('scroll', function() {
-	if (pageYOffset*0.0001 > 1 || pageYOffset*0.0001 < 0.2) {
-		return;
-	} else {
-		pic.style.transform = 'scale('+pageYOffset*0.0001+');';
+switchSection("digital");
+
+// IMAGE POPUPS
+
+var popup = document.getElementById("popup");
+var popupImg = popup.querySelector("img");
+var popupH = popup.querySelector("h1");
+var popupP = popup.querySelector("p");
+
+var imgs = document.querySelectorAll("img");
+var images = []; // filtered to only the actual artwork 
+
+for (var i = 0; i < imgs.length; i++) {
+	thisImage = imgs[i];
+	if (thisImage.getAttribute("description") != null) {
+		images.push(thisImage);
+		var thisIndex = images.length-1;
+		//thisImage.addEventListener("click", function() { clickedImage=thisImage;popupImage(); } );
+		thisImage.onclick = popupImage.bind(thisImage, thisIndex);
 	}
+}
+
+function popupImage(imgIndex) {
+	thisImage = images[imgIndex];
+
+	popupImg.src = thisImage.src;
+	popupImg.classList = thisImage.classList;
+
+	popupH.innerHTML = thisImage.title;
+
+	popupP.innerHTML = thisImage.getAttribute("date"); 
+	if (thisImage.getAttribute("description") != "")
+	{
+		popupP.innerHTML += " • " + thisImage.getAttribute("description");
+	}
+
+	popup.style.display = "flex";
+}
+
+popup.addEventListener("click", function() {
+	popup.style.display = "none";
 });

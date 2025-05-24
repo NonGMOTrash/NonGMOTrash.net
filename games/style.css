@@ -1,28 +1,148 @@
 body {
 	background: black;
-	text-align: center;
-	position: absolute;
-	right: 0%; left: 0%; top: 10%; bottom: 10%;
+}
+
+#bg {
+	position: fixed;
+	background-repeat: repeat;
+	background-size: contain;
+	width: 100%;
+	height: 100%;
+	opacity: 100;
+	transition: 0.5s;
+	z-index: -1;
+}
+
+#mainline {
 	margin: auto;
+	width: 100%;
+	max-width: 1100px;
+	background: var(--color-fg);
+
+	.game {
+		display: flex;
+		padding: 6px;
+		border: 6px solid var(--color-secondary);
+		transition: 0.3s;
+
+		img {
+			object-fit: contain;
+		}
+
+		.items {
+			margin-left: 10px;
+
+			.buttons a::before {
+				width: 0;
+			}
+		}
+
+	}
+	.game:hover, .game:active {
+		border: 6px solid var(--color-accent);
+		background: var(--color-secondary);
+		transition: 0.3s;
+
+		[id="bg"] {
+			opacity: 100;
+			transition: 1s;
+		}
+	}
 }
 
-.game {
-	padding: 10px;
-	transition: all 0.3s ease 0s;
+.button {
+	padding: 3px;
+	border: 6px solid rgba(0,0,0,0);
+	z-index: 100;
+	transition: 0.3s;
+
+}
+.button:hover {
+	border: 6px solid var(--color-accent);
+	transition: 0.3s;
 }
 
-.description {
-	text-align: left;
-	font-size: 20px;
-	width: 500px;
-	margin-left: 20px;
-	margin-right: 20px;
+#arcade-title {
+	display: block;
+	margin: auto;
+	margin-top: 10%;
+	margin-bottom: 5%;
 }
 
-.stores {
+#arcade {
 	display: flex;
-	justify-content: left;
-	align-items: left;
-	gap: 20px;
-	margin-left: 20px;
+	flex-wrap: wrap;
+	gap: 6px;
+	width: 100%;
+	max-width: 1100px;
+	margin: auto;
+
+	.game {
+		width: 30%;
+		height: 25em;
+		background: var(--color-fg);
+		padding: 6px;
+		border: 6px solid var(--color-secondary);
+		display: flex;
+		flex-direction: column;
+		transition: 0.3s;
+
+		img {
+			object-fit: contain;
+			max-height: 60%;
+		}
+
+		h1 {
+			font-size: 2.5rem;
+			height: 40px;
+			margin-top: 0.1rem;
+			margin-bottom: -0.4rem;
+			text-align: center;
+			line-height: 0.8em;
+		}
+
+		p {
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+
+		.jam {
+			position: absolute;
+			top: 0px;
+			right: 0px;
+			font-size: 1rem;
+			--border-size: 5px;
+			border: var(--border-size) solid var(--color-secondary);
+			margin-top: calc(var(--border-size)*-1);
+			margin-right: calc(var(--border-size)*-1);
+			background: var(--color-fg);
+			color: white;
+			transition: 0.3s;
+		}
+	}
+	.game:hover {
+		border: 6px solid var(--color-accent);
+		background: var(--color-secondary);
+		transition: 0.3s;
+
+		.jam {
+			border-color: var(--color-accent);
+			transition: 0.3s;
+		}
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	#mainline, #arcade {
+		max-width: 95%;
+	}
+
+	#arcade {
+		.game {
+			h1 {
+				line-height: 0.6em;
+				margin-bottom: 0.5rem;
+			}
+		}
+	}
 }

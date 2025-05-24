@@ -1,110 +1,394 @@
 <!DOCTYPE html>
+
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<title>what could this be?</title>
-		<link rel="icon" type="image/x-icon" href="favicon.png">
-		<meta name="viewport" content="width=device-width,initial-scale=1">
-	</head>
+<meta charset="UTF-8">
 
-	<link rel="stylesheet" href="global.css">
-	<link rel="stylesheet" href="style.css">
-	<script src="script.js" defer></script>
+<head>
+	<title>NonGMOTrash.net</title>
+	<link rel="icon" type="image/x-icon" href="favicon.png">
+</head>
 
-	<body>
-		
-		<div class="main">
+<link rel="stylesheet" href="global.css">
+<link rel="stylesheet" href="style.css">
 
-			<div class="box" style="grid-area:header">
-				<p class="greeting" id="greeting">
+<script src="script.js"></script>
+<script src="https://chattable.neocities.org/scripts/main.min.js"></script> <!-- chattable -->
+<script>
+	chattable.initialize({ // seems like this has to be done with an inline script?
+		stylesheet : "chattable.css",
+	});
+</script>
+<!-- for bsky embed -->
+<script type="module" src="https://cdn.jsdelivr.net/npm/bluesky-profile-feed-embed@^1.0.0/+esm"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bluesky-profile-feed-embed@^1.0.0/dist/core.min.css">
+<!-- (theme) -->
+<link rel="stylesheet" href="bsky-embed.css">
 
-				</p>
-			</div>
-				<div class="box" style="grid-area:enter">
-				<p class="highlight" >
-					<a href="home/index.html"><img src="enter.png" class="pixel" width="273px" style="padding:3px"></a>
-				</p>
-			</div>
-			<div class="box" style="grid-area:terms">
-				<p class="highlight">
-					<a href="terms/index.html"><img src="terms_and_conditions.png" class="pixel" width="165px"></a>
-				</p>
-			</div>
-			<div class="box" style="grid-area:warn">
-				<p style="font-size:12px">
-					!!WARNINGS!! not mobile friendly (yet), autoplays music, uses javascript
-				</p>
-			</div>
-			<div class="box" style="grid-area:new">
-				<p style="font-size:18px">
-					a <b>major rework</b> of the site is in progress! you can view it<br>
-					<a href="NEW/index.html" style="font-size:30px">here</a>
-				</p>
-			</div>
+<body>
+
+	<div class="cover">
+		<img src="cover.gif" class="pixel">
+		<p id="scroll-indicator">\/ scroll down \/</p>
+	</div>
+
+	<div class="main-1">
+
+		<div class="intro">
 			
-		</div>
-		
-		<div class="webrings">
-		
-			<div class="webring">
-				<a href="https://hotlinewebring.club/" style="color:pink">HOTLINE WEBWRING</a>
-				<div class="flex-center">
-					<a href="https://hotlinewebring.club/nongmotrash/previous">←prev--</a>
-					<a href="https://hotlinewebring.club/nongmotrash/next">--next→</a>
-				</div>
+			<div style="display: flex; flex-wrap: nowrap;">
+				<h1 class="intro-title">hi there~</h1>
+				<marquee class="intro-marquee" scrollamount=10>
+					My thoughts will follow you into your dreams. ✿
+					Present day... present time! HAHAHAHAHAHA! ✿
+					never forget 20xx.io ✿
+					LIVERPOOLS CLOSED ✿
+					Turn the earth into a synthetic heaven, Everything is chrome, Everyone is copacetic ✿
+					𝒟𝓇𝑒𝒶𝓂𝓁𝒾𝓀𝑒 𝑅𝑒𝒶𝓁𝒾𝓉𝓎 ✿
+					We're rich! Mushroom. ✿
+					Heaven or Hell ✿
+					-_- bapanada ✿
+					Let's go, extra hour in the ball pit!! ✿
+					everything will be okay... ✿
+					You're like a car crash in slow motion! It's like I'm watching you fly through a windshield. ✿
+					I exist in the sludge between fiction and fact ✿
+					It's 10 PM somewhere ✿
+					kILL cinnamon ✿
+				</marquee>
 			</div>
-			
-			<div class="webring">
-				<a href="https://docs.graycot.dev/s/MFowZsw_F#" style="color:white">LOOP RING</a>
-				<div class="flex-center">
-					<a href="https://loop.graycot.dev/webring.html?action=prev">←prev--</a>
-					<a href="https://loop.graycot.dev/webring.html?action=rand">???</a>
-					<a href="https://loop.graycot.dev/webring.html?action=next">--next→</a>
-				</div>
-			</div>
-			
-			<div class="webring">
-				<a href="https://webring.bucketfish.me" style="animation:rainbow 2s linear infinite">bucket webring</a>
-				<div class="flex-center">
-					<a href="https://webring.bucketfish.me/redirect.html?to=prev&name=NonGMOTrash">←prev--</a>
-					<a href="https://webring.bucketfish.me/redirect.html?to=next&name=NonGMOTrash">--next→</a>
-				</div>
-			</div>
-			
-			<div class="webring">
-				<a href="https://theforest.link" style="color:green">The Forest</a>
-				<div class="flex-center">
-					<a href="https://theforest.link/go-for-a-walk">take a walk</a>
-				</div>
-			</div>
-			
-			<div class="webring">
-				<a href="https://devring.club/" style="color:gray">devring.club</a>
-				<div class="flex-center">
-					<a href="https://devring.club/sites/NonGMOTrash/prev">←prev--</a>
-					<a href="https://devring.club/random">???</a>
-					<a href="https://devring.club/sites/NonGMOTrash/next">--next→</a>
-				</div>
-			</div>
-			
-			<div class="webring">
-				<a href="https://silly.city/" style="color:#f56ccb">silly city</a>
-				<div class="flex-center">
-					<a href="https://silly.city/prev?user=NonGMOTrash">←prev--</a>
-					<a href="https://silly.city/random">???</a>
-					<a href="https://silly.city/next?user=NonGMOTrash">--next→</a>
-				</div>
-			</div>
-			
+			<p style="font-size:28px; margin-bottom:-0.5em">
+				welcome to my silly central ദ്ദി ˉ͈̀꒳ˉ͈́ )✧<br>
+				i am a full time doer, so i like to do a whole lot of things. if i'm lucky, you may have heard of me from one of these...
+			</p>
+			<ul style="font-size:20px">
+				<li>i made a open source action game called <a href="https://nongmotrash.itch.io/teralite">teralite</a></li>
+				<li>i've made lots of <a href="https://www.youtube.com/@nongmotrash">videos</a>, including one about Your Only Move is Hustle</li> 
+				<li>i was a very prolific <a href="https://krunker.io/social.html?p=profile&q=NonGMOTrash">map maker</a> for Krunker</a></li>
+				<li>i was (used to be :c) one of the top <a href="https://20xx.io">20xx.io</a> players</li>
+				<li>i play bridget a lot <u title="Guilty Gear -Strive-">GGST</u>... i've even contributed to <a href="https://www.dustloop.com/w/Special:Contributions/NonGMOTrash">Dustloop wiki</a> 😳</li>
+				<li>i am █████ ██ ████ ███ ████ ████ ████ in <a href="./countdown/index.html">98 years</a></li>
+<!--                 going to make the best game ever  -->
+			</ul>
+
 		</div>
 
-		<!-- <img src="bg.gif" class="background"> -->
-		<video src="bg.mp4" class="background" autoplay loop></video>
-		
-		<!-- mastodon verification -->
-		<a rel="me" href="https://mstdn.plus/@NonGMOTrash" style="display:none">.</a>
-		
-	</body>
 
+		<div class="news">
+
+			<div class="news-entries">
+
+				<h2 class="news-title">NEWS!</h2>
+
+				<a class="news-entry">
+					<p style="margin-top: 0"><i>may 22nd, 2025</i></p>
+					<h1>website overhaul</h1>
+					<img src="news-site-overhaul.png" class="pixel">
+					<p>
+						version 2.0 nongmotrash.net has been completed!
+					</p>
+				</a>
+				<a class="news-entry" href="https://youtu.be/ZWzAMuFkb_M">
+					<p style="margin-top: 0"><i>april "1st", 2025</i></p>
+					<h1>new video <s>game</s></h1>
+					<img src="news-teralite-7.png">
+					<p>
+						it's april 1st somewhere
+					</p>
+				</a>
+				<a class="news-entry" href="https://nongmotrash.itch.io/over-over">
+					<p style="margin-top: 0"><i>march 2nd, 2025</i></p>
+					<h1>new jam "game"</h1>
+					<img src="news-over-and-over.png" class="pixel">
+					<p>
+						"over and over"<br>
+						made in 3 hours for Trijam.. it's very unfinished
+					</p>
+				</a>
+				<a class="news-entry" href="https://youtu.be/YaN4ejEkhuU">
+					<p style="margin-top: 0"><i>feburary 2nd, 2025</i></p>
+					<h1>new video</h1>
+					<img src="news-testament-t-pose.png" class="pixel">
+					<p>
+						testament t-poses and dies
+					</p>
+				</a>
+				<a class="news-entry" href="https://youtu.be/JQX7UYomZ2I">
+					<p style="margin-top: 0"><i>january 1st, 2025</i></p>
+					<h1>new video</h1>
+					<img src="news-eepy-missile.png" class="pixel">
+					<p>
+						the missile is eepy
+					</p>
+				</a>
+				<a class="news-entry" href="https://nongmotrash.itch.io/drillmonger">
+					<p style="margin-top: 0"><i>november 30th, 2024</i></p>
+					<h1>new jam game</h1>
+					<img src="news-drillmonger.png" class="pixel">
+					<p>
+					for the first time in 2 years, i finally locked in on a game jam. check out the result!!
+					</p>
+				</a>
+				<a class="news-entry" href="https://youtu.be/58zIjOULWBQ">
+					<p style="margin-top: 0"><i>october 29th, 2024</i></p>
+					<h1>new video</h1>
+					<img src="news-personal-web.png">
+					<p>
+					made a video intended to help new people get into the personal web. i really wish i could do VO for this but i think it still turned out good. enjoy :3
+					</p>
+				</a>
+				<a class="news-entry" href="https://nongmotrash.net/writing/introspective/2/index.html">
+					<p style="margin-top: 0"><i>september 16th, 2024</i></p>
+					<h1>state of the trash</h1>
+					<img src="news-sott-2024.png" class="pixel">
+					<p>
+					annual update on how im doing and what im doing and where im doing
+					</p>
+				</a>
+				<a class="news-entry" href="https://youtu.be/jDUkk-5MBqM">
+					<p style="margin-top: 0"><i>august 4th, 2024</i></p>
+					<h1>new video</h1>
+					<img src="news-fav-sfx.png">
+					<p>
+					made a video about my favorite sound effects in games
+					</p>
+				</a>
+				<a class="news-entry" href="https://nongmotrash.net/writing/fiction/1/index.html">
+					<p style="margin-top: 0"><i>august 3rd, 2024</i></p>
+					<h1>new chapter</h1>
+					<img src="news-blood-red-harmony.png">
+					<p>
+						im veeeeeeeery slowly writing a short story................... here is the first chapter
+					</p>
+				</a>
+				<a class="news-entry" href="https://nongmotrash.net/writing/game-design/4/index.html">
+					<p style="margin-top: 0"><i>june 24th, 2024</i></p>
+					<h1>new article</h1>
+					<img src="news-complexity.png">
+					<p>
+						game design article
+					</p>
+				</a>
+				<a class="news-entry" href="https://youtu.be/tNSoOh5oVs0">
+					<p style="margin-top: 0"><i>april 29th, 2024</i></p>
+					<h1>new highlights video</h1>
+					<img src="news-lk-masters.png">
+					<p>
+						made a highlight video of lordknight's LK Masters touranment. even with very light editting this took <i>forever</i>
+					</p>
+				</a>
+				<a class="news-entry" href="https://youtu.be/1x9XYZqyReU">
+					<p style="margin-top: 0"><i>april 1st, 2024</i></p>
+					<h1>new video</h1>
+					<img src="news-idiot.png">
+					<p>
+						april fools!! ...right?
+					</p>
+				</a>
+				<a class="news-entry" href="https://youtu.be/05pSG9kZh1g">
+					<p style="margin-top: 0"><i>feburary 7th, 2024</i></p>
+					<h1>new video</h1>
+					<img src="news-journey.png">
+					<p>
+						not sure it's terribly entertaining, but it was a very fun video to make.
+					</p>
+				</a>
+				<a class="news-entry" href="https://youtu.be/kJQkWVQl6Q4">
+					<p style="margin-top: 0"><i>feburary 1st, 2024</i></p>
+					<h1>new video</h1>
+					<img src="news-calculator.png">
+					<p>
+						made a video showing a crappy game i made on my calculator during quarantine
+					</p>
+				</a>
+				<a class="news-entry" href="https://nongmotrash.net/writing/introspective/1/index.html">
+					<p style="margin-top: 0"><i>december 31st, 2023</i></p>
+					<h1>new article</h1>
+					<img src="news-why-i-suck.png">
+					<p>
+						why i suck at getting anything done
+					</p>
+				</a>
+
+			</div>
+
+			<div id="progress">
+
+				<div class="project" completion=1 status="hiatus">
+					<p class="text">
+						blood red harmony CH.2
+					</p>
+				</div>
+
+				<div class="project" completion=95 status="active">
+					<p class="text">
+						Drawabox Lesson 1
+					</p>
+				</div>
+
+				<a class="link" href="updates/index.html" style="margin-left: auto">
+					<img src="progress.png" class="pixel">
+					<p>updates</p>
+				</a>
+
+				<a class="link">
+					<img src="discord.png" class="pixel">
+					<p style="margin-top:-0.8em">discord<br>server</p>
+				</a>
+
+			</div>
+			
+			<bluesky-profile-feed actor="did:plc:3beruda2rezlvgw5akovtq6b" include-pins>
+				<a target="_blank" href="https://bsky.app/profile/did:plc:3beruda2rezlvgw5akovtq6b" class="bluesky-profile-feed-fallback">
+					oooo nooooo bsky embed broke :(((
+				</a>
+			</bluesky-profile-feed>
+
+		</div>
+
+
+	</div>
+
+	<marquee class="buttons">
+		<img src="btn_sans.png">
+		<img src="btn_computer.png">
+		<a href="https://www.youtube.com/watch?v=fsdiIecv0sM">
+			<img src="btn_glue.png">
+		</a>
+		<a href="https://www.youtube.com/watch?v=LcYNqLwkM8I">
+			<img src="btn_society.gif">
+		</a>
+		<img src="btn_handcoded.gif">
+		<img src="btn_kris.png">
+		<a href="https://www.youtube.com/watch?v=rjRV0G6qWgw">
+			<img src="btn_hhhgregg.gif">
+		</a>
+		<img src="btn_kromer.png">
+		<a href="https://www.youtube.com/watch?v=KWrFdEhyKjg">
+			<img src="btn_kys.png">
+		</a>
+		<img src="btn_queen.gif">
+		<img src="btn_source.png">
+		<img src="btn_time_travel.png">
+		<a href="https://windows96.bandcamp.com/">
+			<img src="btn_win96.gif">
+		</a>
+		<iframe src="//incr.easrng.net/badge?key=changeme" style="background: url(//incr.easrng.net/bg.gif)" title="increment badge" width="88" height="31" frameborder="0"></iframe>
+		<img src="btn_mouse.gif">
+		<img src="btn_graphic_design.png">
+		<img src="btn_dopefish.gif">
+		<a href="https://store.steampowered.com/app/2212330/Your_Only_Move_Is_HUSTLE/">
+			<img src="btn_ninja.png">
+		</a>
+		<img src="btn_bridget.gif">
+		<img src="btn_rip.gif">
+		<a href="https://en.wikipedia.org/wiki/Paranoia_Agent">
+			<img src="btn_maromi.png">
+		</a>
+		<a href="https://nekoweb.org"
+			<img src="btn_nekoweb.gif">
+		</a>
+		<img src="btn_floppa.gif">
+		<img src="btn_ralsei.gif">
+		<img src="btn_iheartjimmy.png">
+	</marquee>
+
+	<div class="main-2">
+
+		<div class="tiles">
+
+			<a href="./games/index.html" class="tile">
+				<img src="tile-games.gif" class="pixel">
+				<h1>games</h1>
+			</a>
+			<a href="./writing/index.html" class="tile">
+				<img src="tile-writing.png" class="pixel">
+				<h1>writing</h1>
+			</a>
+			<a href="./gallery/index.html" class="tile">
+				<img src="tile-gallery.png" class="pixel">
+				<h1>gallery</h1>
+			</a>
+			<a href="./404/index.html" class="tile">
+				<img src="tile-music.png" class="pixel">
+				<h1>???</h1>
+			</a>
+			<a href="./about/index.html" class="tile">
+				<img src="./tile-about.png" class="pixel">
+				<h1>about</h1>
+			</a>
+			<a href="./links/index.html" class="tile">
+				<img src="./tile-links.png" class="pixel">
+				<h1>links</h1>
+			</a>
+		</div>
+
+		<div>
+			<iframe src='https://iframe.chat/embed?chat=NonGMOTrashDotNet' id='chattable' frameborder='none'></iframe>
+		</div>
+
+		
+		<div class="side-container">
+
+			<div id="my-button">
+
+				<h1>my button</h1>
+
+				<div>
+					<img src="btn_nongmotrash.gif" class="pixel" title="hotlinking is ¯\_(ツ)_/¯">
+					<p>
+						&lt;a href="https://nongmotrash.github.io/"&gt;&lt;img src="btn_nongmotrash.gif"&gt;&lt;/a&gt;
+					</p>
+				</div>
+
+			</div>
+
+			<div id="webrings">
+
+				<h1>webrings</h1>
+
+				<div>
+					<div class="webring" style="font-family:Helvetica; font-style:oblique">
+						<a href="https://hotlinewebring.club" style="color:pink">HOTLINE WEBRING</a><br>
+						<a href="https://hotlinewebring.club/nongmotrash/previous">←</a>
+						<a href="https://hotlinewebring.club/nongmotrash/next">→</a>
+					</div>
+					<div class="webring" style="font-family:Georgia">
+						<a href="https://webring.bucketfish.me" style="animation: rainbow linear infinite 2s">bucket webring</a><br>
+						<a href="https://webring.bucketfish.me/redirect.html?to=prev&name=NonGMOTrash">←</a>
+						<a href="https://webring.bucketfish.me/redirect.html?to=next&name=NonGMOTrash">→</a>
+					</div>
+					<div class="webring">
+						<a href="https://devring.club">devring</a><br>
+
+						<a href="https://devring.club/sites/NonGMOTrash/prev">←</a>
+						<a href="https://devring.club/sites/NonGMOTrash/random">?</a>
+						<a href="https://devring.club/sites/NonGMOTrash/next">→</a>
+					</div>
+					<div class="webring"style="font-family:Comic Sans MS">
+						<a href="https://silly.city/" style="color: #ff0073">silly city</a><br>
+						<a href="https://silly.city/prev?user=NonGMOTrash">←</a>
+						<a href="https://silly.city/random?user=NonGMOTrash">?</a>
+						<a href="https://silly.city/next?user=NonGMOTrash">→</a>
+					</div>
+				</div>
+				
+			</div>
+
+		</div>
+
+
+	</div>
+
+
+	<p class="footer">
+		♡ 2022-20XX
+		♡ by using this site, you agree to the <a href="./terms/index.html">terms</a> ;)
+		♡ <s>hosted on nekoweb</s> not yet
+		♡ <a href="credits/index.html">site credits</a>
+		♡ <a href="https://github.com/NonGMOTrash/nongmotrash.github.io">github repo</a>
+		♡ <a href="about/index.html#contact">contact me</a>
+		♡
+	</p>
+
+
+</body>
 </html>
-

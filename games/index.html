@@ -1,45 +1,129 @@
 <!DOCTYPE html>
+
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<title>the good stuff</title>
-		<link rel="icon" type="image/x-icon" href="../favicon.png">
-		<meta name="viewport" content="width=device-width,initial-scale=1">
-	</head>
+<meta charset="UTF-8">
+	<title>my games</title>
+	<link rel="icon" type="image/x-icon" href="favicon.png">
+</head>
 
-	<link rel="stylesheet" href="../global.css">
-	<link rel="stylesheet" href="style.css">
-	<style></style>
+<link rel="stylesheet" href="../global.css">
+<link rel="stylesheet" href="style.css">
 
-	<body>
+<script src="script.js"></script>
 
-		<a href="../home/index.html" class="exit">
-			<img src="../exit.gif" class="exit pixel">
-		</a>
+<body>
 
-		<h2 style="margin-top:50px"><span style="animation: rainbow 2s linear infinite">games.</span> it's what i do best</h2>
+	<a href="../index.html">
+		<img src="../exit.gif" class="exit pixel">
+	</a>
 
-		<div class="flex-center" style="margin-bottom:50px">
-			<a href="../teralite/index.html"><img src="teralite.png" class="game pixel highlight" style="width:543px"></a>
-			<div>
-				<p class="description">a top down action packed mashup of everything i could think of. currently the biggest game i've made.</p>
-				<div class="stores">
-					<a class="store" href="https://nongmotrash.itch.io/teralite">
-						<img src="storepage_itch.png" class="pixel highlight" style="padding:3px">
+	<img id="bg">
+
+	<div id="mainline">
+
+		<div class="game" onmouseover="setBg('teralite')" onmouseleave="setBg('')">
+			<img src="teralite.png" class="pixel">
+			<div class="items">
+				<p style="margin-bottom:3%">fight your way through a variety of worlds ranging from castles to space colonies, with everything my dumb monkey brain could conjure up.</p>
+				<hr>
+				<div class="buttons">
+					<a href="https://youtube.com">
+						<img src="button-itch.png" class="button pixel">
+					</a>
+					<a href="https://youtube.com">
+						<img src="button-trailer.png" class="button pixel">
+					</a>
+					<a href="https://youtube.com">
+						<img src="button-github.png" class="button pixel">
 					</a>
 				</div>
 			</div>
 		</div>
 
-		<div class="flex-center" style="margin-bottom: 50px">
-			<a href="../arcade/index.html"><img src="arcade.png" class="game pixel highlight" style="width:543px"></a>
-			<div>
-				<p class="description">a grab bag of all my smaller, less polished games</p>
-			</div>
-		</div>
+	</div>
+
+	<img src="arcade.png" id="arcade-title" class="pixel">
+
+	<div id="arcade">
+
+		<a href="./over-and-over" class="game">
+			<img src="../news-over-and-over.png" class="pixel">
+			<h1>over and over</h1>
+			<p>very unfinished vignette i made in 3 hours >.<</p>
+			<p class="jam">Trijam #311</p>
+		</a>
+
+		<a href="./drillmonger" class="game">
+			<img src="../news-drillmonger.png" class="pixel">
+			<h1>drillmonger</h1>
+			<p>faster than you can think bullet hell drilling</p>
+			<p class="jam">irl college jam</p>
+		</a>
+
+		<a href="./rhythm-rollin" class="game">
+			<img src="rhythm-rollin.png" class="pixel">
+			<h1>rhythm rollin'</h1>
+			<p>move with a dice to the beat of the music</p>
+			<p class="jam">GTMK 2022 jam</p>
+		</a>
+
+		<a href="./sky-high" class="game">
+			<img src="sky-high.png">
+			<h1>sky high</h1>
+			<p>fly with a balloon gun lmao</p>
+			<p class="jam">GMTK 2021 jam</p>
+		</a>
 		
-		<iframe name="downwell_shop.ogg" src="../player/index.html" class="player-frame" style="border:0" id="music-player">
+		<a href="./omega-percent" class="game">
+			<img src="omega-percent.png">
+			<h1>omega percent</h1>
+			<p>space invader pong II. it's a lot better, just has a stupid name</p>
+		</a>
 
-	</body>
+		<a href="./space-invader-pong" class="game">
+			<img src="space-invader-pong.png">
+			<h1>space invader pong</h1>
+			<p>[link only] space invader pong classic, made on code.org ~2019</p>
+		</a>
 
-</html>
+		<a href="./ice-skater-cow" class="game">
+			<img src="ice-skater-cow.png">
+			<h1>ice skater cow</h1>
+			<p>[link only] unfinished demo with no art. made entirely during class ~2019</p>
+		</a>
+
+		<a href="./blob-bouncer-pong" class="game">
+			<img src="blob-bouncer.png" class="pixel">
+			<h1>Blob Bouncer</h1>
+			<p>[link only] blob game II. from ~2018-19</p>
+		</a>
+
+		<a href="./50-floors-pong" class="game" title="lore: i got 3-4 people to play this during a class period and they all got PISSED, they said this game made them want to kill themselves">
+			<img src="50-floors.png" class="pixel">
+			<h1>50 Floors</h1>
+			<p>[link only] crappy roguelike platformer. from ~2018</p>
+		</a>
+
+		<a href="./avoid" class="game">
+			<img src="avoid.png">
+			<h1>AVOID</h1>
+			<p>scratch game from ~2017(?)</p>
+		</a>
+
+		<a href="./cant-move-while-grounded" class="game" title="fun fact: i made this for a random competition i found and it lost to (imo) an extremely boring game because the creator was friends with the organizer.">
+			<img src="cant-move-while-grounded.png">
+			<h1 style="margin-bottom:1.2em">can't move while grounded</h1>
+			<p>probably my best scratch game. from ~2017(?)</p>
+		</a>
+
+		<a href="./survival-pong" class="game">
+			<img src="survival-pong.png">
+			<h1>survival pong</h1>
+			<p>very weird concept. from ~2017(?)</p>
+		</a>
+
+
+	</div>
+
+</body>
+

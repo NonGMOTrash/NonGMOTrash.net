@@ -1,53 +1,107 @@
-body {
-	background-image: url("bg.webp");
-	/* background-size: cover; */
+.main {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	width: 1350px;
+	max-width: 98%;
+	margin: auto;
+	margin-top: -3.5rem;
 }
 
-.title {
-	text-align: center;
-	font-size: 50px;
-	margin-left: 200px;
-	margin-right: 200px;
-	margin-top: 20px;
-}
-
-.description {
-	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
-	margin-top: 0px;
-	margin-bottom: 50px;
-	width: 50%;
-}
-
-.blog {
-	display: inline-block;
-	text-decoration: none;
-	text-align: center;
-	padding: 5px;
-	margin: 5px;
-	width: 80%;
-	height: 300px;
+.column {
+	width: 675px;
+	max-width: 47%;
+	height: 100%;
 	background: black;
 }
-	
-	.blog-info {
-		display: inline-block;
-		max-height: 100%;
+
+.category {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	background: var(--color-fg);
+	padding: 1em;
+	margin-top: 5%;
+
+	h1 {
+		font-size: 4.375rem;
+		text-decoration: underline;
+		margin-top: 0;
 	}
 
-		.blog-title {
-			font-size: 40px;
-			overflow-wrap: break-word;
+	.entry {
+		border: 3px solid var(--color-secondary);
+		padding: 3px;
+		margin-left: 1vh;
+		margin-bottom: 2vh;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		z-index: 1;
+
+		img {
+			width: 100%;
+			height: 15em;
+			object-fit: contain;
+			margin: auto;
 		}
 
-		.blog-tags {
-			font-size: 16px;
-			margin-top: -30px;
+		h1 {
+			font-size: 1.875rem;
+			font-family: "baskersville";
+			text-align: center;
+			text-decoration: none;
+			/*min-height: 2.3em;*/
+
+			i {
+				font-family: "baskersville-italic";
+			}
 		}
 
-		.blog-date {
-			font-size: 18px;
-			font-style: italic;
+		.details {
+			position: absolute;
+			top: 0.1rem;
+			right: -0.8rem;
+			padding-top: 0.2rem;
+			padding-right: -0.8rem;
+			font-size: 0.875rem;
+			writing-mode: vertical-lr;
+			transform: rotate(180deg);
+		}
+	}
+	.entry:hover {
+		border: 3px solid var(--color-accent);
+	}
+}
+
+@media screen and (max-width: 1100px) {
+	.category {
+		h1 {
+			font-size: 3rem;
+			text-align: center;
 		}
 
+		.entry {
+			h1 {
+				font-size: 1.25rem;
+			}
+
+			.details {
+				background: var(--color-bg);
+				border-right: 3px solid var(--color-secondary);
+				border-top: 3px solid var(--color-secondary);
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.main {
+		flex-direction: column;
+	}
+
+	.column {
+		max-width: 95%;
+		margin: auto;
+	}
+}

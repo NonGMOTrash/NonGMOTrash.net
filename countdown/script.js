@@ -9,7 +9,7 @@ window.onload = function() {
 }
 
 function updateTime() {
-	var endTime = new Date("Jan 1, 2122").getTime();
+	var endTime = new Date("September 16, 2121").getTime();
 	var currentTime = new Date().getTime();
 	var time = (endTime - currentTime) / 1000; // /1000 because it's in milliseconds
 

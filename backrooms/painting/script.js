@@ -18,7 +18,7 @@ function Warp() {
 	} else if (i == 7) {
 		window.location.href = "../poolroom/index.html";
 	} else if (i == 8) {
-		window.location.href = "../secret/index.html";
+		window.location.href = "../close/index.html";
 	} else if (i == 9) {
 		window.location.href = "../tree/index.html";
 	} else if (i == 10) {

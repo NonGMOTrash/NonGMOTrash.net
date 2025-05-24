@@ -2,85 +2,136 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title>my scrapbook</title>
+		<title>gallery</title>
 		<link rel="icon" type="image/x-icon" href="../favicon.png">
 		<meta name="viewport" content="width=device-width,initial-scale=1">
 	</head>
 
 	<link rel="stylesheet" href="../global.css">
 	<link rel="stylesheet" href="style.css">
+
 	<script src="script.js" defer></script>
 
 	<body>
 
-		<a href="../home/index.html" class="exit">
+		<a href="../index.html">
 			<img src="../exit.gif" class="exit pixel">
 		</a>
 
-		<div class="tabs">
-			<img src="images.png" class="pixel highlight clickable" width=192 id="imagesBtn">
-			<img src="videos.png" class="pixel highlight clickable" width=207 id="videosBtn">
-		</div>
-		
+		<div id="main">
 
-		<div id="imagesTab">
-
-			<div class="closeup">
-				<img src="no_img.webp" class="pic">
-				<p class="title">bingus</p>
+			<div id="sidebar">
+				<p onclick="switchSection('digital')" id="digital-button">digital art</p>
+				<p onclick="switchSection('pixel')" id="pixel-button">pixel art</p>
+				<p onclick="switchSection('traditional')" id="traditional-button">traditional</p>
+				<p onclick="switchSection('drawabox')" id="drawabox-button">DrawABox</p>
+				<p onclick="switchSection('sketches')" id="sketches-button">sketches</p>
+				<p onclick="switchSection('images')" id="images-button">images</p>
+				<p onclick="switchSection('videos')" id="videos-button">videos</p>
+				<p onclick="switchSection('photos')" id="photos-button">photos</p>
 			</div>
 
-			<div class="scraps" id="scraps">
-				<img src="i_know_who_i_am.png">
-				<img src="shared_values.webp">
-				<img src="buffoonzville.png" title="map of buffoonzville, my personal minecraft server i ran. those thin lines going out from spawn are sky bridges, all built by yours truly :)">
-				<img src="deltarune_prediction.webp" title="trust">
-				<img src="apple_catcher.webp" title="practice game i made with raylib in c">
-				<img src="minesweeper.webp" title="practice game i made with raylib in c">
-				<img src="rpgs.webp">
-				<img src="twitter_banner.webp">
-				<img src="hmh.webp" title="this is as far as i got in the handmade hero tutorials">
-				<img src="hollow_knight.webp" class="sketch">
-				<img src="morshu.webp" class="sketch">
-				<img src="goose.webp" class="sketch">
-				<img src="skin.webp" class="pixel" title="my minecraft skin">
-				<img src="ralsei.webp">
-				<img src="merch.webp">
-				<img src="5_merit_loss.webp" title="don't do it!!!!!!1">
-				<img src="seagulls.webp" title="never forget.">
-				<img src="NonGMOTrash.webp">
-				<img src="hi.webp">
-				<img src="brogue.webp" title="my first (and only) brogue win. got pretty lucky but im still proud of it lol">
-				<img src="epsilon.webp" width=800 title="the oldest build of teralite i had on my computer - it used to be called project epsilon">
-				<img src="vegetales.webp">
-				<img src="omega.webp">
-				<img src="tierlist.webp">
-				<img src="krunker.webp">
+			<div id="pictures">
+				
+				<div id="digital">
+					<img src="./digital/narrative_project.png" class="" title="HELLMARI fanart" date="may 5th, 2025" description="this was for my final. drew it at 4 in the morning lol">
+					<img src="./digital/landscape_project.png" class="" title="landscape project" date="may 4th, 2025" description="my favorite piece of art so far">
+					<img src="./digital/still_life_project.png" class="" title="still life project" date="april 14th, 2025" description="">
+					<img src="./digital/candle_project.png" class="" title="candle project" date="march 16th, 2025" description="">
+					<img src="./digital/cone_cube.png" class="" title="cone & cube assignment" date="feburary 26th, 2025" description="">
+					<img src="./digital/cylinders.png" class="" title="cylinder assignment" date="feburary 10th, 2025" description="">
+					<img src="./digital/sphere.png" class="" title="sphere assignment" date="feburary 2nd, 2025" description="(learning photoshop)">
+					<img src="./digital/NonGMOTrash Final.png" class="" title="old assignment" date="august 19th, 2020" description="made in Paint.NET lol">
+				</div>
+
+				<div id="pixel">
+					<img src="./pixel/pixel_art_project.png" class="pixel" title="pixel art project" date="april 20th, 2025" description="">
+					<img src="./pixel/bad_maromi.png" class="pixel" title="bad maromi" date="janurary 7th, 2024" description="">
+				</div>
+
+				<div id="traditional">
+					<img src="./traditional/sunset rock.jpg" class="" title="sunset rock" date="november 8th, 2023" description="">
+					<img src="./traditional/ratatouille.jpg" class="" title="ratatouille" date="august 24th, 2022" description="">
+					<img src="./traditional/smile.jpg" class="" title="SMILE!" date="august 24th, 2022" description="">
+					<img src="./traditional/morshu.jpg" class="" title="morshu" date="august 21st, 2022" description="">
+					<img src="./traditional/angry_grandma.jpg" class="" title="angry grandma" date="june 28th, 2022" description="looking up 'angry grandma' on google images gives a lot of funny results lol">
+					<img src="./traditional/hollow_knight.jpg" class="" title="hollow knight" date="june 23rd, 2022" description="">
+					<img src="./traditional/funny goose.jpg" class="" title="funny goose" date="june 6th, 2022" description="">
+					<img src="./traditional/cool bird.jpg" class="" title="cool bird" date="november 19th, 2020" description="">
+					<img src="./traditional/chess fuedalism.jpg" class="" title="chess fuedalism" date="november 19th, 2020" description="">
+					<img src="./traditional/penrose triangle.jpg" class="" title="penrose triangle" date="november 9th, 2020" description="">
+					<img src="./traditional/phone.jpg" class="" title="phone" date="november 9th, 2020" description="(the crappy phone in question)">
+					<img src="./traditional/dog.jpg" class="" title="dog" date="november 5th, 2020" description="">
+					<img src="./traditional/crayons.jpg" class="" title="crayons" date="november 5th, 2020" description="">
+					<img src="./traditional/goose.jpg" class="" title="goose" date="october 26th, 2020" description="">
+					<img src="./traditional/beeg yoshi.jpg" class="" title="beeg yoshi" date="october 26th, 2020" description="WHY is there motion blur??? what was i doing when i too this 😭">
+					<img src="./traditional/lamp.jpg" class="" title="lamp" date="october 12th, 2020" description="">
+					<img src="./traditional/lamp.jpg" class="" title="lamp" date="october 12th, 2020" description="">
+					<img src="./traditional/dodgeball tag.jpg" class="" title="dodgeball tag" date="october 12th, 2020" description="i used to have this irl... it was a gag gift from one of my friends">
+					<img src="./traditional/pencil holder.jpg" class="" title="pencil holder" date="september 28th, 2020" description="bruh">
+					<img src="./traditional/turtle.jpg" class="" title="turtle" date="september 28th, 2020" description="i have a figure of this as well. from Cancún">
+					<img src="./traditional/tac tic.jpg" class="" title="tac tic" date="september 14th, 2020" description="GEEZ i sucked at taking pictures">
+					<img src="./traditional/alarm clock.jpg" class="" title="alarm clock" date="september 14th, 2020" description="">
+					<img src="./traditional/dominos.jpg" class="" title="domonios" date="september 8th, 2020" description="">
+					<img src="./traditional/calculator.jpg" class="" title="cards" date="september 8th, 2020" description="">
+					<img src="./traditional/cards.jpg" class="" title="cards" date="august 31st, 2020" description="">
+					<img src="./traditional/castle.jpg" class="" title="castle" date="august 31st, 2020" description="i actually have a little figure of this castle. it was a gift from my mom">
+					<img src="./traditional/cubes.jpg" class="" title="cubes" date="august 20th, 2020" description="">
+					<img src="./traditional/shoe.jpg" class="" title="shoe" date="august 17th, 2020" description="i had a really crappy phone camera back then. i would retake it but i lost these pages....">
+				</div>
+
+				<div id="drawabox">
+
+				</div>
+
+				<div id="sketches">
+					<img src="./sketches/may_5_2025.png" class="" title="random sketches" date="may 5th, 2025" description="rare footage of me NOT using hard round brush 💀">
+					<img src="./sketches/april_24_2025_CENSORED.png" class="" title="random sketches" date="april 24th, 2025" description="">
+					<img src="./sketches/feb_26_2025.png" class="" title="random sketches" date="feburary 26th, 2025" description="">
+					<img src="./sketches/feb_16_2025.png" class="" title="random sketches" date="feburary 16th, 2025" description="">
+					<img src="./sketches/feb-2-2025.png" class="" title="random sketches" date="feburary 2nd, 2025" description="testing out my drawing tablet">
+
+				</div>
+
+				<div id="images">
+
+				</div>
+
+				<div id="videos">
+
+				</div>
+
+				<div id="photos">
+					<img src="./photos/pink_sun.jpg" class="" title="pink sun" date="july 27th, 2024" description="">
+					<img src="./photos/commit_tax_fraud.jpg" class="" title="commit tax fraud hat" date="july 21th, 2024" description="the current bid makes it so much better. also look in the background to the right 💀">
+					<img src="./photos/las_vegas.jpg" class="" title="las vegas" date="july 21th, 2024" description="hell">
+					<img src="./photos/evo_lets_go_nitro.jpg" class="" title="LET'S GO NI-TRO" date="july 21th, 2024" description="evo 2024 champ">
+					<img src="./photos/evo_ooey_gooey.jpg" class="" title="get real" date="july 21th, 2024" description="typical anji player lol">
+					<img src="./photos/evo_funny_neco_art.jpg" class="" title="funny neco art" date="july 21th, 2024" description="">
+					<img src="./photos/evo_kyanta.jpg" class="" title="ultra fight da kyanta 2 spotted" date="july 20th, 2024" description="">
+					<img src="./photos/evo_chair.jpg" class="" title="evo chair" date="july 20th, 2024" description="signed by many top players of the game. i got to watch randoms get obliterated by slash">
+					<img src="./photos/evo_sajam.jpg" class="" title="have you seen this man?" date="july 19th, 2024" description="yes, i have">
+					<img src="./photos/evo_sf_art.jpg" class="" title="EVO 2024 SF art" date="july 19th, 2024" description="">
+					<img src="./photos/sans_binder.jpg" class="" title="sans binder" date="june 10th, 2024" description="it did not survive">
+					<img src="./photos/mia.jpg" class="" title="mia" date="april 9th, 2024" description="still missing u">
+					<img src="./photos/evil_eepy_cat.jpg" class="" title="evil eepy cat" date="march 9th, 2024" description="">
+					<img src="./photos/former_brisket.jpg" class="" title="former brisket" date="march 8th, 2024" description="future me??">
+					<img src="./photos/clouds.jpg" class="" title="clouds" date="feburary 26th, 2024" description="">
+					<img src="./photos/i_heart_men.jpg" class="" title="the pipeline" date="july 27th, 2023" description="(this isn't me btw)">
+					<img src="./photos/clay_character.jpg" class="" title="clay character" date="feburary 10th, 2018" description="i think this is the first picture i ever took">
+				</div>
+
 			</div>
 
 		</div>
 
-		<div id="videosTab">
-
-			<p class="yt-note">
-				none of my videos <a href="https://m.youtube.com/@nongmotrash">on youtube</a> are here because github pages only gives me 1gb and i don't want to blow it all, so these are just little extra videos lying around on my computer :)
-			</p>
-
-			<div class="vids">
-				<video controls> <source src="20xx.mp4"> </video>
-				<video controls> <source src="counter_demo.mp4"> </video>
-				<video controls> <source src="multitarget_demo.mp4"> </video>
-				<video controls title="LISTEN i made this during covid okay!??!?!?! it did weird things to me"> <source src="amogus.mp4"> </video>
-				<video controls title="i let an all survivor server run for like 5 hours on krunker, and i made this big long bridge.">
-					<source src="krunker_bridge.mp4">
-				</video>
-			</div>
-
+		<div id="popup">
+			<img> <!-- note: this img's classList is overwritten in JS -->
+			<h1></h1>
+			<p></p>
 		</div>
-		
-		<iframe name="spagonia.ogg" src="../player/index.html" class="player-frame" style="border:0" id="music-player">
+
 
 	</body>
 
 </html>
-
