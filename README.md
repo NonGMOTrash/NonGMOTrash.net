@@ -17,10 +17,10 @@ i also write and organize my code in a bit of a strange way... each subdirectory
 ## things i'd change
 
 - use css grids over flexboxes (most of the time). i didn't learn them until i was nearly finished and i think they are better than flexboxes in most situations
-- use a static site generator for the `writings` and `links` pages
+- use a static site generator for the writings and links pages
 - use typescript instead of javascript
 - use SCSS
-- stop nesting css rules, i think it's kinda 
+- limit nested CSS rules to no more than 2 layer, i think it makes things harder to parse
 
 
 i probably *will* rewrite this site for a third time some day, but that day is not today.
