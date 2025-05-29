@@ -20,6 +20,7 @@ i also write and organize my code in a bit of a strange way... each subdirectory
 - use a static site generator for the writings and links pages
 - use typescript instead of javascript
 - use SCSS
+- use the `<base>` tag
 - limit nested CSS rules to no more than 2 layer, i think it makes things harder to parse
 
 
