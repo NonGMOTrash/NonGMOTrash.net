@@ -61,6 +61,11 @@ body {
 			height: 33px;
 		}
 
+		.button-jp {
+			width: 200px;
+			height: 40px;
+		}
+
 	}
 	.header:hover {
 		color: var(--color-accent);
