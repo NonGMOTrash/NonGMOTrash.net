@@ -14,9 +14,27 @@ p {
 	font-size: 24px;
 }
 
+.left {
+	position: absolute;
+	left: 0%;
+	top: 8%;
+	width: 20%;
+	height: 110%;
+	opacity: 0%;
+}
+
 .middle {
 	position: absolute;
 	left: 38%;
+	top: 8%;
+	width: 20%;
+	height: 110%;
+	opacity: 0%;
+}
+
+.right {
+	position: absolute;
+	left: 74%;
 	top: 8%;
 	width: 20%;
 	height: 110%;

@@ -1,0 +1,16 @@
+body {
+	background-color: black;
+	color: white;
+	text-align: center;
+	position: absolute;
+	font-size: 40px;
+}
+
+p {
+	font-size: 24px;
+}
+
+.bg {
+	max-height: 98vh;
+	margin-left: 28%;
+}

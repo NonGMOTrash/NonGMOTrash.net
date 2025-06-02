@@ -23,6 +23,16 @@ p {
 	opacity: 0%;
 }
 
+.mouth {
+	position: absolute;
+	left: 90%;
+	top: 45%;
+	width: 7%;
+	height: 17%;
+	opacity: 0%;
+}
+
+
 .bg {
 	position: fixed;
 	width: 100%;
