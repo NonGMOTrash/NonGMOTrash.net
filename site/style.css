@@ -25,6 +25,15 @@
 
 }
 
+#nongmotrash-js-warning {
+	position: absolute;
+	top: 93%;
+	right: 0;
+	font-size: 1rem;
+	color: red;
+	background: black;
+}
+
 .main-1 {
 	width: 100%;
 	height: 20%;
