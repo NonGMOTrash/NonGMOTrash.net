@@ -265,6 +265,7 @@
 	justify-content: space-evenly;
 	margin-left: calc(-100% - 4.5rem); /* i have no idea how this worked lol */
 	overflow-x: hidden;
+	pointer-events: none;
 
 	>div {
 		position: relative;
@@ -273,6 +274,7 @@
 		border: 3px solid var(--color-secondary);
 		border-right: 0;
 		background: var(--color-fg);
+		pointer-events: auto;
 		display: flex;
 		flex-direction: row;
 		gap: 1em;
