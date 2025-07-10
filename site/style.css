@@ -86,12 +86,6 @@
 	margin-left: 0;
 	z-index: 10;
 	
-	.headline {
-		max-height: 22rem;
-		border-top: solid var(--color-secondary) 9px;
-		border-bottom: solid var(--color-secondary) 9px;
-		display: flex;
-	}
 
 	#progress {
 		margin-left: auto;
@@ -153,6 +147,13 @@
 			}
 		}
 	}
+}
+
+.headline {
+	max-height: 22rem;
+	border-top: solid var(--color-secondary) 9px;
+	border-bottom: solid var(--color-secondary) 9px;
+	display: flex;
 }
 
 .news-entries {
