@@ -1,29 +1,29 @@
 .site-box {
-    text-align: center;
-    background-image: url("https://nongmotrash.nekoweb.org/cover.gif");
-    background-size: contain;
-    border: 4px solid #a5267f;
+	text-align: center;
+	background-image: url("/nongmotrash.net/cover.gif");
+	background-size: contain;
+	border: 4px solid #a5267f;
 }
 
 .site-box img.screenshot, .site-box div.sitefeature {
-  display: none;
+	display: none;
 }
 
 .site-box > a > p {
-  top: 86%;
-  height: 14%;
-  color: #f87424;
-  font-size: 20px
-  font-family: Serif;
-  font-weight: bold;
-  background: black;
+	top: 86%;
+	height: 14%;
+	color: #f87424;
+	font-size: 20px;
+	font-family: Serif;
+	font-weight: bold;
+	background: black;
 }
 .site-box > a > p::after {
-  content: "hi";
+	content: "hi";
 }
 
 .site-box > a > span {
-    display: none;
+	display: none;
 }
 
 
@@ -31,76 +31,19 @@
 
 
 .post-box {
-    background-color: #1f1a2d;
-    border: 4px solid #a5267f;
-    border-radius: 0;
-    padding: 15px;
-    color: white;
-    font-weight: normal;
+	background-color: #1f1a2d;
+	border: 4px solid #a5267f;
+	border-radius: 0;
+	padding: 15px;
+	color: white;
+	font-weight: normal;
 }
 
 .post-box .post-title {
-    margin-top: 10px;
-    margin-bottom: 0px;
-    font-size: 18px;
-    font-weight: bold;
-    font-style: normal;
-    text-decoration: underline;
-}/*!@nkb "username":"nongmotrash","domain":"nongmotrash.net","rss":"","overflow":true,"readonly":false */
-/* 
-    Don't use this file to edit your site style! Create a different CSS file for that.
-    This file defines how custom elements (like sitebox) will look like.
-    Setting CSS that breaks main nekoweb site on purpose is prohibited and may result in ban and site deletion! 
-*/
-
-/* Must start with ".site-box". Change how your website will appear on main nekoweb site: https://lune.dimden.dev/405a44b7e5.png */
-.site-box {
-    text-align: center;
-    background-image: url("https://nongmotrash.nekoweb.org/cover.gif");
-    background-size: contain;
-    border: 4px solid #a5267f;
-}
-
-.site-box img.screenshot, .site-box div.sitefeature {
-  display: none;
-}
-
-.site-box > a > p {
-  top: 86%;
-  height: 14%;
-  color: #f87424;
-  font-size: 20px
-  font-family: Serif;
-  font-weight: bold;
-  background: black;
-}
-.site-box > a > p::after {
-  content: "hi";
-}
-
-.site-box > a > span {
-    display: none;
-}
-
-
-
-
-
-/* Style for your post box (must start with ".post-box") */
-.post-box {
-    background-color: #1f1a2d;
-    border: 4px solid #a5267f;
-    border-radius: 0;
-    padding: 15px;
-    color: white;
-    font-weight: normal;
-}
-
-.post-box .post-title {
-    margin-top: 10px;
-    margin-bottom: 0px;
-    font-size: 18px;
-    font-weight: bold;
-    font-style: normal;
-    text-decoration: underline;
+	margin-top: 10px;
+	margin-bottom: 0px;
+	font-size: 18px;
+	font-weight: bold;
+	font-style: normal;
+	text-decoration: underline;
 }
