@@ -34,5 +34,5 @@ body {
 
 #input:empty::before {
 	color: gray;
-	content: "meow";
+	content: "meow (maybe set your name first? click the gear in the top right)";
 }

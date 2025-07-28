@@ -202,6 +202,7 @@
 	/* text-wrap: nowrap; */
 	margin: 0;
 	margin-bottom: 5%;
+	line-height: 1.2rem;
 }
 
 .news-entry img {
