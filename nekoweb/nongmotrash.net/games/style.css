@@ -25,10 +25,6 @@ body {
 		border: 6px solid var(--color-secondary);
 		transition: 0.3s;
 
-		img {
-			object-fit: contain;
-		}
-
 		.items {
 			margin-left: 10px;
 
@@ -48,6 +44,19 @@ body {
 			transition: 1s;
 		}
 	}
+}
+
+.game-banner-container {
+	display: flex;
+	align-items: center;
+
+}
+.game-banner-container::before {
+	width: 0;
+}
+
+.game-banner {
+	object-fit: contain;
 }
 
 .button {

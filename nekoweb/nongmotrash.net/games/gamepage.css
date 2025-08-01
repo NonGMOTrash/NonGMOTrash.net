@@ -1,0 +1,72 @@
+.main {
+	margin: auto;
+	width: 100%;
+	max-width: 960px;
+}
+
+.banner {
+	width: 100%;
+}
+
+.info {
+	display: grid;
+	grid-template-columns: 3fr 2fr;
+}
+
+#trailer {
+
+}
+
+.downloads {
+	display: flex;
+	gap: 1rem;
+}
+
+.game-ver {
+	font-size: 1rem;
+	margin-top: 0;
+	margin-bottom: -0.8rem;
+}
+
+.screenshots {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: start;
+	gap: 1rem;
+}
+
+.screenshot {
+	max-width: 100%;
+}
+
+.buttons a::before {
+	width: 0;
+}
+
+.buttons {
+	margin-top: -1.5rem;
+}
+
+.button {
+	padding: 3px;
+	border: 6px solid rgba(0,0,0,0);
+	z-index: 100;
+	transition: 0.3s;
+
+}
+.button:hover {
+	border: 6px solid var(--color-accent);
+}
+
+#download-popup {
+	width: 50rem;
+	height: 25rem;
+	background-color: var(--color-fg);
+	border-color: var(--color-secondary);
+}
+
+#download-popup p {
+	font-size: 1.2em;
+
+}
