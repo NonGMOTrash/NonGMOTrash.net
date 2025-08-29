@@ -2,7 +2,7 @@
 
 <html lang="en">
 <meta charset="UTF-8">
-	<title>my games</title>
+	<title>teralite</title>
 	<link rel="icon" type="image/x-icon" href="../favicon.png">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -33,7 +33,9 @@
 				<p>but i hope you'll like it.</p>
 
 				<h2>download the game</h2>
+
 				<div class="downloads">
+					<img src="../logo-catbox.png">
 					<a href="https://files.catbox.moe/q2ezx2.zip" download>
 						<button class="download" onclick="downloadClicked()">Windows</button>
 					</a>
@@ -44,17 +46,30 @@
 						<button class="download" onclick="downloadClicked()">Linux</button>
 					</a>
 				</div>
-				<p class="game-ver">current game version: 1.3.0</p>
 
-				<p>other links:</p>
+				<div class="downloads">
+					<img src="../logo-google-drive.png">
+					<a href="" target="_blank">
+						<button class="download" onclick="downloadClicked()">Windows</button>
+					</a>
+					<a href="https://drive.google.com/file/d/1UUKozk0Y7IZNoY-qgADdcB1QSuWMgKbw/view?usp=drive_link" target="_blank">
+						<button class="download" onclick="downloadClicked()">macOS</button>
+					</a>
+					<a href="https://drive.google.com/file/d/1MF7mal92WS8sxukRB3tRIxySRhBNzg-T/view?usp=drive_link" target="_blank">
+						<button class="download" onclick="downloadClicked()">Linux</button>
+					</a>
+				</div>
+
+				<h2>other links</h2>
+				<br>
 				<div class="buttons">
-					<a href="https://nongmotrash.itch.io/teralite">
+					<a href="https://nongmotrash.itch.io/teralite" target="_blank">
 						<img src="../button-itch.png" class="button pixel">
 					</a>
-					<a href="https://youtu.be/DK7A7qHjJH8">
+					<a href="https://youtu.be/DK7A7qHjJH8" target="_blank">
 						<img src="../button-trailer.png" class="button pixel">
 					</a>
-					<a href="https://github.com/NonGMOTrash/teralite">
+					<a href="https://github.com/NonGMOTrash/teralite" target="_blank">
 						<img src="../button-github.png" class="button pixel">
 					</a>
 				</div>
@@ -75,7 +90,10 @@
 
 
 	<dialog id="download-popup">
-		<p>the file is currently downloading. i hope you enjoy!</p>
+		<p>
+			your files are currently downloading. i hope you enjoy!<br>
+			<b>note:</b> if downloading from catbox, you may get a warning that the file is malware (because it is an executable). it's not!! if you are spooked by this, you can download the exact same file from itch.io.
+		</p>
 
 		<h2>installation instructions</h2>
 		
@@ -88,6 +106,13 @@
 		<p>because this app is unsigned, Gatekeeper will block it by default. <a href="https://docs.godotengine.org/en/stable/tutorials/export/running_on_macos.html#app-is-signed-including-ad-hoc-signatures-but-not-notarized">refer to the Godot docs for how to disable it</a>. i don't own a mac so i can't help you personally, sorry!!</p>
 
 	</dialog>
+
+
+	<p id="game-ver">
+		released June 3rd, 2022<br> 
+		last updated August 1st, 2025<br>
+		current game version: v1.3.0
+	</p>
 
 </body>
 

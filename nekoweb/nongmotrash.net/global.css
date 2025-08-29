@@ -119,7 +119,7 @@ button {
 	font-size: 1.875rem;
 	background-color: black;
 	transition: all 0.3s ease 0s;
-	border: 3px solid orange;
+	border: 3px solid var(--color-accent);
 }
 button:hover {
 	color: var(--color-bg);
