@@ -1,0 +1,39 @@
+name: Build rss.xml
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - "index.html"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  build-rss:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build rss.xml
+        run: npm run build:rss
+
+      - name: Commit rss.xml if changed
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: update rss.xml"
+          file_pattern: "rss.xml"
+
