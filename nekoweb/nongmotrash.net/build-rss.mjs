@@ -5,6 +5,20 @@ import sizeOf from "image-size";
 const homepageDom = new JSDOM(readFileSync("./index.html", "utf8"));
 const homepage = homepageDom.window.document;
 
+function makeLinkAbsolute(relativeLink)
+{
+	if (relativeLink[0] == "." || relativeLink[0] == "/")
+	{
+		relativeLink.slice(1);
+	}
+	if (relativeLink.substring(0, 8) != "https://")
+	{
+		return "https://nongmotrash.net/" + relativeLink;
+	}
+	
+	return relativeLink;
+}
+
 var RSS = `<?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0">
 <channel>
@@ -22,26 +36,29 @@ for (var i = 0; i < entries.length; i++)
 {
 	var entry = entries[i];
 	console.log(entry);
-	var link = entry.getAttribute("href");
-	if (link[0] == ".")
-	{
-		link = "https://nongmotrash.net" + guid.slice(1);
-	}
+	var link = makeLinkAbsolute(entry.getAttribute("href"));
+	var guid = entries.length - i;
 	var date = new Date(Date.parse(entry.querySelector("p.news-date").getAttribute("date"))).toUTCString();
-	var imgUrl = entry.querySelector("img").getAttribute("src");
-	var 
+	var imgElement = entry.querySelector("img");
+	var imgUrl = imgElement.getAttribute("src");
+	console.log(imgUrl);
+	const imgBuffer = readFileSync(imgUrl);
+	var imgDimensions = sizeOf(imgBuffer); 
+	var imgWidth = imgDimensions.width;
+	var imgHeight = imgDimensions.height;
+	imgUrl = makeLinkAbsolute(imgUrl);
 	var title = entry.querySelector("h1").textContent;
 	title = title.trim();
 	var description = entry.querySelector("p.news-description").textContent;
 	description = description.trim();
 
 	RSS += "\r\n<item>";
-	RSS += "\r\n	<link>"+guid+"</link>";
-	RSS += "\r\n	<guid>"+i+"</guid>";
+	RSS += "\r\n	<link>"+link+"</link>";
+	RSS += "\r\n	<guid>"+guid+"</guid>";
 	RSS += "\r\n	<title>"+title+"</title>";
 	RSS += "\r\n	<pubDate>"+date+"</pubDate>";
 	RSS += "\r\n	<description>"+description+"</description>";
-	RSS += '\r\n	<media:thumbnail url="'+imgUrl+'" width="'+imgWidth+'" height="'+imgHeight+'" />';
+	RSS += '\r\n	<media:thumbnail url="'+imgUrl+'" width="'+imgWidth+'" height="'+imgHeight+'"/>';
 	RSS += "\r\n</item>";
 }
 
