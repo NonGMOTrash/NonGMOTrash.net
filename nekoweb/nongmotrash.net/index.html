@@ -23,8 +23,7 @@
 	});
 </script>
 <!-- for bsky embed -->
-<script type="module" src="https://cdn.jsdelivr.net/npm/bluesky-profile-feed-embed@^1.0.0/+esm"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bluesky-profile-feed-embed@^1.0.0/dist/core.min.css">
+<script type="module" src="https://cdn.jsdelivr.net/npm/bsky-embed/dist/bsky-embed.es.js" async></script>
 <!-- (theme) -->
 <link rel="stylesheet" href="bsky-embed.css">
 
@@ -73,7 +72,7 @@
 				<li>i've made lots of <a href="https://www.youtube.com/@nongmotrash">videos</a>, including one about Your Only Move is Hustle</li> 
 				<li>i was a very prolific <a href="https://krunker.io/social.html?p=profile&q=NonGMOTrash">map maker</a> for Krunker</a></li>
 				<li>i (used to be) one of the top 20xx.io players (RIP)</li>
-				<li>i play bridget a lot <u title="Guilty Gear -Strive-">GGST</u>... i've even contributed to <a href="https://www.dustloop.com/w/Special:Contributions/NonGMOTrash">Dustloop wiki</a> 😳</li>
+				<li>i like playing Bridget in <u title="Guilty Gear -Strive-">GGST</u>... i've even contributed to <a href="https://www.dustloop.com/w/Special:Contributions/NonGMOTrash">Dustloop wiki</a> 😳</li>
 				<li>i am █████ ██ ████ ███ ████ ████ ████ in <a href="./countdown/index.html">98 years</a></li>
 			</ul>
 
@@ -88,6 +87,14 @@
 
 				<div class="news-entries">
 
+					<a class="news-entry" href="https://nongmotrash.net/updates/index.html#sep-3-2025">
+						<p class="news-date" date="2025-9-3">september 3rd, 2025</p>
+						<img src="news-rss.png" class="pixel">
+						<h1>i have a RSS feed now!</h1>
+						<p class="news-description">
+							now there's a proper way to stay up to date on my latest machinations
+						</p>
+					</a>
 					<a class="news-entry" href="https://nongmotrash.itch.io/teralite/devlog/996012/teralite-130">
 						<p class="news-date" date="2025-7-24">july 24th, 2025</p>
 						<img src="news-teralite.png" class="pixel">
@@ -247,7 +254,19 @@
 
 			<div id="progress">
 
-				<div class="project" completion=3 status="active">
+				<div class="project" completion=0 status="active">
+					<p class="text">
+						is bridget mix reactable video
+					</p>
+				</div>
+
+				<div class="project" completion=0 status="active">
+					<p class="text">
+						state of the trash 2024-25
+					</p>
+				</div>
+
+				<div class="project" completion=3 status="hiatus">
 					<p class="text">
 						blood red harmony CH.2
 					</p>
@@ -255,7 +274,7 @@
 
 				<div class="project" completion=0 status="hiatus">
 					<p class="text">
-						250 box challenge
+						DaB: 250 box challenge
 					</p>
 				</div>
 
@@ -358,11 +377,40 @@
 
 		<div class="mid-container">
 
-			<bluesky-profile-feed actor="did:plc:3beruda2rezlvgw5akovtq6b" include-pins>
-				<a target="_blank" href="https://bsky.app/profile/did:plc:3beruda2rezlvgw5akovtq6b" class="bluesky-profile-feed-fallback">
-					oooo nooooo bsky embed broke :(((
-				</a>
-			</bluesky-profile-feed>
+			<bsky-embed username="nongmotrash.bsky.social" mode="dark" limit="1" disable-styles="true" custom-styles="
+* {
+	background: #1f1a2d;
+	font-family: 'nunito';
+	color: white;
+}
+
+img {
+	max-width: 20%;
+}
+
+p, span {
+	font-size: 1.5rem;
+}
+
+article {
+	display: flex;
+	flex-direction: row;
+	padding: 1rem;
+}
+
+.flex {
+	display: flex;
+}
+
+.rounded-full {
+	border-radius: 1rem;
+	margin-right: 1rem;
+}
+
+.border-slate-300 {
+	border-color: lightblue;
+}
+			"></bsky-embed>
 
 			<iframe src='https://iframe.chat/embed?chat=NonGMOTrashDotNet' id='chattable' frameborder='none'></iframe>
 

@@ -1,5 +1,6 @@
 import { readFileSync, writeFileSync } from "node:fs";
 import { JSDOM } from "jsdom";
+import sizeOf from "image-size";
 
 const homepageDom = new JSDOM(readFileSync("./index.html", "utf8"));
 const homepage = homepageDom.window.document;
@@ -21,26 +22,26 @@ for (var i = 0; i < entries.length; i++)
 {
 	var entry = entries[i];
 	console.log(entry);
-	var guid = entry.getAttribute("href");
-	if (guid[0] == ".")
+	var link = entry.getAttribute("href");
+	if (link[0] == ".")
 	{
-		guid = "https://nongmotrash.net" + guid.slice(1);
+		link = "https://nongmotrash.net" + guid.slice(1);
 	}
 	var date = new Date(Date.parse(entry.querySelector("p.news-date").getAttribute("date"))).toUTCString();
 	var imgUrl = entry.querySelector("img").getAttribute("src");
-	imgUrl = "https://nongmotrash.net/" + imgUrl;
-	var imgSize = 1; // WIP
+	var 
 	var title = entry.querySelector("h1").textContent;
 	title = title.trim();
 	var description = entry.querySelector("p.news-description").textContent;
 	description = description.trim();
 
 	RSS += "\r\n<item>";
-	RSS += "\r\n	<guid>"+guid+"</guid>";
+	RSS += "\r\n	<link>"+guid+"</link>";
+	RSS += "\r\n	<guid>"+i+"</guid>";
 	RSS += "\r\n	<title>"+title+"</title>";
 	RSS += "\r\n	<pubDate>"+date+"</pubDate>";
 	RSS += "\r\n	<description>"+description+"</description>";
-	RSS += '\r\n	<enclosure url="'+imgUrl+'" type="image/png" length="'+imgSize.toString()+'" />';
+	RSS += '\r\n	<media:thumbnail url="'+imgUrl+'" width="'+imgWidth+'" height="'+imgHeight+'" />';
 	RSS += "\r\n</item>";
 }
 
