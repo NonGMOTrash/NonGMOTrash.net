@@ -20,7 +20,7 @@ function makeLinkAbsolute(relativeLink)
 }
 
 var RSS = `<?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0">
+<rss version="2.0" xmlns:media="http://search.yahoo.com/mrss/">
 <channel>
 
 <title>NonGMOTrash</title>
@@ -35,13 +35,11 @@ var entries = homepage.getElementsByClassName("news-entry");
 for (var i = 0; i < entries.length; i++)
 {
 	var entry = entries[i];
-	console.log(entry);
 	var link = makeLinkAbsolute(entry.getAttribute("href"));
 	var guid = entries.length - i;
 	var date = new Date(Date.parse(entry.querySelector("p.news-date").getAttribute("date"))).toUTCString();
 	var imgElement = entry.querySelector("img");
 	var imgUrl = imgElement.getAttribute("src");
-	console.log(imgUrl);
 	const imgBuffer = readFileSync(imgUrl);
 	var imgDimensions = sizeOf(imgBuffer); 
 	var imgWidth = imgDimensions.width;
@@ -54,7 +52,7 @@ for (var i = 0; i < entries.length; i++)
 
 	RSS += "\r\n<item>";
 	RSS += "\r\n	<link>"+link+"</link>";
-	RSS += "\r\n	<guid>"+guid+"</guid>";
+	RSS += "\r\n	<guid isPermaLink='false'>"+guid+"</guid>";
 	RSS += "\r\n	<title>"+title+"</title>";
 	RSS += "\r\n	<pubDate>"+date+"</pubDate>";
 	RSS += "\r\n	<description>"+description+"</description>";
