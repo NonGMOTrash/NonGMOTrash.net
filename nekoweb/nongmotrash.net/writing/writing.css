@@ -37,8 +37,9 @@ h2 {
 	text-align: center;
 }
 
-img {
+img, video {
 	max-width: 95%;
+	max-height: 80vh;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
@@ -136,7 +137,8 @@ summary {
 	text-align: center;
 	width: 100%;
 	margin: auto;
-	margin-top: 2px;
+	margin-top: 0.1rem;
+	margin-bottom: 0.3rem;
 }
 
 .sidenote {
@@ -236,3 +238,74 @@ summary {
 
 }
 
+/* ==================================================== */
+/*   state of the trash page specific stuff...........  */  
+/* ==================================================== */
+
+.stats {
+	display: flex;
+	justify-content: center;
+	row-gap: 1em;
+	column-gap: 2em;
+	width: 100%;
+	flex-wrap: wrap;
+	background: black;
+	padding-top: 3%;
+	padding-bottom: 3%;
+
+	.stat {
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+
+		b { /* the number */
+			font-size: 55px;
+			font-family: "caskaydia-cove";
+		}
+
+		p { /* the descriptor */
+			font-size: 22px;
+			font-family: "caskaydia-cove";
+			display: block;
+			text-indent: 0;
+		}
+	}
+
+}
+@media (width <= 700px) {
+	.stats {
+		width: 100%;
+		margin-left: 0%;
+		flex-wrap: wrap;
+	}
+}
+
+.stat-gain {
+	color: lightgreen;
+	font-size: 1rem;
+	margin-top: -0.8rem;
+	margin-bottom: -0.6rem;
+}
+.stat-gain::before {
+	content: "▲";
+}
+
+.stat-loss {
+	color: red;
+	font-size: 1rem;
+	margin-top: -0.8rem;
+	margin-bottom: -0.6rem;
+}
+.stat-loss::before {
+	content: "▼";
+}
+
+.stat-same {
+	color: yellow;
+	font-size: 1rem;
+	margin-top: -0.8rem;
+	margin-bottom: -0.6rem;
+}
+.stat-same::before {
+	content: "~";
+}
