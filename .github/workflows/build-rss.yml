@@ -24,6 +24,7 @@ jobs:
         with:
           node-version: "20"
           cache: "npm"
+          cache-dependecy-path: "nekoweb/nongmotrash.net/package-lock.json"
 
       - name: Install dependencies
         run: npm ci
