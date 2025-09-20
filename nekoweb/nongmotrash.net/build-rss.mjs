@@ -7,9 +7,9 @@ const homepage = homepageDom.window.document;
 
 function makeLinkAbsolute(relativeLink)
 {
-	if (relativeLink[0] == "." || relativeLink[0] == "/")
+	while (relativeLink[0] === "." || relativeLink[0] === "/")
 	{
-		relativeLink.slice(1);
+		relativeLink = relativeLink.slice(1);
 	}
 	if (relativeLink.substring(0, 8) != "https://")
 	{
