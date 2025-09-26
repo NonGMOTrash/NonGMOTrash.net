@@ -1,9 +1,4 @@
-name: deploy2nekoweb
-
-on:
-  push:
-    branches:
-      - main
+on: [push]
 
 jobs:
   test:
@@ -11,14 +6,15 @@ jobs:
     name: deploy2nekoweb
     steps:
       - name: Checkout
-        uses: actions/checkout@v1.0.0
+        uses: actions/checkout@v4
 
         # your build step here
 
       - name: deploy2nekoweb
-        uses: indiefellas/deploy2nekoweb@v1.0.0
+        uses: indiefellas/deploy2nekoweb@main
         with:
           nekoweb-api-key: ${{ secrets.NEKOWEB_API_KEY }}
           nekoweb-cookie: ${{ secrets.NEKOWEB_COOKIE }}
-          nekoweb-folder: '/'
+          nekoweb-domain: 'nongmotrash.nekoweb.org'
+          nekoweb-username: 'nongmotrash'
           directory: 'nekoweb'
