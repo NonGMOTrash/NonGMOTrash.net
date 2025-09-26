@@ -1,4 +1,4 @@
-name: Build rss.xml
+name: build rss.xml
 
 on:
   push:
@@ -8,28 +8,28 @@ on:
   workflow_dispatch: {}
 
 permissions:
-  contents: write
+  contents:
+    - read
+    - write
 
 jobs:
   build-rss:
     runs-on: ubuntu-latest
     steps:
-      - name: Check out repo
+      - name: check out repo
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - name: Set up Node
-        uses: actions/setup-node@v4
+      - name: set up Node
+        uses: actions/setup-node@v5
         with:
           node-version: "20"
-          cache: "npm"
-          cache-dependecy-path: "nekoweb/nongmotrash.net/package-lock.json"
 
-      - name: Install dependencies
+      - name: install dependencies
         run: npm ci
 
-      - name: Build rss.xml
+      - name: build rss.xml
         run: npm run build:rss
 
       - name: Commit rss.xml if changed
