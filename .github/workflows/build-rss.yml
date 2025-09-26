@@ -14,23 +14,24 @@ jobs:
   build-rss:
     runs-on: ubuntu-latest
     steps:
-      - name: check out repo
+      - name: Check out repo
         uses: actions/checkout@v5
         with:
           fetch-depth: 0
 
-      - name: set up Node
+      - name: Set up node # installs node.js and npm
         uses: actions/setup-node@v5
         with:
           node-version: "20"
 
-      - name: install dependencies
+      - name: Install dependencies # installs modules (node_modules) based on package-lock.json
+        working-directory: /nekoweb/nongmotrash.net/ 
         run: npm ci
 
-      - name: build rss.xml
+      - name: build rss.xml # looks at package.json to run my build-rss.mjs script
         run: npm run build:rss
 
-      - name: commit rss.xml if changed
+      - name: commit rss.xml if changed # makes a commit automatically
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: update rss.xml"
