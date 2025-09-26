@@ -8,16 +8,14 @@ on:
   workflow_dispatch: {}
 
 permissions:
-  contents:
-    - read
-    - write
+  contents: write
 
 jobs:
   build-rss:
     runs-on: ubuntu-latest
     steps:
       - name: check out repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
         with:
           fetch-depth: 0
 
@@ -32,7 +30,7 @@ jobs:
       - name: build rss.xml
         run: npm run build:rss
 
-      - name: Commit rss.xml if changed
+      - name: commit rss.xml if changed
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "chore: update rss.xml"
