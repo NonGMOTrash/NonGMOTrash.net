@@ -25,7 +25,7 @@ jobs:
           node-version: "20"
 
       - name: Install dependencies # installs modules (node_modules) based on package-lock.json
-        working-directory: /nekoweb/nongmotrash.net/ 
+        working-directory: nekoweb/nongmotrash.net/ 
         run: npm ci
 
       - name: build rss.xml # looks at package.json to run my build-rss.mjs script
