@@ -34,8 +34,7 @@ jobs:
 
       - name: Commit rss.xml if changed # makes a commit automatically
         uses: stefanzweifel/git-auto-commit-action@v5
-        working-directory: nekoweb/nongmotrash.net/ 
         with:
           commit_message: "chore: update rss.xml"
-          file_pattern: "rss.xml"
+          file_pattern: "nekoweb/nongmotrash.net/rss.xml"
 
