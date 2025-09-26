@@ -28,11 +28,13 @@ jobs:
         working-directory: nekoweb/nongmotrash.net/ 
         run: npm ci
 
-      - name: build rss.xml # looks at package.json to run my build-rss.mjs script
+      - name: Build rss.xml # looks at package.json to run my build-rss.mjs script
+        working-directory: nekoweb/nongmotrash.net/ 
         run: npm run build:rss
 
-      - name: commit rss.xml if changed # makes a commit automatically
+      - name: Commit rss.xml if changed # makes a commit automatically
         uses: stefanzweifel/git-auto-commit-action@v5
+        working-directory: nekoweb/nongmotrash.net/ 
         with:
           commit_message: "chore: update rss.xml"
           file_pattern: "rss.xml"
