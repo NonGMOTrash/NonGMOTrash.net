@@ -15,6 +15,6 @@ jobs:
         with:
           nekoweb-api-key: ${{ secrets.NEKOWEB_API_KEY }}
           nekoweb-cookie: ${{ secrets.NEKOWEB_COOKIE }}
-          nekoweb-domain: 'nongmotrash.nekoweb.org'
+          nekoweb-domain: 'nongmotrash.net'
           nekoweb-username: 'nongmotrash'
-          directory: 'nekoweb'
+          directory: 'site'
