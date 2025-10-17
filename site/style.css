@@ -355,11 +355,15 @@ bsky-embed {
 		height: 31px;
 	}
 
-	p {
+	code {
 		max-width: 88px;
 		word-break: break-all;
 		font-size: 0.5rem;
 		font-family: caskaydia-cove;
+	}
+
+	p {
+		font-size: 0.8rem;
 	}
 }
 
