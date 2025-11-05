@@ -8,12 +8,12 @@ body {
 
 p {
 	color: white;
-	font-family: 'Bitter', Comic Sans MS;
-	font-size: 24px;
+	font-size: 1.5rem;
 }
 
 h1 {
 	color: white;
+	font-size: 3rem;
 }
 
 b {

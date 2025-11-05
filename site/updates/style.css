@@ -54,6 +54,11 @@ hr {
 	}
 }
 
+.bg-credits {
+	font-size: 0.8rem;
+	text-align: right;
+}
+
 @media screen and (max-width: 800px)
 {
 	/* h1 span:nth-child(8)::after { */
