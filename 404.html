@@ -1,3 +1,7 @@
+<!--
+this is basically a stub page that handels redirecting old links to nongmotrash.github.io to the new site
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <meta charset="UTF-8">
@@ -5,69 +9,82 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 
 <style>
-	body {
-		background: black;
-		color: white;
-		min-width: 100vw;
-		min-height: 100vh;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		overflow: hidden;
-	}
 
-	a {
-		color: orange;
-	}
-	a:hover {
-		color: red;
-	}
+body {
+	background: black;
+	color: white;
+	min-width: 100vw;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	text-align: center;
+}
+
+a {
+	color: orange;
+}
+a:hover {
+	color: red;
+}
+
+#warning {
+	color: red;
+}
+
 </style>
 
 <body>
 
-	<h1>redirecting...</h1>
-	<p>(i moved to <a href="https://nongmotrash.net">nongmotrash.net</a>)</p>
+	<h1>my site has moved! check out the <a id="link">new page</a></h1>
+	<p id="warning"></p>
 
 </body>
 
 <script>
-	let ref = Document.referrer;
-	if (ref !== undefined && ref.endsWith("index.html"))
-	{
-		ref = ref.slice(ref.size, -10);
-	}
 
-	console.log(ref);
+let ref = Document.referrer;
+if (ref !== undefined && ref.endsWith("index.html"))
+{
+	ref = ref.slice(ref.size, -10);
+}
 
-	if (ref === undefined || ref.length === 0)
+
+var page = "";
+if (ref === undefined || ref.length === 0)
+{
+	page = "https://nongmotrash.net";
+}
+else {
+	switch(ref)
 	{
-		window.location = "https://nongmotrash.net";
+		case "https://nongmotrash.github.io/writing/1": page = "https://nongmotrash.net/writing/game-design/1"; break;
+		case "https://nongmotrash.github.io/blog/1": page = "https://nongmotrash.net/writing/game-design/1"; break;
+		case "https://nongmotrash.github.io/writing/2": page = "https://nongmotrash.net/writing/internet/1"; break;
+		case "https://nongmotrash.github.io/blog/2": page = "https://nongmotrash.net/writing/internet/1"; break;
+		case "https://nongmotrash.github.io/writing/3": page = "https://nongmotrash.net/game-design/2"; break;
+		case "https://nongmotrash.github.io/blog/3": page = "https://nongmotrash.net/writing/internet/3"; break;
+		case "https://nongmotrash.github.io/writing/4": page = "https://nongmotrash.net/introspective/1"; break;
+		case "https://nongmotrash.github.io/writing/5": page = "https://nongmotrash.net/game-design/3"; break;
+		case "https://nongmotrash.github.io/writing/6": page = "https://nongmotrash.net/fiction/1"; break;
+		case "https://nongmotrash.github.io/writing/7": page = "https://nongmotrash.net/fiction/introspective/2"; break;
+		case "https://nongmotrash.github.io/teralite": page = "https://nongmotrash.net/games/teralite"; break;
+		case "https://nongmotrash.github.io/contact": page = "https://nongmotrash.net/about#contact"; break;
+		case "https://nongmotrash.github.io/fav-media/books": page = "https://nongmotrash.net/about/favs/books"; break;
+		case "https://nongmotrash.github.io/fav-media/books": page = "https://nongmotrash.net/about/favs/books"; break;
+		case "https://nongmotrash.github.io/fav-media/movies": page = "https://nongmotrash.net/about/favs/movies"; break;
+		case "https://nongmotrash.github.io/fav-media/music": page = "https://nongmotrash.net/about/favs/music"; break;
+		case "https://nongmotrash.github.io/fav-media/shows": page = "https://nongmotrash.net/about/favs/shows"; break;
+		default:
+			page = "https://nongmotrash.net" + ref.slice(29);
+			document.getElementById("warning").textContent = "warning: equivalent page on the new site could not be found...";
 	}
-	else {
-		switch(ref)
-		{
-			case "https://nongmotrash.github.io/writing/1": window.location = "https://nongmotrash.net/writing/game-design/1"; break;
-			case "https://nongmotrash.github.io/blog/1": window.location = "https://nongmotrash.net/writing/game-design/1"; break;
-			case "https://nongmotrash.github.io/writing/2": window.location = "https://nongmotrash.net/writing/internet/1"; break;
-			case "https://nongmotrash.github.io/blog/2": window.location = "https://nongmotrash.net/writing/internet/1"; break;
-			case "https://nongmotrash.github.io/writing/3": window.location = "https://nongmotrash.net/game-design/2"; break;
-			case "https://nongmotrash.github.io/blog/3": window.location = "https://nongmotrash.net/writing/internet/3"; break;
-			case "https://nongmotrash.github.io/writing/4": window.location = "https://nongmotrash.net/introspective/1"; break;
-			case "https://nongmotrash.github.io/writing/5": window.location = "https://nongmotrash.net/game-design/3"; break;
-			case "https://nongmotrash.github.io/writing/6": window.location = "https://nongmotrash.net/fiction/1"; break;
-			case "https://nongmotrash.github.io/writing/7": window.location = "https://nongmotrash.net/fiction/introspective/2"; break;
-			case "https://nongmotrash.github.io/teralite": window.location = "https://nongmotrash.net/games"; break;
-			case "https://nongmotrash.github.io/contact": window.location = "https://nongmotrash.net/about#contact"; break;
-			case "https://nongmotrash.github.io/fav-media/books": window.location = "https://nongmotrash.net/about/favs/books"; break;
-			case "https://nongmotrash.github.io/fav-media/books": window.location = "https://nongmotrash.net/about/favs/books"; break;
-			case "https://nongmotrash.github.io/fav-media/movies": window.location = "https://nongmotrash.net/about/favs/movies"; break;
-			case "https://nongmotrash.github.io/fav-media/music": window.location = "https://nongmotrash.net/about/favs/music"; break;
-			case "https://nongmotrash.github.io/fav-media/shows": window.location = "https://nongmotrash.net/about/favs/shows"; break;
-			default: window.location = "https://nongmotrash.net" + ref.slice(29);
-		}
-	}
+}
+
+document.getElementById("link").href = page;
+
 </script>
 
 </html> 
