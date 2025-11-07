@@ -27,9 +27,9 @@
 
 #nongmotrash-js-warning {
 	position: absolute;
-	top: 93%;
-	right: 0;
-	font-size: 1rem;
+	top: 100%;
+	right: 5%;
+	font-size: 2rem;
 	color: red;
 	background: black;
 }
