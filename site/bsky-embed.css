@@ -1,42 +1,51 @@
-.bluesky-embed {
-	max-height: 200px;
-	left: 22%;
-
-	--font-size: 20px;
-	--font-family: "nunito";
-	--max-feed-height: 200px; /* doesn't work? */
-
-	--text-primary: #f1f3f5;
-	--text-secondary: #8c9eb2;
-	--text-link: #f87424; /* --color-accent */
-	--background-primary: #1f1a2d; /* --color-fg */
-	--background-secondary: #a5267f; /* --color-secondary */
-	--divider: #a5267f; /* --color-secondary */
-	--divider-hover: rgb(66, 87, 108);
-	--button: #208bfe;
-	--button-text: white;
-	--button-hover: #4ca2fe;
-
-	* {
-		display: unset;
-		font-size: unset;
-		line-height: unset;
-	}
-
-	a::before {
-		width: 0;
-	}
-
-	.profile-feed-header {
-		display: none;
-	}
-
-	.contexts {
-		display: none;
-	}
-
-	.feed-post {
-		margin-bottom: 10rem;
-	}
+* {
+	background: #1f1a2d;
+	font-family: 'nunito';
+	color: white;
 }
 
+img {
+	max-height: 70%;
+	max-width: 90%;
+}
+
+p, span {
+	font-size: 1.5rem;
+}
+
+article {
+	display: flex;
+	flex-direction: row;
+	padding: 1rem;
+}
+
+.flex {
+	display: flex;
+}
+
+.rounded-full {
+	max-width: 20%;
+	max-height: 20%;
+	border-radius: 1rem;
+	margin-right: 1rem;
+}
+
+.border-slate-300 {
+	border-color: lightblue;
+}
+
+.w-14.h-14.rounded-full { /* profile picture */
+	min-width: 8vw;
+	max-width: 8vw;
+	min-height: 8vw;
+	max-height: 8vw;
+}
+
+.flex.gap-2 {
+	display: grid;
+	grid-auto-flow: row dense;
+}
+
+span.text-sm {
+	display: none;
+}

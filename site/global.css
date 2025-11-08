@@ -64,7 +64,8 @@
 	--color-accent: #f87424;
 	--color-secondary: #a5267f;
 	--color-alert: #ff6361;
-	/* typically: 1rem = 16px */
+
+	font-size: 16px;
 }
 
 body {

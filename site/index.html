@@ -24,16 +24,14 @@
 <link rel="stylesheet" href="style.css">
 
 <script src="script.js" defer></script>
-<script src="https://chattable.neocities.org/scripts/main.min.js"></script> <!-- chattable -->
+<script src="https://iframe.chat/scripts/main.min.js"></script> <!-- chattable library -->
 <script>
-	chattable.initialize({ // seems like this has to be done with an inline script?
-		stylesheet : "chattable.css",
-	});
+  chattable.initialize({
+    stylesheet: "chattable.css",
+  });
 </script>
-<!-- for bsky embed -->
+<!-- for bsky embed: -->
 <script type="module" src="https://cdn.jsdelivr.net/npm/bsky-embed/dist/bsky-embed.es.js" async></script>
-<!-- (theme) -->
-<link rel="stylesheet" href="bsky-embed.css">
 
 <body>
 
@@ -59,7 +57,7 @@
 					Turn the earth into a synthetic heaven, Everything is chrome, Everyone is copacetic ✿
 					𝒟𝓇𝑒𝒶𝓂𝓁𝒾𝓀𝑒 𝑅𝑒𝒶𝓁𝒾𝓉𝓎 ✿
 					We're rich! Mushroom. ✿
-					Heaven or Hell ✿
+					Heaven or Hell, Let's Rock ✿
 					-_- bapanada ✿
 					Let's go, extra hour in the ball pit!! ✿
 					everything will be okay... ✿
@@ -71,11 +69,11 @@
 					I, unfortunately, am The Hero of Ages ✿
 				</marquee>
 			</div>
-			<p style="font-size:28px; margin-bottom:-0.5em">
+			<p style="margin-bottom:-0.5em">
 				welcome to my silly central ദി •⩊• )<br>
 				i am a full time do-er, so i like to do a whole lot of things. if i'm lucky, you may have heard of me from one of these...
 			</p>
-			<ul style="font-size:20px">
+			<ul>
 				<li>i made a open source action game called <a href="https://nongmotrash.itch.io/teralite">teralite</a></li>
 				<li>i've made lots of <a href="https://www.youtube.com/@nongmotrash">videos</a>, including one about Your Only Move is Hustle</li> 
 				<li>i was a very prolific <a href="https://krunker.io/social.html?p=profile&q=NonGMOTrash">map maker</a> for Krunker</a></li>
@@ -362,6 +360,9 @@
 		<img src="btn_floppa.gif">
 		<img src="btn_ralsei.gif">
 		<img src="btn_iheartjimmy.png">
+		<a href="https://iframe.chat/" title="Create a live group chat for your website for free">
+			<img src="https://iframe.chat/chattable.png" alt="Chattable 88x31 Web Button">
+		</a>
 	</marquee>
 
 	<div class="main-2">
@@ -396,40 +397,7 @@
 
 		<div class="mid-container">
 
-			<bsky-embed username="nongmotrash.bsky.social" mode="dark" limit="1" disable-styles="true" custom-styles="
-* {
-	background: #1f1a2d;
-	font-family: 'nunito';
-	color: white;
-}
-
-img {
-	max-width: 25%;
-}
-
-p, span {
-	font-size: 1.5rem;
-}
-
-article {
-	display: flex;
-	flex-direction: row;
-	padding: 1rem;
-}
-
-.flex {
-	display: flex;
-}
-
-.rounded-full {
-	border-radius: 1rem;
-	margin-right: 1rem;
-}
-
-.border-slate-300 {
-	border-color: lightblue;
-}
-			"></bsky-embed>
+			<bsky-embed username="nongmotrash.bsky.social" mode="dark" limit="1" disable-styles="true" custom-styles-file="bsky-embed.css"> </bsky-embed>
 
 			<iframe src='https://iframe.chat/embed?chat=NonGMOTrashDotNet' id='chattable' frameborder='none'></iframe>
 
@@ -490,7 +458,6 @@ article {
 
 	</div>
 
-
 	<p class="footer">
 		♡ 2022-20XX
 		♡ by using this site, you agree to the <a href="./terms/index.html">terms</a> ;)
@@ -500,7 +467,6 @@ article {
 		♡ <a href="about/index.html#contact">contact me</a>
 		♡
 	</p>
-
 
 </body>
 </html>

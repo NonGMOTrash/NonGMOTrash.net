@@ -1,38 +1,38 @@
-body {
-	font-family: "caskaydia-cove", Monospace;
-	font-size: 16px;
-	background: black;
-	color: white;
-}
-
-.allMessages {
-	border: solid 1px gray;
-	border-left, border-right: solid 2px gray;
-	/*border-bottom: 0;*/
-}
-
-#top_banner {
-	background: orange;
-	font-family: "grape-soda", MS Gothic;
-}
-
-#timestamp {
-	height: 1em;
-	min-width: 50%;
-	margin: 0;
-	margin-left: auto;
-	border: 1px solid gray;
-	border-top: 0;
-}
-
-#input {
-	border: 3px solid gray;
-	border-radius: 0;
-	background: black;
-	color: white;
-}
-
-#input:empty::before {
-	color: gray;
-	content: "meow (maybe set your name first? click the gear in the top right)";
-}
+/* body { */
+/* 	font-family: "caskaydia-cove", Monospace; */
+/* 	font-size: 24px; */
+/* 	background: #292e42; */
+/* 	color: white; */
+/* } */
+/**/
+/* .allMessages { */
+/* 	border: solid 1px gray; */
+/* 	border-left, border-right: solid 2px gray; */
+/* 	/*border-bottom: 0;*/ */
+/* } */
+/**/
+/* #top_banner { */
+/* 	background: #bee2ff; */
+/* 	font-family: "grape-soda", MS Gothic; */
+/* } */
+/**/
+/* #timestamp { */
+/* 	height: 1em; */
+/* 	min-width: 50%; */
+/* 	margin: 0; */
+/* 	margin-left: auto; */
+/* 	border: 1px solid gray; */
+/* 	border-top: 0; */
+/* } */
+/**/
+/* #input { */
+/* 	border: 3px solid gray; */
+/* 	border-radius: 0; */
+/* 	background: black; */
+/* 	color: white; */
+/* } */
+/**/
+/* #input:empty::before { */
+/* 	color: gray; */
+/* 	content: "meow (maybe set your name first? click the gear in the top right)"; */
+/* } */
