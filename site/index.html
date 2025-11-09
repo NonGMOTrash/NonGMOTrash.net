@@ -26,10 +26,12 @@
 <script src="script.js" defer></script>
 <script src="https://iframe.chat/scripts/main.min.js"></script> <!-- chattable library -->
 <script>
-  chattable.initialize({
-    stylesheet: "chattable.css",
-  });
+	chattable.initialize({ // seems like this has to be done with an inline script?
+		stylesheet : "https://nongmotrash.nekoweb.org/chattable.css", // doesn't need to be anything, i'm setting it in chattable.js to avoid CORS errors
+	});
 </script>
+</script>
+<script src="chattable.js"></script>
 <!-- for bsky embed: -->
 <script type="module" src="https://cdn.jsdelivr.net/npm/bsky-embed/dist/bsky-embed.es.js" async></script>
 
