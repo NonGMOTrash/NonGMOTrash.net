@@ -16,6 +16,8 @@
 	flex-direction: row;
 	justify-content: left;
 	background: var(--color-fg);
+	overflow-x: scroll;
+	overflow-y: hidden;
 
 	h1 {
 		height: 100%;
@@ -31,6 +33,7 @@
 
 .album {
 	max-width: 15rem;
+	height: 100%;
 	margin-right: 3rem;
 	margin-left: 0;
 	display: flex;
