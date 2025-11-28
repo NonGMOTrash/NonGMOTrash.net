@@ -8,16 +8,17 @@
 	</head>
 	
 	<link rel="stylesheet" href="style.css">
-	<style></style>
-	
+	<script src="script.js" defer></script>
+
 	<body>
 		
-		<img src="pizza.gif" style="cursor:pointer" onclick="Pizza();" id="pizza">
+		<video id="vid" autoplay loop muted style="cursor:pointer" onclick="Pizza()">
+			<source id="vid-src" src="pizza.webm">
+		</video>
 		
+		<div id="yt-player"></div>
+
 	</body>
 	
-	<audio src="pizza_time.wav" id="music"></audio>
-	
-	<script src="script.js"></script>
 	
 </html>

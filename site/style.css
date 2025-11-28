@@ -152,7 +152,7 @@
 }
 
 .headline {
-	max-height: 22rem;
+	height: 22em;
 	border-top: solid var(--color-secondary) 9px;
 	border-bottom: solid var(--color-secondary) 9px;
 	display: flex;
@@ -186,7 +186,7 @@
 	/* border-bottom: solid var(--color-secondary); */
 	margin-bottom: 0;
 	padding-top: 0.75rem;
-	letter-spacing: 0.5em;
+	letter-spacing: 0.4em;
 	text-align: center;
 	writing-mode: vertical-lr;
 	transform: rotate(180deg);

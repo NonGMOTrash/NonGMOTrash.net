@@ -7,7 +7,7 @@ body {
 	position: absolute;
 	right: 5%; left: 5%; top: 20%; bottom: 20%;
 	font-size: 40px;
-	font-family: Bitter, Monospace;
+	font-family: Monospace;
 	background-image: url('hornet.gif');
 	background-repeat: repeat;
 	background-size: 2.5%;
@@ -15,4 +15,13 @@ body {
 
 p {
 	font-size: 24px;
+}
+
+a {
+	text-decoration: none;
+}
+
+h3:hover {
+	text-decoration: line-through;
+	cursor: pointer;
 }

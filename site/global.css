@@ -1,5 +1,5 @@
 @font-face {
-	font-family: "nunito";
+	font-family: nunito;
 	src: url("Nunito.woff2") format('woff2'); /* Internet Explorer */
 	font-weight: 600;
 	font-style: normal;
@@ -70,7 +70,7 @@
 
 body {
 	background: var(--color-bg);
-	font-family: "nunito";
+	font-family: nunito;
 	overflow-x: hidden;
 	animation: 0.5s pageLoad ease-in;
 }
@@ -116,7 +116,7 @@ b {
 
 button {
 	color: var(--color-text);
-	font-family: "nunito", Serif;
+	font-family: nunito, Serif;
 	font-size: 1.875rem;
 	background-color: black;
 	transition: all 0.3s ease 0s;

@@ -6,6 +6,6 @@ function Funny() {
 	document.getElementById("video").play();
 	
 	document.getElementById("video").addEventListener("ended", function() {
-		window.location.href = "https://nongmotrash.github.io/home/";
+		window.location.href = "../explosion/index.html";
 	});
 }
